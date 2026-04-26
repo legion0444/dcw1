@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>DC Battle Sim | 1 VS 1</title>
+    <link rel="stylesheet" href="css/sim.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="simulator-page">
+
+    <div class="bg-underlay"></div>
+
+    <header class="cinematic-bar top-bar">
+        <nav class="top-nav">
+            <a href="index.html" class="nav-link">ПОИСК</a>
+            <a href="simulator.html" class="nav-link active">1 VS 1</a>
+            <button class="nav-btn disabled">ОСАДА</button>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="battle-setup">
+            <div class="hero-slot" id="player-slot" onclick="openHeroList('player')">
+                <span>ВЫБЕРИ ГЕРОЯ</span>
+            </div>
+            <div class="vs">VS</div>
+            <div class="hero-slot" id="enemy-slot" onclick="openHeroList('enemy')">
+                <span>ВЫБЕРИ ГЕРОЯ</span>
+            </div>
+        </div>
+
+        <button id="sim-btn">НАЧАТЬ БОЙ</button>
+        <div id="result-text"></div>
+    </main>
+
+    <footer class="cinematic-bar bottom-bar">
+        <small>by LeGion</small>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

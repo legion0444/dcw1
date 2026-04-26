@@ -1,0 +1,502 @@
+
+
+.options-row {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.custom-select-wrapper {
+    position: relative;
+    width: 200px;
+    font-family: 'Oswald', sans-serif;
+    user-select: none;
+    z-index: 11;
+}
+
+.select-trigger {
+    background: rgba(10, 10, 10, 0.9);
+    border: 1px solid #333;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+/* Эффект при открытии */
+.custom-select-wrapper.open .select-trigger {
+    border-color: #e23636;
+    box-shadow: 0 0 10px rgba(226, 54, 54, 0.4);
+}
+
+.custom-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #0a0a0a;
+    border: 1px solid #e23636;
+    border-top: none;
+    max-height: 250px;
+    overflow-y: auto;
+    display: none;
+    z-index: 110;
+}
+
+.custom-select-wrapper.open .custom-options {
+    display: block;
+}
+
+.option {
+    padding: 10px 15px;
+    color: #888;
+    cursor: pointer;
+    transition: 0.2s;
+    text-transform: uppercase;
+}
+
+.option:hover {
+    background: #e23636;
+    color: #fff;
+}
+
+.option.selected {
+    color: #e23636;
+}
+
+/* КРАСНЫЙ СКРОЛЛБАР ВНУТРИ */
+.custom-options::-webkit-scrollbar { width: 6px; }
+.custom-options::-webkit-scrollbar-track { background: #2e2e2e; }
+.custom-options::-webkit-scrollbar-thumb { background: #e23636; }
+
+.arrow {
+    width: 0; height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #e23636;
+}
+
+/* Ширина всей полосы скролла */
+.heroes-container::-webkit-scrollbar {
+    width: 8px;
+    display: block;
+}
+
+/* Фон дорожки, по которой едет ползунок */
+.heroes-container::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+}
+
+/* Сам ползунок */
+.heroes-container::-webkit-scrollbar-thumb {
+    background: #e23636; /* Твой фирменный красный */
+    border-radius: 0;    /* Квадратный стиль */
+    transition: 0.3s;
+}
+
+/* Цвет ползунка при наведении */
+.heroes-container::-webkit-scrollbar-thumb:hover {
+    background: #ff4d4d;
+}
+
+/* Контейнер на почти всю ширину экрана */
+.sections-wide-wrapper {
+    width: 95%;              /* Почти по края экрана */
+    max-width: 1800px;       /* Но ограничиваем на очень больших мониторах */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;               /* Расстояние между разделами */
+    padding-bottom: 100px;   /* Отступ снизу, чтобы футер не перекрывал */
+}
+
+.hero-group {
+    width: 100%;
+}
+
+.group-title {
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 4px solid #e23636;
+}
+
+/* Сетка с маленькими карточками */
+.heroes-grid-mini {
+    display: flex;
+    flex-wrap: wrap;         /* Герои идут в ряд и переносятся */
+    gap: 10px;               /* Плотная расстановка */
+}
+
+/* КАРТОЧКА 50x50 */
+.hero-mini-card {
+    width: 80px;
+    height: 80px;
+    background: #111;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;      /* Для позиционирования имени внутри */
+    cursor: pointer;
+    transition: 0.2s;
+    overflow: visible;       /* Чтобы имя могло выходить за границы */
+}
+
+.hero-mini-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-mini-card:hover {
+    border-color: #e23636;
+    transform: scale(1.1);   /* Легкое увеличение при наведении */
+    z-index: 10;             /* Чтобы быть над соседями */
+}
+
+/* ВСПЛЫВАЮЩЕЕ ИМЯ */
+.hero-tooltip {
+    position: absolute;
+    bottom: -25px;           /* Появляется под карточкой */
+    left: 50%;
+    transform: translateX(-50%);
+    background: #e23636;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 6px;
+    white-space: nowrap;     /* Чтобы имя не переносилось */
+    opacity: 0;              /* Скрыто по умолчанию */
+    pointer-events: none;    /* Чтобы не мешало кликам */
+    transition: 0.2s;
+    z-index: 11;
+}
+
+.hero-mini-card:hover .hero-tooltip {
+    opacity: 1;
+    bottom: -30px;           /* Плавное выплывание */
+}
+
+/* Стеклянная подложка теперь облегает сетку */
+.hero-group .glass-panel {
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(5px);
+    z-index: 0;
+}
+
+.heroes-container {
+    flex: 1; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    
+    /* ВКЛЮЧАЕМ СКРОЛЛ */
+    overflow-y: auto; 
+    overflow-x: hidden;
+    
+    /* Плавность и отступ под скроллбар */
+    scroll-behavior: smooth;
+    padding-right: 5px; 
+}
+/* Кастомный скроллбар именно для стеклянной панели */
+.glass-panel::-webkit-scrollbar {
+    width: 4px;
+}
+
+.glass-panel::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.glass-panel::-webkit-scrollbar-thumb {
+    background: #e23636;
+    border-radius: 2px;
+}
+
+
+.hero-card:hover {
+    border-color: #e23636;
+    background: rgba(226, 54, 54, 0.1);
+    transform: scale(1.02);
+}
+
+.filter-glass {
+    background: rgba(255, 255, 255, 0.02); /* Очень легкий белый */
+    backdrop-filter: blur(8px);            /* Размытие фона */
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    padding: 20px 40px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    
+    position: relative; /* Обязательно */
+    z-index: 100;      
+    overflow: visible !important;
+}
+
+/* РАЗДЕЛЫ (DETAILS) */
+.sections-wrapper { width: 100%; max-width: 1200px; }
+
+.hero-section { margin-bottom: 15px; width: 100%; }
+
+.section-header {
+    list-style: none; /* Убираем стандартную стрелку */
+    background: rgba(226, 54, 54, 0.1);
+    border-left: 4px solid #e23636;
+    padding: 12px 25px;
+    font-weight: 900;
+    font-size: 18px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+
+.section-header:hover { background: rgba(226, 54, 54, 0.2); }
+
+.hero-section[open] .arrow { transform: rotate(180deg); color: #e23636; }
+
+/* СТЕКЛЯННЫЕ ПАНЕЛИ ВНУТРИ РАЗДЕЛОВ */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-top: none; /* Склейка с заголовком */
+}
+
+.heroes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 15px;
+}
+
+/* ЛОГИКА ПЕРЕКЛЮЧЕНИЯ РЕЖИМОВ */
+.search-mode-panel { display: none; width: 100%; max-width: 1200px; }
+
+/* Если включен режим поиска */
+.mode-search .sections-wrapper { display: none; }
+.mode-search .search-mode-panel { display: block; }
+
+/* КАРТОЧКА ГЕРОЯ */
+.hero-card {
+    background: rgba(0,0,0,0.5);
+    aspect-ratio: 1/1;
+    border: 1px solid #333;
+    position: relative;
+    cursor: pointer;
+}
+.hero-card:hover { border-color: #e23636; transform: scale(1.03); transition: 0.2s; }
+.hero-name { position: absolute; bottom: 0; width: 100%; background: rgba(0,0,0,0.8); text-align: center; font-size: 12px; padding: 5px 0; font-weight: bold; }
+
+/* Полосы как раньше */
+
+.nav-link.active { color: #e23636; }
+
+#hero-name-filter:focus {
+    border-color: #e23636;
+    box-shadow: 0 0 15px rgba(226, 54, 54, 0.2);
+}
+
+#hero-name-filter:focus {
+    border-color: #e23636;
+    box-shadow: 0 0 15px rgba(226, 54, 54, 0.2);
+}
+/* Корректируем отступы wrapper, так как теперь есть padding у glass */
+
+.filter-wrapper {
+    display: flex;
+    flex-direction: column; /* Ставит поиск над фильтрами */
+    align-items: center;    /* Центрирует по горизонтали */
+    gap: 15px;              /* Расстояние между поиском и фильтрами */
+    width: 100%;
+    margin: 20px 0;         /* Отступы от краев cinema-полос */
+    overflow: visible !important;
+}
+
+/* Ряд с поисковой строкой */
+.search-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#hero-name-filter {
+    width: 400px;           /* Сделаем поиск чуть шире для солидности */
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #333;
+    color: #fff;
+    padding: 12px 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    outline: none;
+    transition: 0.3s;
+}
+
+#hero-name-filter:focus {
+    border-color: #e23636;
+    box-shadow: 0 0 15px rgba(226, 54, 54, 0.2);
+}
+
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper select {
+    appearance: none;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #333;
+    color: #888;
+    padding: 8px 35px 8px 15px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+    min-width: 130px;
+}
+
+.select-wrapper::after {
+    content: '▼';
+    font-size: 9px;
+    color: #e23636;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.select-wrapper select:hover {
+    color: #fff;
+    border-color: #e23636;
+}
+
+
+
+/* ОБНУЛЕНИЕ */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    height: 100vh;
+    /* Убираем overflow: hidden, если на мобилках контент может не влезть по высоте */
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+}
+
+/* АНИМИРОВАННЫЙ ФОН */
+@keyframes diagonalSlide {
+    from { background-position: 0 0; }
+    to { background-position: -1900px 545px; }
+}
+
+.bg-underlay {
+    position: fixed;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background-image: url('../images/misc/tamplates/background.webp');
+    background-repeat: repeat;
+    background-size: 1900px 545px; 
+    filter: blur(4px) brightness(0.4);
+    z-index: -1;
+    animation: diagonalSlide 60s linear infinite;
+    will-change: background-position;
+}
+
+/* КИНЕМАТОГРАФИЧНЫЕ ПОЛОСЫ */
+.cinematic-bar {
+    min-height: 10vh; /* Используем min-height */
+    padding: 10px 20px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    box-shadow: 0 0 40px rgba(0,0,0,1);
+}
+
+.top-nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Чтобы ссылки переносились, если их много */
+    justify-content: center;
+}
+
+.nav-link {
+    color: #444;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px; /* Чуть меньше базу для мобилок */
+    letter-spacing: 2px;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.nav-link:hover, .nav-link.active { color: #e23636; }
+.nav-link.disabled { opacity: 0.2; }
+
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Элементы будут друг под другом */
+    align-items: center;    /* Центрируем по горизонтали */
+    gap: 50px;               /* Расстояние между текстом и кнопкой */
+    
+    
+}
+
+.footer-author {
+    color: #1f1f1f;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    /* ИЗМЕНИ ЗДЕСЬ: */
+    letter-spacing: -1px; /* Вместо 4px поставь 1px или 0 */
+}
+
+
+/* НИЖНЯЯ ПАНЕЛЬ */
+.footer-content {
+    color: #333;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* --- АДАПТИВНОСТЬ (МЕДИА-ЗАПРОСЫ) --- */
+
+/* Для ПК (большие экраны) */
+@media (min-width: 1024px) {
+    .nav-link { font-size: 16px; }
+    .search-group { height: 65px; }
+    .main-logo-img { width: 450px; }
+    .footer-content { font-size: 12px; letter-spacing: 4px; }
+}

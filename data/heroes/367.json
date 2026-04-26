@@ -1,0 +1,89 @@
+{
+    "id": 367,
+    "name": "Tawardil",
+    "name_ru": "Тавардил",
+    "class_id": 6,
+    "class_2_id": 0,
+    "race_id": 43,
+    "alliance_id": 7,
+    "alliance_2_id": 0,
+    "rarity_id": 2,
+    "cost_gold": "1.6E+46",
+    "buy_level": 225,
+    "image": "images/heroes/367.webp",
+    "power": 120,
+    "base_damage": "8.6Е+54",
+    "hp": 28,
+    "hp_main": 0,
+    "atk": 26,
+    "atk_main": 1,
+    "def": 27,
+    "def_main": 0,
+    "wis": 20,
+    "wis_main": 0,
+    "agi": 19,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 40,
+    "order": 115,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 3793,
+            "hero_id": 367,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/367_3793.webp",
+            "image_id": 3333,
+            "type": "opening",
+            "chance": 70,
+            "created": "2024-03-01 17:52:15",
+            "updated": "2024-06-27 20:54:14",
+            "status": null,
+            "name": "Morphs a random enemy into a flower.",
+            "name_ru": "Превращает случайного противника в героя - цветочек."
+        }
+    ],
+    "alliance_data": {
+        "id": 7,
+        "name": "Thieves",
+        "color": "#c8e514",
+        "name_ru": "Воры",
+        "image": "images/gallery/assets/images/categories/alliances/036e8a8b13e6134bc54de30f14a68134.png",
+        "items": [
+            {
+                "id": 58,
+                "alliance_id": 7,
+                "min": 2,
+                "description": "All heroes receive +40% to AGI",
+                "ru_description": "Все герои получают +40% к AGI",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            },
+            {
+                "id": 59,
+                "alliance_id": 7,
+                "min": 4,
+                "description": "All heroes receive +100% to AGI",
+                "ru_description": "Все герои получают +100% к AGI",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2026-04-07 20:23:35"
+            },
+            {
+                "id": 60,
+                "alliance_id": 7,
+                "min": 6,
+                "description": "All heroes receive +175% to AGI. All heroes receive a 40% bonus to dodge non magical attacks",
+                "ru_description": "Все герои получают +175% к AGI. Все герои получают бонус 40% к увороту от не магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2026-04-07 20:23:30"
+            }
+        ]
+    },
+    "cat": "9",
+    "index_in_category": 12
+}

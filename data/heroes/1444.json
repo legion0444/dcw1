@@ -1,0 +1,80 @@
+{
+    "id": 1444,
+    "name": "Soul Reaper",
+    "name_ru": "Потрошитель душ",
+    "class_id": 7,
+    "class_2_id": 0,
+    "race_id": 41,
+    "alliance_id": 13,
+    "alliance_2_id": 0,
+    "rarity_id": 7,
+    "cost_gold": "5.0Е+922",
+    "buy_level": 4520,
+    "image": "images/heroes/1444.webp",
+    "power": 520,
+    "base_damage": "8.2Е+913",
+    "hp": 123,
+    "hp_main": 0,
+    "atk": 127,
+    "atk_main": 1,
+    "def": 116,
+    "def_main": 0,
+    "wis": 63,
+    "wis_main": 0,
+    "agi": 62,
+    "agi_main": 0,
+    "bonus_event": 15,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 2000,
+    "order": 273,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 2320,
+            "hero_id": 1444,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/1444_2320.webp",
+            "image_id": 3491,
+            "type": "active",
+            "chance": 30,
+            "created": "2023-09-20 14:45:23",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Deals massive ATK-based damage to  random enemies with a power of 450% ",
+            "name_ru": "Наносит мощный урон АТК по одному  сопернику силой 450%"
+        }
+    ],
+    "alliance_data": {
+        "id": 13,
+        "name": "Troopers",
+        "color": "#d6d6d6",
+        "name_ru": "Десантники",
+        "image": "images/gallery/assets/images/categories/alliances/6dc3cc85bf1f8c629f7e1fb5ad85d00b.png",
+        "items": [
+            {
+                "id": 72,
+                "alliance_id": 13,
+                "min": 3,
+                "description": "All troopers receive +50% to ATK",
+                "ru_description": "Все десантники получают бонус 50% к AТК",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            },
+            {
+                "id": 73,
+                "alliance_id": 13,
+                "min": 6,
+                "description": "All troopers receive +150% to ATK, 20% bonus against all damage types, +10% to dodge.",
+                "ru_description": "Все десантники получают бонус 150% к АТК, 20% к защите от любого вида урона, +10% к увороту.",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "cat": "2",
+    "index_in_category": 81
+}

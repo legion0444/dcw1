@@ -1,0 +1,89 @@
+{
+    "id": 329,
+    "name": "Ulla, the Unrelenting",
+    "name_ru": "Улла, Непримиримая",
+    "class_id": 15,
+    "class_2_id": 0,
+    "race_id": 40,
+    "alliance_id": 8,
+    "alliance_2_id": 0,
+    "rarity_id": 1,
+    "cost_gold": "2,5Е+06",
+    "buy_level": 80,
+    "image": "images/heroes/329.webp",
+    "power": 55,
+    "base_damage": "4,7Е+04",
+    "hp": 13,
+    "hp_main": 0,
+    "atk": 13,
+    "atk_main": 1,
+    "def": 11,
+    "def_main": 0,
+    "wis": 7,
+    "wis_main": 0,
+    "agi": 7,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 0,
+    "order": 21,
+    "color_1": "#473c00",
+    "color_2": "#311b2d",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 2037,
+            "hero_id": 329,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/329_2037.webp",
+            "image_id": 3367,
+            "type": "active",
+            "chance": 30,
+            "created": "2023-08-21 10:23:49",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Deals massive ATK-based damage to 6 random enemies with a power of 75%.",
+            "name_ru": "Наносит мощный урон АТК по 6 случайным соперникам силой 75%"
+        }
+    ],
+    "alliance_data": {
+        "id": 8,
+        "name": "Rogues",
+        "color": "#ffc000",
+        "name_ru": "Изгои",
+        "image": "images/gallery/assets/images/categories/alliances/6808dbb999dee3b97327951ce48d8afd.png",
+        "items": [
+            {
+                "id": 61,
+                "alliance_id": 8,
+                "min": 2,
+                "description": "All heroes receive +20% to ATK",
+                "ru_description": "Все герои получают +20% ΑΤΚ",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            },
+            {
+                "id": 62,
+                "alliance_id": 8,
+                "min": 4,
+                "description": "All heroes receive +40% to ATK. Additionally, the Rogue can attack an enemy.",
+                "ru_description": "Все герои получают +40% АТК. Изгой дополнительно атакует врага.",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            },
+            {
+                "id": 63,
+                "alliance_id": 8,
+                "min": 6,
+                "description": "All heroes receive +40% to ATK. All allied heroes gain + 40% protection from non—magical attacks. Additionally, the Rogue can attack an enemy.",
+                "ru_description": "Все герои получают +40% ΑΤΚ. Все союзные герои получают +40% к защите от не магических атак. Изгой дополнительно атакует врага.",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "cat": "2",
+    "index_in_category": 20
+}

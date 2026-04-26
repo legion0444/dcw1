@@ -1,0 +1,89 @@
+{
+    "id": 1741,
+    "name": "Erdapap the Firefossa",
+    "name_ru": "Ердапап Огнефосса",
+    "class_id": 15,
+    "class_2_id": null,
+    "race_id": 40,
+    "alliance_id": 8,
+    "alliance_2_id": 0,
+    "rarity_id": 2,
+    "cost_gold": "8.4E+45",
+    "buy_level": 220,
+    "image": "images/heroes/1741.webp",
+    "power": 70,
+    "base_damage": "1.7Е+58",
+    "hp": 15,
+    "hp_main": 0,
+    "atk": 12,
+    "atk_main": 1,
+    "def": 14,
+    "def_main": 0,
+    "wis": 14,
+    "wis_main": 0,
+    "agi": 7,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 40,
+    "order": 93,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 2879,
+            "hero_id": 1741,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/1741_2879.webp",
+            "image_id": 3579,
+            "type": "opening",
+            "chance": 100,
+            "created": "2023-10-18 08:55:02",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Raises ATK, WIS, AGI, DEF of all allies by 25%. Applies only to Rogue.",
+            "name_ru": "Повышает ATK, WIS, AGI, DEF всем союзникам на 25%. Применяется только на изгой."
+        }
+    ],
+    "alliance_data": {
+        "id": 8,
+        "name": "Rogues",
+        "color": "#ffc000",
+        "name_ru": "Изгои",
+        "image": "images/gallery/assets/images/categories/alliances/6808dbb999dee3b97327951ce48d8afd.png",
+        "items": [
+            {
+                "id": 61,
+                "alliance_id": 8,
+                "min": 2,
+                "description": "All heroes receive +20% to ATK",
+                "ru_description": "Все герои получают +20% ΑΤΚ",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            },
+            {
+                "id": 62,
+                "alliance_id": 8,
+                "min": 4,
+                "description": "All heroes receive +40% to ATK. Additionally, the Rogue can attack an enemy.",
+                "ru_description": "Все герои получают +40% АТК. Изгой дополнительно атакует врага.",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            },
+            {
+                "id": 63,
+                "alliance_id": 8,
+                "min": 6,
+                "description": "All heroes receive +40% to ATK. All allied heroes gain + 40% protection from non—magical attacks. Additionally, the Rogue can attack an enemy.",
+                "ru_description": "Все герои получают +40% ΑΤΚ. Все союзные герои получают +40% к защите от не магических атак. Изгой дополнительно атакует врага.",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "cat": "11",
+    "index_in_category": 1
+}

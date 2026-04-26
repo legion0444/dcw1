@@ -1,0 +1,80 @@
+{
+    "id": 1313,
+    "name": "Peachneedle ",
+    "name_ru": "Персикошип",
+    "class_id": 20,
+    "class_2_id": 0,
+    "race_id": 18,
+    "alliance_id": 12,
+    "alliance_2_id": 0,
+    "rarity_id": 7,
+    "cost_gold": "1Е+1730",
+    "buy_level": 8300,
+    "image": "images/heroes/1313.webp",
+    "power": 790,
+    "base_damage": "1Е+1700",
+    "hp": 134,
+    "hp_main": 0,
+    "atk": 103,
+    "atk_main": 0,
+    "def": 102,
+    "def_main": 0,
+    "wis": 209,
+    "wis_main": 1,
+    "agi": 131,
+    "agi_main": 0,
+    "bonus_event": 10,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 2500,
+    "order": 337,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 2653,
+            "hero_id": 1313,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/1313_2653.webp",
+            "image_id": 3449,
+            "type": "active",
+            "chance": 30,
+            "created": "2023-10-11 14:05:20",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Deals massive WIS-based damage to 4 random enemies with a power of 100% ",
+            "name_ru": "Наносит мощный урон WIS по 4 случайным соперникам силой 100%"
+        }
+    ],
+    "alliance_data": {
+        "id": 12,
+        "name": "Sages",
+        "color": "#ff8255",
+        "name_ru": "Мудрецы",
+        "image": "images/gallery/assets/images/categories/alliances/94c0e5787de4117eac96eb92b9a73c95.png",
+        "items": [
+            {
+                "id": 70,
+                "alliance_id": 12,
+                "min": 2,
+                "description": "All heroes receive a 40% bonus to defence against magical attacks",
+                "ru_description": "Все герои получают бонус 40% к защите от магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            },
+            {
+                "id": 71,
+                "alliance_id": 12,
+                "min": 4,
+                "description": "All heroes receive an 80% bonus to defence against magical attacks",
+                "ru_description": "Все герои получают бонус 80% к защите от магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "cat": "2",
+    "index_in_category": 86
+}

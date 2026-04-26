@@ -1,0 +1,80 @@
+{
+    "id": 339,
+    "name": "Adi the Hawk",
+    "name_ru": "Ади ястреб",
+    "class_id": 27,
+    "class_2_id": null,
+    "race_id": 40,
+    "alliance_id": 4,
+    "alliance_2_id": 0,
+    "rarity_id": 2,
+    "cost_gold": "1.6E+46",
+    "buy_level": 225,
+    "image": "images/heroes/339.webp",
+    "power": 120,
+    "base_damage": "1.7E+74",
+    "hp": 29,
+    "hp_main": 0,
+    "atk": 14,
+    "atk_main": 0,
+    "def": 23,
+    "def_main": 0,
+    "wis": 15,
+    "wis_main": 0,
+    "agi": 27,
+    "agi_main": 1,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 40,
+    "order": 107,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 2054,
+            "hero_id": 339,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/339_2054.webp",
+            "image_id": 3352,
+            "type": "active",
+            "chance": 30,
+            "created": "2023-08-21 10:50:24",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Deals massive AGI-based damage to 4 random enemies with a power of 100%.",
+            "name_ru": "Наносит мощный урон AGI по 4 случайным соперникам силой 100%."
+        }
+    ],
+    "alliance_data": {
+        "id": 4,
+        "name": "Rangers",
+        "color": "#ff5300",
+        "name_ru": "Рейнджеры",
+        "image": "images/gallery/assets/images/categories/alliances/a5dacb05fcf1baf144d3c91962e95923.png",
+        "items": [
+            {
+                "id": 53,
+                "alliance_id": 4,
+                "min": 2,
+                "description": "All heroes receive +10% to dodge",
+                "ru_description": "Все герои получают +10% к увороту",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            },
+            {
+                "id": 54,
+                "alliance_id": 4,
+                "min": 4,
+                "description": "All heroes receive +30% to dodge",
+                "ru_description": "Все герои получают +30% к увороту",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "cat": "9",
+    "index_in_category": 4
+}

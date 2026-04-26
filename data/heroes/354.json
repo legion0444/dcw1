@@ -1,0 +1,71 @@
+{
+    "id": 354,
+    "name": "RTX-10",
+    "name_ru": "РТХ-10",
+    "class_id": 32,
+    "class_2_id": null,
+    "race_id": 28,
+    "alliance_id": 2,
+    "alliance_2_id": 0,
+    "rarity_id": 2,
+    "cost_gold": "1.6E+46",
+    "buy_level": 225,
+    "image": "images/heroes/354.webp",
+    "power": 120,
+    "base_damage": "5.9Е+54",
+    "hp": 30,
+    "hp_main": 0,
+    "atk": 18,
+    "atk_main": 0,
+    "def": 28,
+    "def_main": 0,
+    "wis": 14,
+    "wis_main": 0,
+    "agi": 26,
+    "agi_main": 1,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 40,
+    "order": 114,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 2084,
+            "hero_id": 354,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/354_2084.webp",
+            "image_id": 3385,
+            "type": "active",
+            "chance": 30,
+            "created": "2023-08-21 14:35:57",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Deals massive AGI-based damage to 5 random enemies with a power of 75%.",
+            "name_ru": "Наносит мощный урон AGI по 5 случайным соперникам силой 75%."
+        }
+    ],
+    "alliance_data": {
+        "id": 2,
+        "name": "Assassins",
+        "color": "#00c81d",
+        "name_ru": "Асассины",
+        "image": "images/gallery/assets/images/categories/alliances/c88f5caca61a11732cd11c105573fa30.png",
+        "items": [
+            {
+                "id": 51,
+                "alliance_id": 2,
+                "min": 2,
+                "description": "All assassins receive a 50% bonus to pure damage",
+                "ru_description": "Все ассасины получают бонус чистого урона 50%",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "cat": "9",
+    "index_in_category": 11
+}

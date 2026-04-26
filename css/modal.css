@@ -1,0 +1,337 @@
+/* Строка параметров в ряд */
+.hero-meta-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 25px;
+    align-items: center;
+    padding-left: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
+    padding-bottom: 15px;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.meta-label {
+    color: #e23636;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.meta-value {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Кнопка-пилюля для Альянса */
+.alliance-pill-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(226, 54, 54, 0.4);
+    padding: 5px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+}
+
+.alliance-pill-button:hover {
+    background: rgba(226, 54, 54, 0.2);
+    box-shadow: 0 0 15px rgba(226, 54, 54, 0.3);
+}
+
+.alliance-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+/* Общий контейнер для визуальной части */
+.hero-visual-container {
+    position: relative;
+    padding-left: 20px; /* Создаем отступ слева для сдвига */
+}
+
+/* Красная подложка (сзади картинки) */
+.hero-visual-bg {
+
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    width: 240px;
+    height: 240px;
+    filter: blur(25px); /* Увеличил размытие для мягкости */
+    opacity: 0.3;
+    z-index: 1;
+    animation: breath 6s infinite ease-in-out; /* Ускорил дыхание для заметности */
+    
+
+}
+
+@keyframes breath {
+    0% {
+        transform: scale(0.9);
+        
+    }
+    50% {
+        transform: scale(0.95); /* Легкое увеличение */
+        
+    }
+    100% {
+        transform: scale(0.9);
+        
+    }
+}
+.hero-modal-title {
+    font-family: 'Oswald', sans-serif;
+    left: 1px;
+    font-size: 35px; /* Крупный размер как на скриншоте */
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px; /* Отступ от шапки с картинкой */
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    border-left: 5px solid #e23636; /* Красная полоска слева, если нужно по дизайну [cite: 22, 31] */
+    padding-left: 15px;
+}
+
+/* Убедитесь, что контент-wrapper позволяет заголовку быть сверху [cite: 17] */
+.modal-content-wrapper {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение: Имя -> Контент -> Навыки */
+}
+/* Контейнер 200х200 */
+.image-container {
+    left: -10px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    z-index: 2; /* Поверх подложки */
+    overflow: visible; /* Чтобы рамка редкости могла выходить за края */
+}
+
+/* Картинка героя */
+.main-hero-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+/* РАМКА РЕДКОСТИ: выходит за края */
+.rarity-frame-overlay {
+    position: absolute;
+    /* Увеличиваем размер, чтобы она выступала */
+    width: 220px; 
+    height: 220px;
+    
+    top: -10px;
+    left: -10px;
+    
+    z-index: 5;
+    pointer-events: none; /* Чтобы можно было кликать сквозь неё */
+    object-fit: contain;
+}
+/* Стеклянная плашка осколков (тот самый белый прямоугольник) */
+.shards-overlay-panel {
+    position: absolute;
+    bottom: -23px; /* Отрицательное значение выводит плашку наполовину вниз */
+    left: 50%;
+    transform: translateX(-50%);
+    
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 15px;
+    
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    
+    min-width: 80px;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    z-index: 10; /* Чтобы была поверх границ контейнера */
+}
+
+.shards-count {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+.shard-icon-img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* Старая панель статов во флексе теперь занимает всю высоту */
+.hero-stats-side {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto; /* Прижимаем статы к правому краю */
+}
+
+.hero-modal-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 10000; padding: 20px;
+}
+
+.hero-modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* СЛОЙ ФОНА (MARVEL GLASS) */
+.modal-background {
+    position: absolute;
+    opacity: 99%;
+    top: 0; left: 0; width: 100%; height: 100%;
+
+    background: rgba(255, 255, 255, 0.02); /* Очень легкий белый */
+    backdrop-filter: blur(8px);            /* Размытие фона */
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    
+    z-index: 1;
+}
+
+.modal-content-wrapper {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+/* ВЕРХНЯЯ ЧАСТЬ НА FLEXBOX */
+.hero-header-flex {
+    
+    align-items: flex-start; /* Выравнивание по верхнему краю [cite: 18] */
+    
+}
+
+.hero-visual {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+.hero-info-main {
+    flex: 1; /* Занимает всё свободное место */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* ОБЩИЕ ПАНЕЛИ */
+.panel-glass {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+}
+
+.panel-header {
+    background: rgba(226, 54, 54, 0.15);
+    padding: 5px 12px;
+    font-size: 11px;
+    color: #e23636;
+    letter-spacing: 2px;
+    border-bottom: 1px solid rgba(226, 54, 54, 0.2);
+}
+
+.panel-body { padding: 12px; }
+
+/* СТАТЫ С ИКОНКАМИ */
+.stats-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.stat-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.stat-icon { width: 22px; height: 22px; }
+.stat-icon img { width: 100%; height: 100%; object-fit: contain; }
+.stat-value { font-size: 18px; font-weight: bold; }
+
+/* НАВЫКИ */
+.hero-skills-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+}
+
+.skill-row {
+    display: flex;
+    gap: 20px;
+    background: rgba(255,255,255,0.02);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.skill-img-wrapper {
+    width: 70px; height: 70px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #444;
+}
+.skill-img-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+
+.skill-meta { font-size: 12px; margin-bottom: 5px; }
+.meta-label { color: #e23636; }
+.skill-description { font-size: 14px; color: #ccc; text-transform: none; line-height: 1.4; }
+
+/* КНОПКА */
+.legion-button {
+    background: transparent; border: 1px solid #e23636;
+    color: #e23636; padding: 10px 40px; cursor: pointer;
+    font-family: 'Oswald'; font-weight: bold; letter-spacing: 1px;
+    transition: 0.3s; width: fit-content; margin: 20px auto 0; display: block;
+}
+.legion-button:hover { background: #e23636; color: #fff; box-shadow: 0 0 20px #e23636; }
+
+.close-modal {
+    position: absolute; top: 10px; right: 10px;
+    background: none; border: none; color: #555; font-size: 24px; cursor: pointer;
+}

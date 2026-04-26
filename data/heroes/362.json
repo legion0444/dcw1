@@ -1,0 +1,80 @@
+{
+    "id": 362,
+    "name": "Arbiter of Darkness",
+    "name_ru": "Арбитр Тьмы",
+    "class_id": 20,
+    "class_2_id": 0,
+    "race_id": 1,
+    "alliance_id": 12,
+    "alliance_2_id": 0,
+    "rarity_id": 2,
+    "cost_gold": "1.6E+46",
+    "buy_level": 220,
+    "image": "images/heroes/362.webp",
+    "power": 120,
+    "base_damage": "1.2E+41",
+    "hp": 22,
+    "hp_main": 0,
+    "atk": 15,
+    "atk_main": 0,
+    "def": 16,
+    "def_main": 0,
+    "wis": 31,
+    "wis_main": 1,
+    "agi": 18,
+    "agi_main": 0,
+    "bonus_event": 25,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 40,
+    "order": 84,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 2866,
+            "hero_id": 362,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/362_2866.webp",
+            "image_id": 3420,
+            "type": "opening",
+            "chance": 100,
+            "created": "2023-10-14 10:20:18",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Curces 3 random enemies. Curced enemies lose 20% of the ability proc chance. ",
+            "name_ru": "Проклинает 3 случайных соперников. Проклятые соперники теряют 20% вероятности срабатывания специальной способности."
+        }
+    ],
+    "alliance_data": {
+        "id": 12,
+        "name": "Sages",
+        "color": "#ff8255",
+        "name_ru": "Мудрецы",
+        "image": "images/gallery/assets/images/categories/alliances/94c0e5787de4117eac96eb92b9a73c95.png",
+        "items": [
+            {
+                "id": 70,
+                "alliance_id": 12,
+                "min": 2,
+                "description": "All heroes receive a 40% bonus to defence against magical attacks",
+                "ru_description": "Все герои получают бонус 40% к защите от магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            },
+            {
+                "id": 71,
+                "alliance_id": 12,
+                "min": 4,
+                "description": "All heroes receive an 80% bonus to defence against magical attacks",
+                "ru_description": "Все герои получают бонус 80% к защите от магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "cat": "10",
+    "index_in_category": 8
+}

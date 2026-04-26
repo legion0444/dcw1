@@ -1,0 +1,71 @@
+{
+    "id": 547,
+    "name": "Imiko",
+    "name_ru": "Имико",
+    "class_id": 19,
+    "class_2_id": 0,
+    "race_id": 40,
+    "alliance_id": 10,
+    "alliance_2_id": 0,
+    "rarity_id": 2,
+    "cost_gold": "1.6E+46",
+    "buy_level": 240,
+    "image": "images/heroes/547.webp",
+    "power": 120,
+    "base_damage": "1.2E+41",
+    "hp": 22,
+    "hp_main": 0,
+    "atk": 25,
+    "atk_main": 0,
+    "def": 15,
+    "def_main": 0,
+    "wis": 25,
+    "wis_main": 1,
+    "agi": 20,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 0,
+    "order": 79,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 2185,
+            "hero_id": 547,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/547_2185.webp",
+            "image_id": 3516,
+            "type": "active",
+            "chance": 50,
+            "created": "2023-08-24 14:07:14",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Restores a fixed number of HP for all allies.",
+            "name_ru": "Восстанавливает всем союзникам НР равное WIS."
+        }
+    ],
+    "alliance_data": {
+        "id": 10,
+        "name": "Monks",
+        "color": "#d90168",
+        "name_ru": "Монахи",
+        "image": "images/gallery/assets/images/categories/alliances/0e3ab36a5076a98c16fa5f88dab934da.png",
+        "items": [
+            {
+                "id": 67,
+                "alliance_id": 10,
+                "min": 2,
+                "description": "All monks deal an additional 10% damage and receive a 15% bonus to defense against all damage types. All heroes receive a 20% bonus to dodge non magical attacks",
+                "ru_description": "Все монахи наносят дополнительно 10% урона и получают 15% к защите от любого вида урона. Все герои получают бонус 20% к увороту от не магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "cat": "2",
+    "index_in_category": 52
+}

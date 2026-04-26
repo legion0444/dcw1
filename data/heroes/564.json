@@ -1,0 +1,89 @@
+{
+    "id": 564,
+    "name": "Sun Zi",
+    "name_ru": "Сан Цзи",
+    "class_id": 4,
+    "class_2_id": null,
+    "race_id": 40,
+    "alliance_id": 1,
+    "alliance_2_id": 0,
+    "rarity_id": 4,
+    "cost_gold": "3.34E+81",
+    "buy_level": 420,
+    "image": "images/heroes/564.webp",
+    "power": 180,
+    "base_damage": "19.5E+75",
+    "hp": 42,
+    "hp_main": 0,
+    "atk": 42,
+    "atk_main": 1,
+    "def": 42,
+    "def_main": 0,
+    "wis": 22,
+    "wis_main": 0,
+    "agi": 23,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 0,
+    "order": 171,
+    "color_1": null,
+    "color_2": null,
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 1873,
+            "hero_id": 564,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/564_1873.webp",
+            "image_id": 3398,
+            "type": "opening",
+            "chance": 100,
+            "created": "2023-08-20 15:26:10",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Raises ATK of all allies by 50%.",
+            "name_ru": "Повышает АТК всем союзникам на 50%."
+        }
+    ],
+    "alliance_data": {
+        "id": 1,
+        "name": "Warriors",
+        "color": "#b97000",
+        "name_ru": "Воины",
+        "image": "images/gallery/assets/images/categories/alliances/f3d501fa5fc6ca802c6f1003d19ce8e8.png",
+        "items": [
+            {
+                "id": 48,
+                "alliance_id": 1,
+                "min": 3,
+                "description": "All warriors receive an additional 20% DEF",
+                "ru_description": "Все воины получают дополнительно 20% DEF",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:49:10"
+            },
+            {
+                "id": 49,
+                "alliance_id": 1,
+                "min": 6,
+                "description": "All warriors receive an additional 40% DEF",
+                "ru_description": "Все воины получают дополнительно 40% DEF",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:49:20"
+            },
+            {
+                "id": 50,
+                "alliance_id": 1,
+                "min": 9,
+                "description": "All warriors receive an additional 80% DEF",
+                "ru_description": "Все воины получают дополнительно 80% DEF",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:49:25"
+            }
+        ]
+    },
+    "cat": "2",
+    "index_in_category": 59
+}

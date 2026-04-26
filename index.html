@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEARCH</title>
+    <link rel="stylesheet" href="css/search.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="home-page">
+
+    <div class="bg-underlay"></div>
+
+    <header class="cinematic-bar top-bar">
+        <nav class="top-nav">
+            <a href="index.html" class="nav-link active">ГЛАВНАЯ</a>
+            <a href="heroes.html" class="nav-link">ГЕРОИ</a>
+            <a href="#" class="nav-link disabled">ЛОКАЦИИ</a>
+            <a href="#" class="nav-link disabled">ПРЕДМЕТЫ</a>
+            <a href="#" class="nav-link disabled">МАГАЗИН</a>
+        </nav>
+    </header>
+
+    <main class="google-container">
+        <div class="search-section">
+            
+            <div class="logo-wrapper">
+                <img src="images/misc/tamplates/logo.webp" alt="LEGION" class="main-logo-img">
+            </div>
+            
+            <div class="search-group">
+                <div class="input-container">
+                    <input type="text" id="hero-search" placeholder="ЧТО ИЩЕМ..." autocomplete="off">
+                    <div id="search-results" class="results-dropdown"></div>
+                </div>
+                <button id="search-btn" class="search-action-btn">НАЙТИ</button>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="cinematic-bar bottom-bar">
+        <div class="footer-content">
+            <a href="about.html" class="nav-link">О НАС</a>          
+            <div class="footer-author">
+            <span>• BY LEGION •</span>
+        </div> 
+        </div>
+        
+    </footer>
+
+    <script type="module" src="js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+{
+    "id": 2054,
+    "name": "Bloodfang",
+    "name_ru": "Кровавый клык",
+    "class_id": 2,
+    "class_2_id": 0,
+    "race_id": 21,
+    "alliance_id": 23,
+    "alliance_2_id": 0,
+    "rarity_id": 2,
+    "cost_gold": "0",
+    "buy_level": 0,
+    "image": "images/heroes/2054.webp",
+    "power": 120,
+    "base_damage": "2.5E+41",
+    "hp": 32,
+    "hp_main": 0,
+    "atk": 18,
+    "atk_main": 1,
+    "def": 28,
+    "def_main": 0,
+    "wis": 12,
+    "wis_main": 0,
+    "agi": 28,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 40,
+    "order": 162,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 6646,
+            "hero_id": 2054,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/2054_6646.webp",
+            "image_id": 3621,
+            "type": "active",
+            "chance": 80,
+            "created": "2025-06-01 13:06:13",
+            "updated": "2025-06-01 13:06:13",
+            "status": null,
+            "name": "Devours an enemy, leaving him no more than 30% of his HP. Increases the own ATK by a factor of 2. Restores the attacker's HP.",
+            "name_ru": "Пожирает врага, оставляя ему не более 30% здоровья. Увеличивает свой АТК в 2 раза. Восстанавливает свое HP."
+        }
+    ],
+    "alliance_data": {
+        "id": 23,
+        "name": "Berserkers",
+        "color": "#7b111f",
+        "name_ru": "Берсерки",
+        "image": "images/gallery/assets/images/categories/alliances/f54699893b20df57cc6d8fcb580f4b95.png",
+        "items": [
+            {
+                "id": 87,
+                "alliance_id": 23,
+                "min": 2,
+                "description": "All heroes receive +10% to ΑΤΚ. All berserkers receive an additional 40% ΑΤΚ. Berserkers can go into a rage. Berserkers may lose useful passive abilities that have been cast on them.",
+                "ru_description": "Все герои получают +10% к ATK. Все берсерки получают дополнительно 40% AТК. Берсерки могут стать яростными. Берсерки могут потерять полезные пассивные способности, которые были на них наложены.",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            },
+            {
+                "id": 88,
+                "alliance_id": 23,
+                "min": 4,
+                "description": "All heroes receive +60% to ΑΤΚ. All berserkers receive an additional 80% ΑΤΚ. Berserkers can go into a rage. Berserkers may lose useful passive abilities that have been cast on them.",
+                "ru_description": "Все герои получают +60% к ATK. Все берсерки получают дополнительно 80% ATК. Берсерки могут стать яростными. Берсерки могут потерять полезные пассивные способности, которые были на них наложены.",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            },
+            {
+                "id": 89,
+                "alliance_id": 23,
+                "min": 6,
+                "description": "All heroes receive +60% to ΑΤΚ. All berserkers receive an additional 80% ΑΤΚ. Berserkers can go into a rage. Berserkers receive a 50% bonus to dodge non magical attacks. Berserkers may lose useful passive abilities that have been cast on them.",
+                "ru_description": "Все герои получают +60% к ATK. Все берсерки получают дополнительно 80% AТК. Берсерки могут стать яростными. Берсерки получают бонус 50% к увороту от не магических атак. Берсерки могут потерять полезные пассивные способности, которые были на них наложены.",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "cat": "9",
+    "index_in_category": 76
+}

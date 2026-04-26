@@ -1,0 +1,80 @@
+{
+    "id": 2036,
+    "name": "Thalor Swiftstride",
+    "name_ru": "Талор",
+    "class_id": 20,
+    "class_2_id": 0,
+    "race_id": 14,
+    "alliance_id": 12,
+    "alliance_2_id": 0,
+    "rarity_id": 2,
+    "cost_gold": "1.6E+46",
+    "buy_level": 225,
+    "image": "images/heroes/2036.webp",
+    "power": 120,
+    "base_damage": "2.5Е+41",
+    "hp": 24,
+    "hp_main": 0,
+    "atk": 14,
+    "atk_main": 0,
+    "def": 26,
+    "def_main": 0,
+    "wis": 26,
+    "wis_main": 1,
+    "agi": 17,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 40,
+    "order": 162,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": null,
+    "skills": [
+        {
+            "id": 6634,
+            "hero_id": 2036,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/2036_6634.webp",
+            "image_id": 3613,
+            "type": "opening",
+            "chance": 75,
+            "created": "2024-12-06 21:46:51",
+            "updated": "2024-12-11 11:23:49",
+            "status": null,
+            "name": "Curses 2 random enemies. The curse applies the following effect: Stunned.",
+            "name_ru": "Проклинает 2 случайных соперниково. Проклятие накладывает эффект: Оглушен."
+        }
+    ],
+    "alliance_data": {
+        "id": 12,
+        "name": "Sages",
+        "color": "#ff8255",
+        "name_ru": "Мудрецы",
+        "image": "images/gallery/assets/images/categories/alliances/94c0e5787de4117eac96eb92b9a73c95.png",
+        "items": [
+            {
+                "id": 70,
+                "alliance_id": 12,
+                "min": 2,
+                "description": "All heroes receive a 40% bonus to defence against magical attacks",
+                "ru_description": "Все герои получают бонус 40% к защите от магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            },
+            {
+                "id": 71,
+                "alliance_id": 12,
+                "min": 4,
+                "description": "All heroes receive an 80% bonus to defence against magical attacks",
+                "ru_description": "Все герои получают бонус 80% к защите от магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "cat": "9",
+    "index_in_category": 69
+}

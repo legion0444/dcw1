@@ -1,0 +1,16 @@
+{
+  "categories": {
+    "1": { "ru": "Все", "en": "All" },
+    "2": { "ru": "Линейные Герои", "en": "Linear heroes", "icon": "icons/siege.svg" },
+    "3": { "ru": "Герои осады", "en": "Siege heroes", "icon": "icons/event.svg" },
+    "4": { "ru": "Герои события", "en": "Event heroes", "icon": "icons/lair.svg" },
+    "5": { "ru": "Титаны", "en": "Titans" },
+    "6": { "ru": "Герои логова", "en": "Lair heroes" },
+    "7": { "ru": "Герои лабиринта", "en": "Labyrinth heroes" },
+    "8": { "ru": "Проклятые герои", "en": "Curced heroes" },
+    "9": { "ru": "Герои Драконьего Драфта", "en": "Dragon Dragt heroes" },
+    "10": { "ru": "Донатные Герои, Арбитры и Судьи", "en": "Donated heroes, arbiters and judges" },
+    "11": { "ru": "Герои стримеров", "en": "Streemers heroes" },
+    "12": { "ru": "Другие Герои", "en": "Other heroes" }
+  }
+}

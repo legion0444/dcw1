@@ -1,0 +1,71 @@
+{
+    "id": 438,
+    "name": "Qin'qid",
+    "name_ru": "Яинь'яид",
+    "class_id": 24,
+    "class_2_id": null,
+    "race_id": 29,
+    "alliance_id": 16,
+    "alliance_2_id": 0,
+    "rarity_id": 2,
+    "cost_gold": "1.6E+46",
+    "buy_level": 225,
+    "image": "images/heroes/438.webp",
+    "power": 120,
+    "base_damage": "1.1Е+58",
+    "hp": 26,
+    "hp_main": 0,
+    "atk": 25,
+    "atk_main": 1,
+    "def": 24,
+    "def_main": 0,
+    "wis": 20,
+    "wis_main": 0,
+    "agi": 15,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 40,
+    "order": 139,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 2720,
+            "hero_id": 438,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/438_2720.webp",
+            "image_id": 3553,
+            "type": "opening",
+            "chance": 100,
+            "created": "2023-10-13 00:53:38",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Increases all base stats of 2 random allies by 122.5% of the hero\\'s own base WIS. Applies only to Insect.",
+            "name_ru": "Повышает все базовые характеристики 2 случайным союзникам на 122.5% от своей базовой WIS. Применяется только на Насекомое."
+        }
+    ],
+    "alliance_data": {
+        "id": 16,
+        "name": "Spiders",
+        "color": "#cc5718",
+        "name_ru": "Пауки",
+        "image": "images/gallery/assets/images/categories/alliances/0ec3c20e66a5a02f8890a466bb07dbe3.png",
+        "items": [
+            {
+                "id": 77,
+                "alliance_id": 16,
+                "min": 3,
+                "description": "All heroes receive a 15% bonus to dodge non magical attacks",
+                "ru_description": "Все герои получают бонус 15% к увороту от не магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:50:58"
+            }
+        ]
+    },
+    "cat": "9",
+    "index_in_category": 36
+}

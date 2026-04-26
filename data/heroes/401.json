@@ -1,0 +1,71 @@
+{
+    "id": 401,
+    "name": "Gug",
+    "name_ru": "Гуг",
+    "class_id": 19,
+    "class_2_id": null,
+    "race_id": 12,
+    "alliance_id": 10,
+    "alliance_2_id": 0,
+    "rarity_id": 2,
+    "cost_gold": "1.6E+46",
+    "buy_level": 225,
+    "image": "images/heroes/401.webp",
+    "power": 120,
+    "base_damage": "1.1Е+58",
+    "hp": 30,
+    "hp_main": 0,
+    "atk": 28,
+    "atk_main": 1,
+    "def": 27,
+    "def_main": 0,
+    "wis": 14,
+    "wis_main": 0,
+    "agi": 20,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 40,
+    "order": 127,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 2247,
+            "hero_id": 401,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/401_2247.webp",
+            "image_id": 6178,
+            "type": "opening",
+            "chance": 50,
+            "created": "2023-08-24 14:11:22",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Morphs two random enemies into little goblins.",
+            "name_ru": "Превращает двух случайных противников в героев - маленькие гоблины."
+        }
+    ],
+    "alliance_data": {
+        "id": 10,
+        "name": "Monks",
+        "color": "#d90168",
+        "name_ru": "Монахи",
+        "image": "images/gallery/assets/images/categories/alliances/0e3ab36a5076a98c16fa5f88dab934da.png",
+        "items": [
+            {
+                "id": 67,
+                "alliance_id": 10,
+                "min": 2,
+                "description": "All monks deal an additional 10% damage and receive a 15% bonus to defense against all damage types. All heroes receive a 20% bonus to dodge non magical attacks",
+                "ru_description": "Все монахи наносят дополнительно 10% урона и получают 15% к защите от любого вида урона. Все герои получают бонус 20% к увороту от не магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "cat": "9",
+    "index_in_category": 24
+}

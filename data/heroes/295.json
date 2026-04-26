@@ -1,0 +1,71 @@
+{
+    "id": 295,
+    "name": "Bobby",
+    "name_ru": "Бобби",
+    "class_id": 11,
+    "class_2_id": null,
+    "race_id": 21,
+    "alliance_id": 28,
+    "alliance_2_id": 0,
+    "rarity_id": 1,
+    "cost_gold": "100М",
+    "buy_level": 75,
+    "image": "images/heroes/295.webp",
+    "power": 64,
+    "base_damage": "782К",
+    "hp": 16,
+    "hp_main": 0,
+    "atk": 14,
+    "atk_main": 1,
+    "def": 14,
+    "def_main": 0,
+    "wis": 7,
+    "wis_main": 0,
+    "agi": 7,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 0,
+    "order": 24,
+    "color_1": "#001d33",
+    "color_2": "#2c2f30",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 1960,
+            "hero_id": 295,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/295_1960.webp",
+            "image_id": 3511,
+            "type": "active",
+            "chance": 30,
+            "created": "2023-08-21 08:55:45",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Deals massive ATK-based damage to random enemy with a power of 300%.",
+            "name_ru": "Наносит мощный урон АТК по случайному сопернику с силой 300%."
+        }
+    ],
+    "alliance_data": {
+        "id": 28,
+        "name": "Unicorn Master",
+        "color": "#0b0071",
+        "name_ru": "Мастер единорогов",
+        "image": "images/gallery/assets/images/categories/alliances/60988aeda2939cf22b18832651ef0fb7.png",
+        "items": [
+            {
+                "id": 94,
+                "alliance_id": 28,
+                "min": 2,
+                "description": "Bobby receives a 400% bonus to his base stats, and improved combat abilities. To activate, you need: Bobby and Sir Abe Junior.",
+                "ru_description": "Бобби получает 400% к своим характеристикам, а также улучшенные боевые способности Для активации требуется Бобби и Сэр Эйб Младший.",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "cat": "2",
+    "index_in_category": 23
+}

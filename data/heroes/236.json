@@ -1,0 +1,89 @@
+{
+    "id": 236,
+    "name": "Kulazar the Decayer",
+    "name_ru": "Кулазар",
+    "class_id": 17,
+    "class_2_id": 0,
+    "race_id": 30,
+    "alliance_id": 9,
+    "alliance_2_id": 0,
+    "rarity_id": 7,
+    "cost_gold": "1.0E+974",
+    "buy_level": 4666,
+    "image": "images/heroes/236.webp",
+    "power": 645,
+    "base_damage": "2.5E+963",
+    "hp": 131,
+    "hp_main": 0,
+    "atk": 138,
+    "atk_main": 0,
+    "def": 132,
+    "def_main": 0,
+    "wis": 119,
+    "wis_main": 1,
+    "agi": 109,
+    "agi_main": 0,
+    "bonus_event": 10,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 2000,
+    "order": 285,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 4121,
+            "hero_id": 236,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/236_4121.webp",
+            "image_id": 3446,
+            "type": "active",
+            "chance": 50,
+            "created": "2024-04-03 16:26:39",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Revives and fully restores HP of 4 allies.",
+            "name_ru": "Воскрешает и восстанавливает полностью HP 4 союзников."
+        }
+    ],
+    "alliance_data": {
+        "id": 9,
+        "name": "Mages",
+        "color": "#8047ff",
+        "name_ru": "Маги",
+        "image": "images/gallery/assets/images/categories/alliances/f005288ee6233543006b15a51923a00e.png",
+        "items": [
+            {
+                "id": 64,
+                "alliance_id": 9,
+                "min": 3,
+                "description": "All mages receive a 30% bonus to additional damage and a 15% bonus to defence against magical attacks",
+                "ru_description": "Все маги получают 30% бонус к дополнительному урону и 15% к защите от магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:51:40"
+            },
+            {
+                "id": 65,
+                "alliance_id": 9,
+                "min": 6,
+                "description": "All mages receive a 75% bonus to additional damage and a 40% bonus to defence against magical attacks",
+                "ru_description": "Все маги получают 75% бонус к дополнительному урону и 40% к защите от магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:51:55"
+            },
+            {
+                "id": 66,
+                "alliance_id": 9,
+                "min": 9,
+                "description": "All mages receive a 150% bonus to additional damage and a 65% bonus to defence against magical attacks",
+                "ru_description": "Все маги получают 150% бонус к дополнительному урону и 65% к защите от магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:52:15"
+            }
+        ]
+    },
+    "cat": "3",
+    "index_in_category": 35
+}

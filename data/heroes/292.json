@@ -1,0 +1,80 @@
+{
+    "id": 292,
+    "name": "G'eld Kil'Ndar",
+    "name_ru": "Г'эльд Кил'Ндар",
+    "class_id": 27,
+    "class_2_id": 0,
+    "race_id": 43,
+    "alliance_id": 4,
+    "alliance_2_id": 0,
+    "rarity_id": 1,
+    "cost_gold": "14,699K",
+    "buy_level": 65,
+    "image": "images/heroes/292.webp",
+    "power": 55,
+    "base_damage": "186К",
+    "hp": 13,
+    "hp_main": 0,
+    "atk": 8,
+    "atk_main": 0,
+    "def": 8,
+    "def_main": 0,
+    "wis": 8,
+    "wis_main": 0,
+    "agi": 14,
+    "agi_main": 1,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 0,
+    "order": 22,
+    "color_1": "#4d2900",
+    "color_2": "#2c331e",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 6310,
+            "hero_id": 292,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/292_6310.webp",
+            "image_id": 3423,
+            "type": "active",
+            "chance": 30,
+            "created": "2024-05-12 12:46:09",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Deals massive AGI-based damage to 3 random enemies with a power of 100%.",
+            "name_ru": "Наносит мощный урон AGI по 3 случайным соперникам силой 100%"
+        }
+    ],
+    "alliance_data": {
+        "id": 4,
+        "name": "Rangers",
+        "color": "#ff5300",
+        "name_ru": "Рейнджеры",
+        "image": "images/gallery/assets/images/categories/alliances/a5dacb05fcf1baf144d3c91962e95923.png",
+        "items": [
+            {
+                "id": 53,
+                "alliance_id": 4,
+                "min": 2,
+                "description": "All heroes receive +10% to dodge",
+                "ru_description": "Все герои получают +10% к увороту",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            },
+            {
+                "id": 54,
+                "alliance_id": 4,
+                "min": 4,
+                "description": "All heroes receive +30% to dodge",
+                "ru_description": "Все герои получают +30% к увороту",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "cat": "2",
+    "index_in_category": 21
+}

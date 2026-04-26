@@ -1,0 +1,71 @@
+{
+    "id": 2034,
+    "name": "Brynna Stoneblossom",
+    "name_ru": "Бринна",
+    "class_id": 9,
+    "class_2_id": 0,
+    "race_id": 11,
+    "alliance_id": 24,
+    "alliance_2_id": 0,
+    "rarity_id": 2,
+    "cost_gold": "1.6E+46",
+    "buy_level": 225,
+    "image": "images/heroes/2034.webp",
+    "power": 120,
+    "base_damage": "2.5Е+41",
+    "hp": 26,
+    "hp_main": 0,
+    "atk": 23,
+    "atk_main": 0,
+    "def": 22,
+    "def_main": 0,
+    "wis": 21,
+    "wis_main": 1,
+    "agi": 18,
+    "agi_main": 1,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 40,
+    "order": 162,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 6633,
+            "hero_id": 2034,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/2034_6633.webp",
+            "image_id": 3556,
+            "type": "opening",
+            "chance": 100,
+            "created": "2024-12-06 21:42:23",
+            "updated": "2024-12-11 11:23:21",
+            "status": null,
+            "name": "Increases all base stats of 2 random allies by 200% of the hero's own base WIS. Applies only to Beast.",
+            "name_ru": "Повышает все базовые характеристики 2 случайным союзникам на 200% от своей базовой WIS. Применяется только на Зверь"
+        }
+    ],
+    "alliance_data": {
+        "id": 24,
+        "name": "Druids",
+        "color": "#00d10a",
+        "name_ru": "Друиды",
+        "image": "images/gallery/assets/images/categories/alliances/b147271f51268c80b4f2089b4c6df01e.png",
+        "items": [
+            {
+                "id": 90,
+                "alliance_id": 24,
+                "min": 3,
+                "description": "All beasts receive an additional 75% ATK, DEF, WIS, AGI. Druids can resurrect an allied beast.",
+                "ru_description": "Все звери получают дополнительно 75% ATK, DEF, WIS, AGI. Друид может воскресить союзного зверя.",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "cat": "9",
+    "index_in_category": 68
+}

@@ -1,0 +1,71 @@
+{
+    "id": 1526,
+    "name": "Ufir, Ancient Demon",
+    "name_ru": "Уфир, Древний демон",
+    "class_id": 34,
+    "class_2_id": 0,
+    "race_id": 15,
+    "alliance_id": 14,
+    "alliance_2_id": 0,
+    "rarity_id": 4,
+    "cost_gold": "4.8Е+29",
+    "buy_level": 125,
+    "image": "images/heroes/1526.webp",
+    "power": 135,
+    "base_damage": "8.0E+24",
+    "hp": 31,
+    "hp_main": 0,
+    "atk": 6,
+    "atk_main": 0,
+    "def": 30,
+    "def_main": 0,
+    "wis": 42,
+    "wis_main": 1,
+    "agi": 25,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 0,
+    "order": 74,
+    "color_1": "#001a33",
+    "color_2": "#2e001f",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 2461,
+            "hero_id": 1526,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/1526_2461.webp",
+            "image_id": 3381,
+            "type": "active",
+            "chance": 50,
+            "created": "2023-10-03 09:00:00",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Raises ATK, WIS, AGI, DEF by 50%.",
+            "name_ru": "Повышает ATK, WIS, AGI, DEF себе на 50%."
+        }
+    ],
+    "alliance_data": {
+        "id": 14,
+        "name": "Whisperers",
+        "color": "#34dfff",
+        "name_ru": "Шептуны",
+        "image": "images/gallery/assets/images/categories/alliances/b76d703eb206f65607bbf08210ccebee.png",
+        "items": [
+            {
+                "id": 74,
+                "alliance_id": 14,
+                "min": 3,
+                "description": "All heroes receive +30% to dodge",
+                "ru_description": "Все герои получают +30% к увороту",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "cat": "10",
+    "index_in_category": 3
+}

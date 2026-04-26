@@ -1,0 +1,80 @@
+{
+    "id": 1323,
+    "name": "Necrophagist Trooper",
+    "name_ru": "Пожиратель Солдат",
+    "class_id": 7,
+    "class_2_id": 0,
+    "race_id": 28,
+    "alliance_id": 13,
+    "alliance_2_id": 0,
+    "rarity_id": 7,
+    "cost_gold": "1.0Е+1325",
+    "buy_level": 6500,
+    "image": "images/heroes/1323.webp",
+    "power": 630,
+    "base_damage": "2Е+1316",
+    "hp": 139,
+    "hp_main": 0,
+    "atk": 160,
+    "atk_main": 1,
+    "def": 138,
+    "def_main": 0,
+    "wis": 79,
+    "wis_main": 0,
+    "agi": 84,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 2250,
+    "order": 301,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 2523,
+            "hero_id": 1323,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/1323_2523.webp",
+            "image_id": 3479,
+            "type": "active",
+            "chance": 30,
+            "created": "2023-10-06 08:38:58",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Deals massive ATK-based damage to 2 random enemies with a power of 200% ",
+            "name_ru": "Наносит мощный урон АТК по 2 случайным соперникам силой 200% "
+        }
+    ],
+    "alliance_data": {
+        "id": 13,
+        "name": "Troopers",
+        "color": "#d6d6d6",
+        "name_ru": "Десантники",
+        "image": "images/gallery/assets/images/categories/alliances/6dc3cc85bf1f8c629f7e1fb5ad85d00b.png",
+        "items": [
+            {
+                "id": 72,
+                "alliance_id": 13,
+                "min": 3,
+                "description": "All troopers receive +50% to ATK",
+                "ru_description": "Все десантники получают бонус 50% к AТК",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            },
+            {
+                "id": 73,
+                "alliance_id": 13,
+                "min": 6,
+                "description": "All troopers receive +150% to ATK, 20% bonus against all damage types, +10% to dodge.",
+                "ru_description": "Все десантники получают бонус 150% к АТК, 20% к защите от любого вида урона, +10% к увороту.",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "cat": "2",
+    "index_in_category": 82
+}

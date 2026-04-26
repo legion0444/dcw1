@@ -1,0 +1,71 @@
+{
+    "id": 463,
+    "name": "Quinta",
+    "name_ru": "Квинта",
+    "class_id": 19,
+    "class_2_id": null,
+    "race_id": 40,
+    "alliance_id": 10,
+    "alliance_2_id": 0,
+    "rarity_id": 2,
+    "cost_gold": "1.6E+46",
+    "buy_level": 225,
+    "image": "images/heroes/463.webp",
+    "power": 120,
+    "base_damage": "7.2E+56",
+    "hp": 27,
+    "hp_main": 0,
+    "atk": 27,
+    "atk_main": 1,
+    "def": 24,
+    "def_main": 0,
+    "wis": 15,
+    "wis_main": 0,
+    "agi": 19,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 40,
+    "order": 145,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 2223,
+            "hero_id": 463,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/463_2223.webp",
+            "image_id": 3381,
+            "type": "opening",
+            "chance": 50,
+            "created": "2023-08-24 14:09:44",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Steals 2 random abilities from enemy heroes. Ability types: - Active, Opening",
+            "name_ru": "Ворует случайные способности у героев противника. Количество способностей - 2. Типы способностей - Активная, Открытие."
+        }
+    ],
+    "alliance_data": {
+        "id": 10,
+        "name": "Monks",
+        "color": "#d90168",
+        "name_ru": "Монахи",
+        "image": "images/gallery/assets/images/categories/alliances/0e3ab36a5076a98c16fa5f88dab934da.png",
+        "items": [
+            {
+                "id": 67,
+                "alliance_id": 10,
+                "min": 2,
+                "description": "All monks deal an additional 10% damage and receive a 15% bonus to defense against all damage types. All heroes receive a 20% bonus to dodge non magical attacks",
+                "ru_description": "Все монахи наносят дополнительно 10% урона и получают 15% к защите от любого вида урона. Все герои получают бонус 20% к увороту от не магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "cat": "9",
+    "index_in_category": 42
+}

@@ -1,0 +1,89 @@
+{
+    "id": 297,
+    "name": "Günkhar Witch",
+    "name_ru": "Гунхар-ведьма",
+    "class_id": 17,
+    "class_2_id": 0,
+    "race_id": 43,
+    "alliance_id": 9,
+    "alliance_2_id": 0,
+    "rarity_id": 1,
+    "cost_gold": "28,250М",
+    "buy_level": 100,
+    "image": "images/heroes/297.webp",
+    "power": 64,
+    "base_damage": "3,8Е+17",
+    "hp": 11,
+    "hp_main": 0,
+    "atk": 6,
+    "atk_main": 0,
+    "def": 6,
+    "def_main": 0,
+    "wis": 17,
+    "wis_main": 1,
+    "agi": 10,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 0,
+    "order": 27,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 6311,
+            "hero_id": 297,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/297_6311.webp",
+            "image_id": 3513,
+            "type": "opening",
+            "chance": 100,
+            "created": "2024-05-12 12:46:20",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Raises AGI of 3 random elf allies by 100%.",
+            "name_ru": "Повышает AGI 3 случайным союзникам эльфам на 100%."
+        }
+    ],
+    "alliance_data": {
+        "id": 9,
+        "name": "Mages",
+        "color": "#8047ff",
+        "name_ru": "Маги",
+        "image": "images/gallery/assets/images/categories/alliances/f005288ee6233543006b15a51923a00e.png",
+        "items": [
+            {
+                "id": 64,
+                "alliance_id": 9,
+                "min": 3,
+                "description": "All mages receive a 30% bonus to additional damage and a 15% bonus to defence against magical attacks",
+                "ru_description": "Все маги получают 30% бонус к дополнительному урону и 15% к защите от магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:51:40"
+            },
+            {
+                "id": 65,
+                "alliance_id": 9,
+                "min": 6,
+                "description": "All mages receive a 75% bonus to additional damage and a 40% bonus to defence against magical attacks",
+                "ru_description": "Все маги получают 75% бонус к дополнительному урону и 40% к защите от магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:51:55"
+            },
+            {
+                "id": 66,
+                "alliance_id": 9,
+                "min": 9,
+                "description": "All mages receive a 150% bonus to additional damage and a 65% bonus to defence against magical attacks",
+                "ru_description": "Все маги получают 150% бонус к дополнительному урону и 65% к защите от магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:52:15"
+            }
+        ]
+    },
+    "cat": "4",
+    "index_in_category": 0
+}

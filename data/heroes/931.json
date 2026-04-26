@@ -1,0 +1,89 @@
+{
+    "id": 931,
+    "name": "Angel Eyes Stan",
+    "name_ru": "Стен Ангельские глазки",
+    "class_id": 15,
+    "class_2_id": null,
+    "race_id": 40,
+    "alliance_id": 8,
+    "alliance_2_id": 0,
+    "rarity_id": 1,
+    "cost_gold": "2500K",
+    "buy_level": 35,
+    "image": "images/heroes/931.webp",
+    "power": 55,
+    "base_damage": "1651K",
+    "hp": 13,
+    "hp_main": 0,
+    "atk": 13,
+    "atk_main": 1,
+    "def": 11,
+    "def_main": 0,
+    "wis": 7,
+    "wis_main": 0,
+    "agi": 7,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 0,
+    "order": 19,
+    "color_1": "#132400",
+    "color_2": "#423900",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 1743,
+            "hero_id": 931,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/931_1743.webp",
+            "image_id": 3423,
+            "type": "active",
+            "chance": 30,
+            "created": "2023-08-19 12:02:03",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Deals massive ATK-based damage to 3 random enemies with a power of 100%.",
+            "name_ru": "Наносит мощный урон ATK по 3 случайным соперникам силой 100%."
+        }
+    ],
+    "alliance_data": {
+        "id": 8,
+        "name": "Rogues",
+        "color": "#ffc000",
+        "name_ru": "Изгои",
+        "image": "images/gallery/assets/images/categories/alliances/6808dbb999dee3b97327951ce48d8afd.png",
+        "items": [
+            {
+                "id": 61,
+                "alliance_id": 8,
+                "min": 2,
+                "description": "All heroes receive +20% to ATK",
+                "ru_description": "Все герои получают +20% ΑΤΚ",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            },
+            {
+                "id": 62,
+                "alliance_id": 8,
+                "min": 4,
+                "description": "All heroes receive +40% to ATK. Additionally, the Rogue can attack an enemy.",
+                "ru_description": "Все герои получают +40% АТК. Изгой дополнительно атакует врага.",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            },
+            {
+                "id": 63,
+                "alliance_id": 8,
+                "min": 6,
+                "description": "All heroes receive +40% to ATK. All allied heroes gain + 40% protection from non—magical attacks. Additionally, the Rogue can attack an enemy.",
+                "ru_description": "Все герои получают +40% ΑΤΚ. Все союзные герои получают +40% к защите от не магических атак. Изгой дополнительно атакует врага.",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "cat": "2",
+    "index_in_category": 18
+}

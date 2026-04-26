@@ -1,0 +1,71 @@
+{
+    "id": 1467,
+    "name": "Star Wanderer",
+    "name_ru": "Звездный Странник",
+    "class_id": 30,
+    "class_2_id": 0,
+    "race_id": 2,
+    "alliance_id": 25,
+    "alliance_2_id": 0,
+    "rarity_id": 7,
+    "cost_gold": "5.0E+771",
+    "buy_level": 3780,
+    "image": "images/heroes/1467.webp",
+    "power": 450,
+    "base_damage": "1.0Е+750",
+    "hp": 78,
+    "hp_main": 0,
+    "atk": 60,
+    "atk_main": 0,
+    "def": 56,
+    "def_main": 0,
+    "wis": 120,
+    "wis_main": 1,
+    "agi": 72,
+    "agi_main": 0,
+    "bonus_event": 10,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 1750,
+    "order": 250,
+    "color_1": "#001d1f",
+    "color_2": "#002914",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 2359,
+            "hero_id": 1467,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/1467_2359.webp",
+            "image_id": 3459,
+            "type": "active",
+            "chance": 30,
+            "created": "2023-09-30 09:13:09",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Deals massive WIS-based damage to random enemy with a power of 455%.",
+            "name_ru": "Наносит мощный урон WIS одному случайному сопернику силой 455%"
+        }
+    ],
+    "alliance_data": {
+        "id": 25,
+        "name": "Wanderers",
+        "color": "#add4d0",
+        "name_ru": "Странники",
+        "image": "images/gallery/assets/images/categories/alliances/1d98a3971db2e88ebd82b71ebe768f06.png",
+        "items": [
+            {
+                "id": 91,
+                "alliance_id": 25,
+                "min": 3,
+                "description": "All wanderers receive a 30% bonus to defend against magical attacks. Additionally, the wanderer can attack an enemy.",
+                "ru_description": "Все странники получают бонус 30% к защите от магических атак. Странник дополнительно атакует врага.",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "cat": "2",
+    "index_in_category": 78
+}

@@ -1,0 +1,80 @@
+{
+    "id": 2038,
+    "name": "Marina Coralhelm",
+    "name_ru": "Марина",
+    "class_id": 28,
+    "class_2_id": 0,
+    "race_id": 14,
+    "alliance_id": 5,
+    "alliance_2_id": 0,
+    "rarity_id": 2,
+    "cost_gold": "1.6E+46",
+    "buy_level": 225,
+    "image": "images/heroes/2038.webp",
+    "power": 120,
+    "base_damage": "2.5Е+41",
+    "hp": 27,
+    "hp_main": 0,
+    "atk": 21,
+    "atk_main": 1,
+    "def": 25,
+    "def_main": 0,
+    "wis": 25,
+    "wis_main": 0,
+    "agi": 12,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 40,
+    "order": 162,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": null,
+    "skills": [
+        {
+            "id": 6635,
+            "hero_id": 2038,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/2038_6635.webp",
+            "image_id": 3538,
+            "type": "active",
+            "chance": 30,
+            "created": "2024-12-06 21:53:44",
+            "updated": "2024-12-11 11:24:17",
+            "status": null,
+            "name": "Deals massive ATK-based damage to 3 random  enemies with a power of 100%. The target loses all buffs and debuffs that had been applied to them.",
+            "name_ru": "Наносит мощный урон АТК по 3 случайным соперникам силой 100%. Атакованный соперник теряет все бафы и дебафы наложенные на него ранее."
+        }
+    ],
+    "alliance_data": {
+        "id": 5,
+        "name": "Knights",
+        "color": "#bc0f73",
+        "name_ru": "Рыцари",
+        "image": "images/gallery/assets/images/categories/alliances/b89f7fb00479d74236e3dce897e9803a.png",
+        "items": [
+            {
+                "id": 55,
+                "alliance_id": 5,
+                "min": 3,
+                "description": "All knights receive a 20% bonus against all damage types and a 50% bonus to additional damage",
+                "ru_description": "Все рыцари получают бонус 20% к защите от любого вида урона и бонус 50% к дополнительному урону",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2026-04-07 20:22:00"
+            },
+            {
+                "id": 56,
+                "alliance_id": 5,
+                "min": 6,
+                "description": "All knights receive a 40% bonus against all damage types and a 100% bonus to additional damage",
+                "ru_description": "Все рыцари получают бонус 40% к защите от любого вида урона и бонус 100% к дополнительному урону",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2026-04-07 20:22:14"
+            }
+        ]
+    },
+    "cat": "9",
+    "index_in_category": 70
+}

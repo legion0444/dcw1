@@ -1,0 +1,89 @@
+{
+    "id": 1841,
+    "name": "Gatekeeper",
+    "name_ru": "Привратник",
+    "class_id": 4,
+    "class_2_id": 0,
+    "race_id": 13,
+    "alliance_id": 1,
+    "alliance_2_id": 0,
+    "rarity_id": 3,
+    "cost_gold": "500",
+    "buy_level": 20,
+    "image": "images/heroes/1841.webp",
+    "power": 55,
+    "base_damage": "49",
+    "hp": 12,
+    "hp_main": 0,
+    "atk": 11,
+    "atk_main": 1,
+    "def": 11,
+    "def_main": 0,
+    "wis": 9,
+    "wis_main": 0,
+    "agi": 9,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 5,
+    "order": 8,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 3415,
+            "hero_id": 1841,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/1841_3415.webp",
+            "image_id": 3581,
+            "type": "opening",
+            "chance": 100,
+            "created": "2023-12-28 16:05:53",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Increases all base stats\\'s of 2 random allies by 175% of the hero\\'s own base WIS.",
+            "name_ru": "Повышает все характеристики 2 случайным союзникам на 175% от своей базовой WIS."
+        }
+    ],
+    "alliance_data": {
+        "id": 1,
+        "name": "Warriors",
+        "color": "#b97000",
+        "name_ru": "Воины",
+        "image": "images/gallery/assets/images/categories/alliances/f3d501fa5fc6ca802c6f1003d19ce8e8.png",
+        "items": [
+            {
+                "id": 48,
+                "alliance_id": 1,
+                "min": 3,
+                "description": "All warriors receive an additional 20% DEF",
+                "ru_description": "Все воины получают дополнительно 20% DEF",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:49:10"
+            },
+            {
+                "id": 49,
+                "alliance_id": 1,
+                "min": 6,
+                "description": "All warriors receive an additional 40% DEF",
+                "ru_description": "Все воины получают дополнительно 40% DEF",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:49:20"
+            },
+            {
+                "id": 50,
+                "alliance_id": 1,
+                "min": 9,
+                "description": "All warriors receive an additional 80% DEF",
+                "ru_description": "Все воины получают дополнительно 80% DEF",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:49:25"
+            }
+        ]
+    },
+    "cat": "7",
+    "index_in_category": 0
+}

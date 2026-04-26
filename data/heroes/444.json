@@ -1,0 +1,89 @@
+{
+    "id": 444,
+    "name": "Troll Bigbaster",
+    "name_ru": "Тролль-убийца",
+    "class_id": 2,
+    "class_2_id": 0,
+    "race_id": 39,
+    "alliance_id": 23,
+    "alliance_2_id": 0,
+    "rarity_id": 1,
+    "cost_gold": "57500К",
+    "buy_level": 150,
+    "image": "images/heroes/444.webp",
+    "power": 64,
+    "base_damage": "484К",
+    "hp": 14,
+    "hp_main": 0,
+    "atk": 16,
+    "atk_main": 1,
+    "def": 14,
+    "def_main": 0,
+    "wis": 7,
+    "wis_main": 0,
+    "agi": 7,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 5,
+    "order": 23,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 2229,
+            "hero_id": 444,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/444_2229.webp",
+            "image_id": 3368,
+            "type": "active",
+            "chance": 30,
+            "created": "2023-08-24 14:10:11",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Deals massive ATK-based damage to 3 random enemies with a power of 100%.",
+            "name_ru": "Наносит мощный урон АТК по 3 случайным соперникам силой 100%."
+        }
+    ],
+    "alliance_data": {
+        "id": 23,
+        "name": "Berserkers",
+        "color": "#7b111f",
+        "name_ru": "Берсерки",
+        "image": "images/gallery/assets/images/categories/alliances/f54699893b20df57cc6d8fcb580f4b95.png",
+        "items": [
+            {
+                "id": 87,
+                "alliance_id": 23,
+                "min": 2,
+                "description": "All heroes receive +10% to ΑΤΚ. All berserkers receive an additional 40% ΑΤΚ. Berserkers can go into a rage. Berserkers may lose useful passive abilities that have been cast on them.",
+                "ru_description": "Все герои получают +10% к ATK. Все берсерки получают дополнительно 40% AТК. Берсерки могут стать яростными. Берсерки могут потерять полезные пассивные способности, которые были на них наложены.",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            },
+            {
+                "id": 88,
+                "alliance_id": 23,
+                "min": 4,
+                "description": "All heroes receive +60% to ΑΤΚ. All berserkers receive an additional 80% ΑΤΚ. Berserkers can go into a rage. Berserkers may lose useful passive abilities that have been cast on them.",
+                "ru_description": "Все герои получают +60% к ATK. Все берсерки получают дополнительно 80% ATК. Берсерки могут стать яростными. Берсерки могут потерять полезные пассивные способности, которые были на них наложены.",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            },
+            {
+                "id": 89,
+                "alliance_id": 23,
+                "min": 6,
+                "description": "All heroes receive +60% to ΑΤΚ. All berserkers receive an additional 80% ΑΤΚ. Berserkers can go into a rage. Berserkers receive a 50% bonus to dodge non magical attacks. Berserkers may lose useful passive abilities that have been cast on them.",
+                "ru_description": "Все герои получают +60% к ATK. Все берсерки получают дополнительно 80% AТК. Берсерки могут стать яростными. Берсерки получают бонус 50% к увороту от не магических атак. Берсерки могут потерять полезные пассивные способности, которые были на них наложены.",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "cat": "2",
+    "index_in_category": 22
+}

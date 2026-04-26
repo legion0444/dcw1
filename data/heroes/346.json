@@ -1,0 +1,89 @@
+{
+    "id": 346,
+    "name": "Tras'tokvak",
+    "name_ru": "Трас'токвак",
+    "class_id": 17,
+    "class_2_id": null,
+    "race_id": 30,
+    "alliance_id": 9,
+    "alliance_2_id": 0,
+    "rarity_id": 2,
+    "cost_gold": "1.6E+46",
+    "buy_level": 225,
+    "image": "images/heroes/346.webp",
+    "power": 120,
+    "base_damage": "4.5Е+54",
+    "hp": 28,
+    "hp_main": 0,
+    "atk": 14,
+    "atk_main": 0,
+    "def": 23,
+    "def_main": 0,
+    "wis": 24,
+    "wis_main": 1,
+    "agi": 17,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 40,
+    "order": 110,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 2051,
+            "hero_id": 346,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/346_2051.webp",
+            "image_id": 6535,
+            "type": "active",
+            "chance": 50,
+            "created": "2023-08-21 10:50:11",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Summons a little sphinx into an empty hero slot.",
+            "name_ru": "Вызывает на свободное место героя - маленький сфинкс."
+        }
+    ],
+    "alliance_data": {
+        "id": 9,
+        "name": "Mages",
+        "color": "#8047ff",
+        "name_ru": "Маги",
+        "image": "images/gallery/assets/images/categories/alliances/f005288ee6233543006b15a51923a00e.png",
+        "items": [
+            {
+                "id": 64,
+                "alliance_id": 9,
+                "min": 3,
+                "description": "All mages receive a 30% bonus to additional damage and a 15% bonus to defence against magical attacks",
+                "ru_description": "Все маги получают 30% бонус к дополнительному урону и 15% к защите от магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:51:40"
+            },
+            {
+                "id": 65,
+                "alliance_id": 9,
+                "min": 6,
+                "description": "All mages receive a 75% bonus to additional damage and a 40% bonus to defence against magical attacks",
+                "ru_description": "Все маги получают 75% бонус к дополнительному урону и 40% к защите от магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:51:55"
+            },
+            {
+                "id": 66,
+                "alliance_id": 9,
+                "min": 9,
+                "description": "All mages receive a 150% bonus to additional damage and a 65% bonus to defence against magical attacks",
+                "ru_description": "Все маги получают 150% бонус к дополнительному урону и 65% к защите от магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:52:15"
+            }
+        ]
+    },
+    "cat": "9",
+    "index_in_category": 7
+}

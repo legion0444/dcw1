@@ -1,0 +1,71 @@
+{
+    "id": 327,
+    "name": "Toxic Spider",
+    "name_ru": "Ядовитый паук",
+    "class_id": 24,
+    "class_2_id": 0,
+    "race_id": 29,
+    "alliance_id": 16,
+    "alliance_2_id": 0,
+    "rarity_id": 1,
+    "cost_gold": "200000",
+    "buy_level": 30,
+    "image": "images/heroes/327.webp",
+    "power": 55,
+    "base_damage": "5000",
+    "hp": 14,
+    "hp_main": 0,
+    "atk": 14,
+    "atk_main": 1,
+    "def": 13,
+    "def_main": 0,
+    "wis": 2,
+    "wis_main": 0,
+    "agi": 6,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 5,
+    "order": 17,
+    "color_1": "#333d00",
+    "color_2": "#47002a",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 2038,
+            "hero_id": 327,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/327_2038.webp",
+            "image_id": 3392,
+            "type": "opening",
+            "chance": 100,
+            "created": "2023-08-21 10:23:53",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Decreases ATK, WIS, AGI, DEF of 5 random enemies by 20%.",
+            "name_ru": "Уменьшает ATK, WIS, AGI, DEF 5 случайным врагам на 20%."
+        }
+    ],
+    "alliance_data": {
+        "id": 16,
+        "name": "Spiders",
+        "color": "#cc5718",
+        "name_ru": "Пауки",
+        "image": "images/gallery/assets/images/categories/alliances/0ec3c20e66a5a02f8890a466bb07dbe3.png",
+        "items": [
+            {
+                "id": 77,
+                "alliance_id": 16,
+                "min": 3,
+                "description": "All heroes receive a 15% bonus to dodge non magical attacks",
+                "ru_description": "Все герои получают бонус 15% к увороту от не магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:50:58"
+            }
+        ]
+    },
+    "cat": "2",
+    "index_in_category": 16
+}

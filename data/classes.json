@@ -1,0 +1,172 @@
+[
+    {
+        "id": 1,
+        "name": "Bard",
+        "name_ru": "Бард"
+    },
+    {
+        "id": 2,
+        "name": "Berserker",
+        "name_ru": "Берсерк"
+    },
+    {
+        "id": 3,
+        "name": "Warlord",
+        "name_ru": "Военачальник"
+    },
+    {
+        "id": 4,
+        "name": "Warrior",
+        "name_ru": "Воин"
+    },
+    {
+        "id": 5,
+        "name": "Wizard",
+        "name_ru": "Волшебник"
+    },
+    {
+        "id": 6,
+        "name": "Thief",
+        "name_ru": "Вор"
+    },
+    {
+        "id": 7,
+        "name": "Trooper",
+        "name_ru": "Десантник"
+    },
+    {
+        "id": 8,
+        "name": "Skymaw",
+        "name_ru": "Небожор"
+    },
+    {
+        "id": 9,
+        "name": "Druid",
+        "name_ru": "Друид"
+    },
+    {
+        "id": 10,
+        "name": "Soul",
+        "name_ru": "Души"
+    },
+    {
+        "id": 11,
+        "name": "Unicorn",
+        "name_ru": "Единорог"
+    },
+    {
+        "id": 12,
+        "name": "Eater",
+        "name_ru": "Едок"
+    },
+    {
+        "id": 13,
+        "name": "Defender",
+        "name_ru": "Защитник"
+    },
+    {
+        "id": 14,
+        "name": "Zealot",
+        "name_ru": "Зилот"
+    },
+    {
+        "id": 15,
+        "name": "Rogue",
+        "name_ru": "Изгой"
+    },
+    {
+        "id": 16,
+        "name": "Blacksmith",
+        "name_ru": "Кузнец"
+    },
+    {
+        "id": 17,
+        "name": "Mag",
+        "name_ru": "Маг"
+    },
+    {
+        "id": 18,
+        "name": "Mechanic",
+        "name_ru": "Механик"
+    },
+    {
+        "id": 19,
+        "name": "Monk",
+        "name_ru": "Монах"
+    },
+    {
+        "id": 20,
+        "name": "Sage",
+        "name_ru": "Мудрец"
+    },
+    {
+        "id": 21,
+        "name": "Mauler",
+        "name_ru": "Мучитель"
+    },
+    {
+        "id": 22,
+        "name": "Hunter",
+        "name_ru": "Охотник"
+    },
+    {
+        "id": 23,
+        "name": "Paladin",
+        "name_ru": "Паладин"
+    },
+    {
+        "id": 24,
+        "name": "Spider",
+        "name_ru": "Паук"
+    },
+    {
+        "id": 25,
+        "name": "Support",
+        "name_ru": "Поддержка"
+    },
+    {
+        "id": 26,
+        "name": "Scout",
+        "name_ru": "Разведчик"
+    },
+    {
+        "id": 27,
+        "name": "Ranger",
+        "name_ru": "Рейнджер"
+    },
+    {
+        "id": 28,
+        "name": "Knight",
+        "name_ru": "Рыцарь"
+    },
+    {
+        "id": 29,
+        "name": "Priest",
+        "name_ru": "Священник"
+    },
+    {
+        "id": 30,
+        "name": "Wanderer",
+        "name_ru": "Странник"
+    },
+    {
+        "id": 31,
+        "name": "Shadowknight",
+        "name_ru": "Теневой рыцарь"
+    },
+    {
+        "id": 32,
+        "name": "Assassin",
+        "name_ru": "Убийца"
+    },
+    {
+        "id": 33,
+        "name": "Champion",
+        "name_ru": "Чемпион"
+    },
+    {
+        "id": 34,
+        "name": "Whisper",
+        "name_ru": "Шептун"
+    }
+]

@@ -1,0 +1,89 @@
+{
+    "id": 509,
+    "name": "Zak, Mad Troll",
+    "name_ru": "Зак, Безумный тролль",
+    "class_id": 4,
+    "class_2_id": null,
+    "race_id": 39,
+    "alliance_id": 1,
+    "alliance_2_id": 0,
+    "rarity_id": 1,
+    "cost_gold": "450В",
+    "buy_level": 40,
+    "image": "images/heroes/509.webp",
+    "power": 64,
+    "base_damage": "460М",
+    "hp": 16,
+    "hp_main": 0,
+    "atk": 15,
+    "atk_main": 1,
+    "def": 12,
+    "def_main": 0,
+    "wis": 7,
+    "wis_main": 0,
+    "agi": 7,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 0,
+    "order": 29,
+    "color_1": "#1b293b",
+    "color_2": "#4d1f00",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 2204,
+            "hero_id": 509,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/509_2204.webp",
+            "image_id": 3372,
+            "type": "active",
+            "chance": 30,
+            "created": "2023-08-24 14:08:30",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Deals massive ATK-based damage to random enemy with a power of 350%.",
+            "name_ru": "Наносит мощный урон АТК по одному сопернику силой 350%"
+        }
+    ],
+    "alliance_data": {
+        "id": 1,
+        "name": "Warriors",
+        "color": "#b97000",
+        "name_ru": "Воины",
+        "image": "images/gallery/assets/images/categories/alliances/f3d501fa5fc6ca802c6f1003d19ce8e8.png",
+        "items": [
+            {
+                "id": 48,
+                "alliance_id": 1,
+                "min": 3,
+                "description": "All warriors receive an additional 20% DEF",
+                "ru_description": "Все воины получают дополнительно 20% DEF",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:49:10"
+            },
+            {
+                "id": 49,
+                "alliance_id": 1,
+                "min": 6,
+                "description": "All warriors receive an additional 40% DEF",
+                "ru_description": "Все воины получают дополнительно 40% DEF",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:49:20"
+            },
+            {
+                "id": 50,
+                "alliance_id": 1,
+                "min": 9,
+                "description": "All warriors receive an additional 80% DEF",
+                "ru_description": "Все воины получают дополнительно 80% DEF",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:49:25"
+            }
+        ]
+    },
+    "cat": "2",
+    "index_in_category": 27
+}

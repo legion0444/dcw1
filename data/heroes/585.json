@@ -1,0 +1,71 @@
+{
+    "id": 585,
+    "name": "Tikola Nesla",
+    "name_ru": "Тикола Несла",
+    "class_id": 18,
+    "class_2_id": 0,
+    "race_id": 40,
+    "alliance_id": 17,
+    "alliance_2_id": 0,
+    "rarity_id": 6,
+    "cost_gold": "1.3E+99",
+    "buy_level": 400,
+    "image": "images/heroes/585.webp",
+    "power": 240,
+    "base_damage": "7.8E+93",
+    "hp": 46,
+    "hp_main": 0,
+    "atk": 29,
+    "atk_main": 1,
+    "def": 32,
+    "def_main": 0,
+    "wis": 60,
+    "wis_main": 1,
+    "agi": 42,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 300,
+    "order": 203,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 6305,
+            "hero_id": 585,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/585_6305.webp",
+            "image_id": 3403,
+            "type": "active",
+            "chance": 50,
+            "created": "2024-05-12 12:45:46",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Decreases DEF, HP of 3 random enemies by 45%.",
+            "name_ru": "Уменьшает DEF, HP 3 случайным врагам на 45%."
+        }
+    ],
+    "alliance_data": {
+        "id": 17,
+        "name": "Mechanics",
+        "color": "#3b8c80",
+        "name_ru": "Механики",
+        "image": "images/gallery/assets/images/categories/alliances/75e38c1c1386650b2624383c5516e431.png",
+        "items": [
+            {
+                "id": 78,
+                "alliance_id": 17,
+                "min": 3,
+                "description": "All constructs receive an additional 75% ATK, DEF, WIS, AGI. Mechanics can resurrect an allied construction.",
+                "ru_description": "Все механизмы получают дополнительно 75% АТК, DEF, WIS, AGI. Механик может воскресить союзный механизм.",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2026-04-07 19:48:24"
+            }
+        ]
+    },
+    "cat": "2",
+    "index_in_category": 65
+}

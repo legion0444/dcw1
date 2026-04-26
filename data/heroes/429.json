@@ -1,0 +1,71 @@
+{
+    "id": 429,
+    "name": "Griswold",
+    "name_ru": "Грисвольд",
+    "class_id": 16,
+    "class_2_id": null,
+    "race_id": 40,
+    "alliance_id": 3,
+    "alliance_2_id": 0,
+    "rarity_id": 1,
+    "cost_gold": "4000",
+    "buy_level": 30,
+    "image": "images/heroes/429.webp",
+    "power": 55,
+    "base_damage": "245",
+    "hp": 12,
+    "hp_main": 0,
+    "atk": 14,
+    "atk_main": 1,
+    "def": 11,
+    "def_main": 0,
+    "wis": 7,
+    "wis_main": 0,
+    "agi": 7,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 0,
+    "order": 13,
+    "color_1": "#330f00",
+    "color_2": "#4d3400",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 2235,
+            "hero_id": 429,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/429_2235.webp",
+            "image_id": 3364,
+            "type": "active",
+            "chance": 50,
+            "created": "2023-08-24 14:10:34",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Morphs into Grimbeorn.",
+            "name_ru": "Перевоплощается в героя - Гримбьорн."
+        }
+    ],
+    "alliance_data": {
+        "id": 3,
+        "name": "Blacksmiths",
+        "color": "#a40013",
+        "name_ru": "Кузнецы",
+        "image": "images/gallery/assets/images/categories/alliances/bdd2c2fb3cc6c61eef792640eab3e2b2.png",
+        "items": [
+            {
+                "id": 52,
+                "alliance_id": 3,
+                "min": 2,
+                "description": "All heroes receive +40% to ATK, +40% to DEF",
+                "ru_description": "Все герои получают +40% к ATK, +40% к DEF",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2026-04-08 12:54:17"
+            }
+        ]
+    },
+    "cat": "2",
+    "index_in_category": 12
+}

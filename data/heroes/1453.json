@@ -1,0 +1,71 @@
+{
+    "id": 1453,
+    "name": "Suref",
+    "name_ru": "Суреф",
+    "class_id": 19,
+    "class_2_id": 0,
+    "race_id": 1,
+    "alliance_id": 10,
+    "alliance_2_id": 0,
+    "rarity_id": 2,
+    "cost_gold": "8.4E+45",
+    "buy_level": 220,
+    "image": "images/heroes/1453.webp",
+    "power": 70,
+    "base_damage": "1.7Е+58",
+    "hp": 10,
+    "hp_main": 0,
+    "atk": 9,
+    "atk_main": 1,
+    "def": 9,
+    "def_main": 0,
+    "wis": 18,
+    "wis_main": 0,
+    "agi": 12,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 40,
+    "order": 96,
+    "color_1": "#062312",
+    "color_2": "#3e413f",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 6302,
+            "hero_id": 1453,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/1453_6302.webp",
+            "image_id": 3541,
+            "type": "opening",
+            "chance": 100,
+            "created": "2024-05-12 12:45:40",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Raises all stats of all mages by 30% if the enemy team includes a human and your team includes 3 mages.",
+            "name_ru": "Повышает все характеристики всем магам на 30%, если среди соперников есть хотя бы 1 человек и у вас есть 3 мага."
+        }
+    ],
+    "alliance_data": {
+        "id": 10,
+        "name": "Monks",
+        "color": "#d90168",
+        "name_ru": "Монахи",
+        "image": "images/gallery/assets/images/categories/alliances/0e3ab36a5076a98c16fa5f88dab934da.png",
+        "items": [
+            {
+                "id": 67,
+                "alliance_id": 10,
+                "min": 2,
+                "description": "All monks deal an additional 10% damage and receive a 15% bonus to defense against all damage types. All heroes receive a 20% bonus to dodge non magical attacks",
+                "ru_description": "Все монахи наносят дополнительно 10% урона и получают 15% к защите от любого вида урона. Все герои получают бонус 20% к увороту от не магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "cat": "11",
+    "index_in_category": 3
+}

@@ -1,0 +1,80 @@
+{
+    "id": 481,
+    "name": "Canus Aestasius",
+    "name_ru": "Канус Аестасиус",
+    "class_id": 28,
+    "class_2_id": 0,
+    "race_id": 1,
+    "alliance_id": 5,
+    "alliance_2_id": 0,
+    "rarity_id": 7,
+    "cost_gold": "1.0E+1325",
+    "buy_level": 6500,
+    "image": "images/heroes/481.webp",
+    "power": 745,
+    "base_damage": "6Е+1316",
+    "hp": 203,
+    "hp_main": 0,
+    "atk": 145,
+    "atk_main": 1,
+    "def": 142,
+    "def_main": 0,
+    "wis": 120,
+    "wis_main": 0,
+    "agi": 111,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 5,
+    "bonus_lair": 0,
+    "shards": 2000,
+    "order": 320,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 2833,
+            "hero_id": 481,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/481_2833.webp",
+            "image_id": 3540,
+            "type": "active",
+            "chance": 30,
+            "created": "2023-10-14 08:48:49",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Deals massive ATK-based damage to 4 random enemies with a power of 130%. The target loses all buffs and debuffs that had been applied to them.",
+            "name_ru": "Наносит мощный урон ATK по 4 случайным соперникам силой 130%. Атакованный соперник теряет все бафы и дебафы наложенные на него ранее."
+        }
+    ],
+    "alliance_data": {
+        "id": 5,
+        "name": "Knights",
+        "color": "#bc0f73",
+        "name_ru": "Рыцари",
+        "image": "images/gallery/assets/images/categories/alliances/b89f7fb00479d74236e3dce897e9803a.png",
+        "items": [
+            {
+                "id": 55,
+                "alliance_id": 5,
+                "min": 3,
+                "description": "All knights receive a 20% bonus against all damage types and a 50% bonus to additional damage",
+                "ru_description": "Все рыцари получают бонус 20% к защите от любого вида урона и бонус 50% к дополнительному урону",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2026-04-07 20:22:00"
+            },
+            {
+                "id": 56,
+                "alliance_id": 5,
+                "min": 6,
+                "description": "All knights receive a 40% bonus against all damage types and a 100% bonus to additional damage",
+                "ru_description": "Все рыцари получают бонус 40% к защите от любого вида урона и бонус 100% к дополнительному урону",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2026-04-07 20:22:14"
+            }
+        ]
+    },
+    "cat": "9",
+    "index_in_category": 95
+}

@@ -1,0 +1,220 @@
+/* ОБНУЛЕНИЕ */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    height: 100vh;
+    /* Убираем overflow: hidden, если на мобилках контент может не влезть по высоте */
+    overflow-x: hidden; 
+    display: flex;
+    flex-direction: column;
+}
+
+/* АНИМИРОВАННЫЙ ФОН */
+@keyframes diagonalSlide {
+    from { background-position: 0 0; }
+    to { background-position: -1900px 545px; }
+}
+
+.bg-underlay {
+    position: fixed;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background-image: url('../images/misc/tamplates/background.webp');
+    background-repeat: repeat;
+    background-size: 1900px 545px; 
+    filter: blur(4px) brightness(0.4);
+    z-index: -1;
+    animation: diagonalSlide 60s linear infinite;
+    will-change: background-position;
+}
+
+/* КИНЕМАТОГРАФИЧНЫЕ ПОЛОСЫ */
+.cinematic-bar {
+    min-height: 10vh; /* Используем min-height */
+    padding: 10px 20px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    box-shadow: 0 0 40px rgba(0,0,0,1);
+}
+
+.top-nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Чтобы ссылки переносились, если их много */
+    justify-content: center;
+}
+
+.nav-link {
+    color: #444;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px; /* Чуть меньше базу для мобилок */
+    letter-spacing: 2px;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.nav-link:hover, .nav-link.active { color: #e23636; }
+.nav-link.disabled { opacity: 0.2; }
+
+/* ЦЕНТРАЛЬНЫЙ БЛОК */
+.google-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Отступы по бокам для мобилок */
+    padding-bottom: 10vh
+}
+
+.search-section {
+    width: 100%;
+    /* Увеличиваем с 800px до 1000px или 1200px */
+    max-width: 1100px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Элементы будут друг под другом */
+    align-items: center;    /* Центрируем по горизонтали */
+    gap: 50px;               /* Расстояние между текстом и кнопкой */
+    
+    
+}
+
+.footer-author {
+    color: #1f1f1f;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    /* ИЗМЕНИ ЗДЕСЬ: */
+    letter-spacing: -1px; /* Вместо 4px поставь 1px или 0 */
+}
+/* ЛОГОТИП */
+.logo-wrapper {
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-logo-img {
+    max-width: 100%; /* Чтобы не вылезал за экран */
+    height: auto;
+    width: 350px; /* Базовый размер */
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.4));
+}
+
+/* ГРУППА ПОИСКА */
+.search-group {
+    display: flex;
+    width: 100%; /* Было 150%, это ломало верстку. Контролируем через max-width родителя */
+    height: 55px;
+}
+
+.input-container {
+    flex: 1;
+    position: relative;
+}
+
+#hero-search {
+    opacity: 60%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #333;
+    border-right: none;
+    padding: 0 20px;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    outline: none;
+    transition: 0.3s;
+    
+}
+
+#hero-search:focus {
+    border-color: #e23636;
+    background: #000;
+}
+
+.search-action-btn {
+    width: 120px;
+    background: #e23636;
+    color: #fff;
+    border: 2px solid #e23636;
+    font-weight: 900;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    letter-spacing: 1px;
+}
+
+.search-action-btn:hover {
+    background: #fff;
+    color: #e23636;
+    border-color: #fff;
+}
+
+/* НИЖНЯЯ ПАНЕЛЬ */
+.footer-content {
+    color: #333;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* --- АДАПТИВНОСТЬ (МЕДИА-ЗАПРОСЫ) --- */
+
+/* Для ПК (большие экраны) */
+@media (min-width: 1024px) {
+    .nav-link { font-size: 16px; }
+    .search-group { height: 65px; }
+    .main-logo-img { width: 450px; }
+    .footer-content { font-size: 12px; letter-spacing: 4px; }
+}
+
+/* Для мобильных устройств (смартфоны) */
+/* Обновленный медиа-запрос для ПК */
+@media (min-width: 1024px) {
+    .nav-link { 
+        font-size: 16px; 
+    }
+
+    /* Делаем саму секцию шире */
+    .search-section {
+        max-width: 1200px; 
+    }
+
+    /* Увеличиваем высоту и общие габариты строки */
+    .search-group { 
+        height: 70px; /* Сделаем её чуть выше для солидности */
+        width: 100%; 
+    }
+
+    /* Можно увеличить саму кнопку "Найти" для баланса */
+    .search-action-btn {
+        width: 180px;
+        font-size: 20px;
+    }
+
+    .main-logo-img { 
+        width: 800px; /* Логотип тоже можно покрупнее */
+    }
+}

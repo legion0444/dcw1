@@ -1,0 +1,71 @@
+{
+    "id": 513,
+    "name": "Sun Wukong",
+    "name_ru": "Сун Вуконг",
+    "class_id": 19,
+    "class_2_id": null,
+    "race_id": 31,
+    "alliance_id": 10,
+    "alliance_2_id": 0,
+    "rarity_id": 1,
+    "cost_gold": "2700Т",
+    "buy_level": 40,
+    "image": "images/heroes/513.webp",
+    "power": 70,
+    "base_damage": "814В",
+    "hp": 17,
+    "hp_main": 0,
+    "atk": 17,
+    "atk_main": 1,
+    "def": 12,
+    "def_main": 0,
+    "wis": 8,
+    "wis_main": 0,
+    "agi": 11,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 0,
+    "order": 41,
+    "color_1": null,
+    "color_2": null,
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 2202,
+            "hero_id": 513,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/513_2202.webp",
+            "image_id": 3558,
+            "type": "opening",
+            "chance": 30,
+            "created": "2023-08-24 14:08:22",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Steals 3 random abilities from enemy heroes. Ability types: - Active, Opening.",
+            "name_ru": "Ворует случайные способности у героев противника. Количество способностей - 3. Типы способностей - Активная, Открытие."
+        }
+    ],
+    "alliance_data": {
+        "id": 10,
+        "name": "Monks",
+        "color": "#d90168",
+        "name_ru": "Монахи",
+        "image": "images/gallery/assets/images/categories/alliances/0e3ab36a5076a98c16fa5f88dab934da.png",
+        "items": [
+            {
+                "id": 67,
+                "alliance_id": 10,
+                "min": 2,
+                "description": "All monks deal an additional 10% damage and receive a 15% bonus to defense against all damage types. All heroes receive a 20% bonus to dodge non magical attacks",
+                "ru_description": "Все монахи наносят дополнительно 10% урона и получают 15% к защите от любого вида урона. Все герои получают бонус 20% к увороту от не магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "cat": "2",
+    "index_in_category": 33
+}

@@ -1,0 +1,89 @@
+{
+    "id": 1785,
+    "name": "Frozen Elga",
+    "name_ru": "Ледяная Эльга",
+    "class_id": 17,
+    "class_2_id": 0,
+    "race_id": 40,
+    "alliance_id": 9,
+    "alliance_2_id": 0,
+    "rarity_id": 6,
+    "cost_gold": "1.3E+99",
+    "buy_level": 400,
+    "image": "images/heroes/1785.webp",
+    "power": 240,
+    "base_damage": "7.8E+93",
+    "hp": 45,
+    "hp_main": 0,
+    "atk": 29,
+    "atk_main": 0,
+    "def": 33,
+    "def_main": 0,
+    "wis": 60,
+    "wis_main": 1,
+    "agi": 42,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 300,
+    "order": 204,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 2946,
+            "hero_id": 1785,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/1785_2946.webp",
+            "image_id": 3404,
+            "type": "opening",
+            "chance": 100,
+            "created": "2023-10-19 21:10:17",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Raises DEF of all allies by 100%.",
+            "name_ru": "Повышает DEF всем союзникам на 100%"
+        }
+    ],
+    "alliance_data": {
+        "id": 9,
+        "name": "Mages",
+        "color": "#8047ff",
+        "name_ru": "Маги",
+        "image": "images/gallery/assets/images/categories/alliances/f005288ee6233543006b15a51923a00e.png",
+        "items": [
+            {
+                "id": 64,
+                "alliance_id": 9,
+                "min": 3,
+                "description": "All mages receive a 30% bonus to additional damage and a 15% bonus to defence against magical attacks",
+                "ru_description": "Все маги получают 30% бонус к дополнительному урону и 15% к защите от магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:51:40"
+            },
+            {
+                "id": 65,
+                "alliance_id": 9,
+                "min": 6,
+                "description": "All mages receive a 75% bonus to additional damage and a 40% bonus to defence against magical attacks",
+                "ru_description": "Все маги получают 75% бонус к дополнительному урону и 40% к защите от магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:51:55"
+            },
+            {
+                "id": 66,
+                "alliance_id": 9,
+                "min": 9,
+                "description": "All mages receive a 150% bonus to additional damage and a 65% bonus to defence against magical attacks",
+                "ru_description": "Все маги получают 150% бонус к дополнительному урону и 65% к защите от магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:52:15"
+            }
+        ]
+    },
+    "cat": "2",
+    "index_in_category": 66
+}

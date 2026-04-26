@@ -1,0 +1,217 @@
+[
+    {
+        "id": 1,
+        "name": "Avatar",
+        "name_ru": "Аватар"
+    },
+    {
+        "id": 2,
+        "name": "Aino",
+        "name_ru": "Айно"
+    },
+    {
+        "id": 3,
+        "name": "Angel",
+        "name_ru": "Ангел"
+    },
+    {
+        "id": 4,
+        "name": "Beaver",
+        "name_ru": "Бобер"
+    },
+    {
+        "id": 5,
+        "name": "God",
+        "name_ru": "Божество"
+    },
+    {
+        "id": 6,
+        "name": "Chipmunk",
+        "name_ru": "Бурундук"
+    },
+    {
+        "id": 7,
+        "name": "Vampire",
+        "name_ru": "Вампир"
+    },
+    {
+        "id": 8,
+        "name": "Ved'akhen",
+        "name_ru": "Ведьакхен"
+    },
+    {
+        "id": 9,
+        "name": "Gigant",
+        "name_ru": "Гигант"
+    },
+    {
+        "id": 10,
+        "name": "Gnoll",
+        "name_ru": "Гнолл"
+    },
+    {
+        "id": 11,
+        "name": "Dwarf",
+        "name_ru": "Гном"
+    },
+    {
+        "id": 12,
+        "name": "Goblin",
+        "name_ru": "Гоблин"
+    },
+    {
+        "id": 13,
+        "name": "Golem",
+        "name_ru": "Голем"
+    },
+    {
+        "id": 14,
+        "name": "Humanoid",
+        "name_ru": "Гуманоид"
+    },
+    {
+        "id": 15,
+        "name": "Demon",
+        "name_ru": "Демон"
+    },
+    {
+        "id": 16,
+        "name": "Dragonoid",
+        "name_ru": "Драгонид"
+    },
+    {
+        "id": 17,
+        "name": "Dragon",
+        "name_ru": "Дракон"
+    },
+    {
+        "id": 18,
+        "name": "Treefolk",
+        "name_ru": "Древень"
+    },
+    {
+        "id": 19,
+        "name": "Spirit",
+        "name_ru": "Дух"
+    },
+    {
+        "id": 20,
+        "name": "Soul",
+        "name_ru": "Души"
+    },
+    {
+        "id": 21,
+        "name": "Beast",
+        "name_ru": "Зверь"
+    },
+    {
+        "id": 22,
+        "name": "Evil",
+        "name_ru": "Зло"
+    },
+    {
+        "id": 23,
+        "name": "Efreet",
+        "name_ru": "Ифрит"
+    },
+    {
+        "id": 24,
+        "name": "Cow",
+        "name_ru": "Корова"
+    },
+    {
+        "id": 25,
+        "name": "Rabbit",
+        "name_ru": "Кролик"
+    },
+    {
+        "id": 26,
+        "name": "Skafanj",
+        "name_ru": "Скафандж"
+    },
+    {
+        "id": 27,
+        "name": "Lion",
+        "name_ru": "Лев"
+    },
+    {
+        "id": 28,
+        "name": "Construct",
+        "name_ru": "Механизм"
+    },
+    {
+        "id": 29,
+        "name": "Insect",
+        "name_ru": "Насекомое"
+    },
+    {
+        "id": 30,
+        "name": "Undead",
+        "name_ru": "Нежить"
+    },
+    {
+        "id": 31,
+        "name": "Ape",
+        "name_ru": "Обезьяна"
+    },
+    {
+        "id": 32,
+        "name": "Vegetable",
+        "name_ru": "Овощ"
+    },
+    {
+        "id": 33,
+        "name": "Orc",
+        "name_ru": "Орк"
+    },
+    {
+        "id": 34,
+        "name": "Building",
+        "name_ru": "Постройка"
+    },
+    {
+        "id": 35,
+        "name": "Void",
+        "name_ru": "Пустота"
+    },
+    {
+        "id": 36,
+        "name": "Creature",
+        "name_ru": "Существо"
+    },
+    {
+        "id": 37,
+        "name": "Sphinx",
+        "name_ru": "Сфинкс"
+    },
+    {
+        "id": 38,
+        "name": "Titan",
+        "name_ru": "Титан"
+    },
+    {
+        "id": 39,
+        "name": "Troll",
+        "name_ru": "Тролль"
+    },
+    {
+        "id": 40,
+        "name": "Human",
+        "name_ru": "Человек"
+    },
+    {
+        "id": 41,
+        "name": "Alien",
+        "name_ru": "Чужой"
+    },
+    {
+        "id": 42,
+        "name": "Elemental",
+        "name_ru": "Элементаль"
+    },
+    {
+        "id": 43,
+        "name": "Elf",
+        "name_ru": "Эльф"
+    }
+]

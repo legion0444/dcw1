@@ -1,0 +1,71 @@
+{
+    "id": 1447,
+    "name": "Star Hunter",
+    "name_ru": "Звездный охотник",
+    "class_id": 22,
+    "class_2_id": 0,
+    "race_id": 2,
+    "alliance_id": 27,
+    "alliance_2_id": 0,
+    "rarity_id": 7,
+    "cost_gold": "5.0E+771",
+    "buy_level": 3780,
+    "image": "images/heroes/1447.webp",
+    "power": 450,
+    "base_damage": "1.0Е+750",
+    "hp": 97,
+    "hp_main": 0,
+    "atk": 114,
+    "atk_main": 1,
+    "def": 98,
+    "def_main": 0,
+    "wis": 52,
+    "wis_main": 0,
+    "agi": 71,
+    "agi_main": 1,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 1750,
+    "order": 248,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 2319,
+            "hero_id": 1447,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/1447_2319.webp",
+            "image_id": 3458,
+            "type": "active",
+            "chance": 30,
+            "created": "2023-09-20 14:45:17",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Deals massive ATK-based damage to 2 random enemies with a power of 200%.",
+            "name_ru": "Наносит мощный урон АТК по 2 случайным соперникам силой 200% "
+        }
+    ],
+    "alliance_data": {
+        "id": 27,
+        "name": "Hunters",
+        "color": "#00d4a8",
+        "name_ru": "Охотники",
+        "image": "images/gallery/assets/images/categories/alliances/7b348884e63acaa236033c52ae72a1bc.png",
+        "items": [
+            {
+                "id": 93,
+                "alliance_id": 27,
+                "min": 3,
+                "description": "All hunters receive a 10% bonus to dodge. Additionally, the hunter can attack an enemy.",
+                "ru_description": "Все охотники получают бонус +10% к увороту. Охотник дополнительно атакует врага.",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "cat": "2",
+    "index_in_category": 76
+}

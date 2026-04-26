@@ -1,0 +1,71 @@
+{
+    "id": 2030,
+    "name": "Oakbark the Ancient",
+    "name_ru": "Кородуб Древний",
+    "class_id": 3,
+    "class_2_id": 0,
+    "race_id": 18,
+    "alliance_id": 26,
+    "alliance_2_id": 0,
+    "rarity_id": 7,
+    "cost_gold": "1.0E+1325",
+    "buy_level": 6500,
+    "image": "images/heroes/2030.webp",
+    "power": 745,
+    "base_damage": "1Е+1313",
+    "hp": 202,
+    "hp_main": 0,
+    "atk": 146,
+    "atk_main": 1,
+    "def": 140,
+    "def_main": 0,
+    "wis": 116,
+    "wis_main": 0,
+    "agi": 117,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 5,
+    "bonus_lair": 0,
+    "shards": 2000,
+    "order": 331,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": null,
+    "skills": [
+        {
+            "id": 6631,
+            "hero_id": 2030,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/2030_6631.webp",
+            "image_id": 3525,
+            "type": "opening",
+            "chance": 100,
+            "created": "2024-12-06 21:32:34",
+            "updated": "2024-12-11 11:21:16",
+            "status": null,
+            "name": "Morphs a random enemy into a flower.",
+            "name_ru": "Превращает случайного противника в героя - цветочек."
+        }
+    ],
+    "alliance_data": {
+        "id": 26,
+        "name": "Warlords",
+        "color": "#ffc200",
+        "name_ru": "Военачальники",
+        "image": "images/gallery/assets/images/categories/alliances/c0829ee3164bdb341bc072de60c70505.png",
+        "items": [
+            {
+                "id": 92,
+                "alliance_id": 26,
+                "min": 3,
+                "description": "All heroes receive a 15% bonus to defence against all damage types",
+                "ru_description": "Все герои получают бонус 15% к уменьшению урона от всех типов урона",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "cat": "9",
+    "index_in_category": 108
+}

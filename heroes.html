@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEGION WIKI - HEROES</title>
+    <link rel="stylesheet" href="css/heroes.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-underlay"></div>
+
+    <header class="cinematic-bar top-bar">
+        <nav class="top-nav">
+            <a href="index.html" class="nav-link">ГЛАВНАЯ</a>
+            <a href="heroes.html" class="nav-link active">ГЕРОИ</a>
+            <a href="#" class="nav-link disabled">ЛОКАЦИИ</a>
+            <a href="#" class="nav-link disabled">ПРЕДМЕТЫ</a>
+            <a href="#" class="nav-link disabled">МАГАЗИН</a>
+        </nav>
+    </header>
+
+    <main class="heroes-container">
+        <div class="filter-glass">
+            <div class="filter-wrapper">
+                <div class="search-row">
+                    <input type="text" id="hero-name-filter" placeholder="ПОИСК ПО ИМЕНИ..." autocomplete="off">
+                </div>
+                
+                <div class="options-row">
+                    <div class="custom-select-wrapper" id="dropdown-class">
+                        <div class="select-trigger"><span>КЛАСС: ВСЕ</span><div class="arrow"></div></div>
+                        <div class="custom-options"></div>
+                    </div>
+
+                    <div class="custom-select-wrapper" id="dropdown-race">
+                        <div class="select-trigger"><span>РАСА: ВСЕ</span><div class="arrow"></div></div>
+                        <div class="custom-options"></div>
+                    </div>
+
+                    <div class="custom-select-wrapper" id="dropdown-alliance">
+                        <div class="select-trigger"><span>АЛЬЯНС: ВСЕ</span><div class="arrow"></div></div>
+                        <div class="custom-options"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sections-wide-wrapper">
+            <div class="loading-label" style="text-align: center; color: #fff; padding: 40px; font-family: 'Oswald';">
+                
+            </div>
+        </div>
+    </main>
+
+    <footer class="cinematic-bar bottom-bar">
+        <div class="footer-content">
+            <a href="about.html" class="nav-link">О НАС</a>          
+            <div class="footer-author"><span>• BY LEGION •</span></div> 
+        </div>
+    </footer>
+
+    <script type="module" src="js/heroes-load.js"></script>
+</body>
+</html>

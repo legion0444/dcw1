@@ -1,0 +1,89 @@
+{
+    "id": 260,
+    "name": "Ninsusinak",
+    "name_ru": "Нинсусинак",
+    "class_id": 4,
+    "class_2_id": 0,
+    "race_id": 37,
+    "alliance_id": 1,
+    "alliance_2_id": 0,
+    "rarity_id": 7,
+    "cost_gold": "1.0Е+974",
+    "buy_level": 4666,
+    "image": "images/heroes/260.webp",
+    "power": 645,
+    "base_damage": "1.7E+950",
+    "hp": 142,
+    "hp_main": 0,
+    "atk": 143,
+    "atk_main": 1,
+    "def": 139,
+    "def_main": 0,
+    "wis": 125,
+    "wis_main": 0,
+    "agi": 116,
+    "agi_main": 0,
+    "bonus_event": 10,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 2000,
+    "order": 295,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 4111,
+            "hero_id": 260,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/260_4111.webp",
+            "image_id": 3524,
+            "type": "reactive",
+            "chance": 75,
+            "created": "2024-04-03 16:25:52",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Removes all buffs and debuffs from 5 random enemies.",
+            "name_ru": "Снимает все бафы и дебафы с 5 случайных соперников."
+        }
+    ],
+    "alliance_data": {
+        "id": 1,
+        "name": "Warriors",
+        "color": "#b97000",
+        "name_ru": "Воины",
+        "image": "images/gallery/assets/images/categories/alliances/f3d501fa5fc6ca802c6f1003d19ce8e8.png",
+        "items": [
+            {
+                "id": 48,
+                "alliance_id": 1,
+                "min": 3,
+                "description": "All warriors receive an additional 20% DEF",
+                "ru_description": "Все воины получают дополнительно 20% DEF",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:49:10"
+            },
+            {
+                "id": 49,
+                "alliance_id": 1,
+                "min": 6,
+                "description": "All warriors receive an additional 40% DEF",
+                "ru_description": "Все воины получают дополнительно 40% DEF",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:49:20"
+            },
+            {
+                "id": 50,
+                "alliance_id": 1,
+                "min": 9,
+                "description": "All warriors receive an additional 80% DEF",
+                "ru_description": "Все воины получают дополнительно 80% DEF",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:49:25"
+            }
+        ]
+    },
+    "cat": "3",
+    "index_in_category": 45
+}

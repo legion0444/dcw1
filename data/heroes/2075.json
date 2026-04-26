@@ -1,0 +1,71 @@
+{
+    "id": 2075,
+    "name": "Kilad'Narud the Cunning",
+    "name_ru": "Килад'Наруд Хитрый",
+    "class_id": 32,
+    "class_2_id": 0,
+    "race_id": 12,
+    "alliance_id": 2,
+    "alliance_2_id": 0,
+    "rarity_id": 2,
+    "cost_gold": "8.4E+45",
+    "buy_level": 220,
+    "image": "images/heroes/2075.webp",
+    "power": 70,
+    "base_damage": "1.7Е+58",
+    "hp": 15,
+    "hp_main": 0,
+    "atk": 13,
+    "atk_main": 0,
+    "def": 14,
+    "def_main": 0,
+    "wis": 12,
+    "wis_main": 0,
+    "agi": 10,
+    "agi_main": 1,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 40,
+    "order": 97,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 6663,
+            "hero_id": 2075,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/2075_6663.webp",
+            "image_id": 3547,
+            "type": "opening",
+            "chance": 100,
+            "created": "2025-10-08 14:44:29",
+            "updated": "2025-10-08 14:51:18",
+            "status": null,
+            "name": "Raises all stats of all allies by 20%. Applies only to Goblin.",
+            "name_ru": "Повышает все характеристики всем союзникам на 20%.\r\nПрименяется только на Гоблин."
+        }
+    ],
+    "alliance_data": {
+        "id": 2,
+        "name": "Assassins",
+        "color": "#00c81d",
+        "name_ru": "Асассины",
+        "image": "images/gallery/assets/images/categories/alliances/c88f5caca61a11732cd11c105573fa30.png",
+        "items": [
+            {
+                "id": 51,
+                "alliance_id": 2,
+                "min": 2,
+                "description": "All assassins receive a 50% bonus to pure damage",
+                "ru_description": "Все ассасины получают бонус чистого урона 50%",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "cat": "11",
+    "index_in_category": 5
+}

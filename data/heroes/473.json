@@ -1,0 +1,80 @@
+{
+    "id": 473,
+    "name": "Cossus Caderius",
+    "name_ru": "Коссус Кадериус",
+    "class_id": 28,
+    "class_2_id": 0,
+    "race_id": 1,
+    "alliance_id": 5,
+    "alliance_2_id": 0,
+    "rarity_id": 7,
+    "cost_gold": "1.0E+1325",
+    "buy_level": 6500,
+    "image": "images/heroes/473.webp",
+    "power": 745,
+    "base_damage": "3Е+1319",
+    "hp": 202,
+    "hp_main": 0,
+    "atk": 146,
+    "atk_main": 1,
+    "def": 140,
+    "def_main": 0,
+    "wis": 116,
+    "wis_main": 0,
+    "agi": 117,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 5,
+    "bonus_lair": 0,
+    "shards": 2000,
+    "order": 317,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 2836,
+            "hero_id": 473,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/473_2836.webp",
+            "image_id": 3360,
+            "type": "active",
+            "chance": 30,
+            "created": "2023-10-14 08:48:59",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Deals heavy AGI-based damage to all enemies with a power of 75%. Number of attacks: 1. Miss chance: 15%.",
+            "name_ru": "Наносит мощный урон AGI по всем соперникам силой 75%. Количество атак 1. Шанс промаха 15%."
+        }
+    ],
+    "alliance_data": {
+        "id": 5,
+        "name": "Knights",
+        "color": "#bc0f73",
+        "name_ru": "Рыцари",
+        "image": "images/gallery/assets/images/categories/alliances/b89f7fb00479d74236e3dce897e9803a.png",
+        "items": [
+            {
+                "id": 55,
+                "alliance_id": 5,
+                "min": 3,
+                "description": "All knights receive a 20% bonus against all damage types and a 50% bonus to additional damage",
+                "ru_description": "Все рыцари получают бонус 20% к защите от любого вида урона и бонус 50% к дополнительному урону",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2026-04-07 20:22:00"
+            },
+            {
+                "id": 56,
+                "alliance_id": 5,
+                "min": 6,
+                "description": "All knights receive a 40% bonus against all damage types and a 100% bonus to additional damage",
+                "ru_description": "Все рыцари получают бонус 40% к защите от любого вида урона и бонус 100% к дополнительному урону",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2026-04-07 20:22:14"
+            }
+        ]
+    },
+    "cat": "9",
+    "index_in_category": 92
+}

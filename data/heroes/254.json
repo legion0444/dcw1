@@ -1,0 +1,80 @@
+{
+    "id": 254,
+    "name": "Tagg Em",
+    "name_ru": "Тагг Эм",
+    "class_id": 20,
+    "class_2_id": 0,
+    "race_id": 42,
+    "alliance_id": 12,
+    "alliance_2_id": 0,
+    "rarity_id": 7,
+    "cost_gold": "1.0Е+974",
+    "buy_level": 4666,
+    "image": "images/heroes/254.webp",
+    "power": 645,
+    "base_damage": "1.7E+950",
+    "hp": 133,
+    "hp_main": 0,
+    "atk": 109,
+    "atk_main": 0,
+    "def": 129,
+    "def_main": 0,
+    "wis": 135,
+    "wis_main": 1,
+    "agi": 147,
+    "agi_main": 0,
+    "bonus_event": 10,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 2000,
+    "order": 292,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 4114,
+            "hero_id": 254,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/254_4114.webp",
+            "image_id": 3397,
+            "type": "opening",
+            "chance": 80,
+            "created": "2024-04-03 16:26:07",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Curses all heroes. Cursed heroescan no longer use abilities.",
+            "name_ru": "Проклинает всех героев. Проклятые герои не могут больше использовать свои способности."
+        }
+    ],
+    "alliance_data": {
+        "id": 12,
+        "name": "Sages",
+        "color": "#ff8255",
+        "name_ru": "Мудрецы",
+        "image": "images/gallery/assets/images/categories/alliances/94c0e5787de4117eac96eb92b9a73c95.png",
+        "items": [
+            {
+                "id": 70,
+                "alliance_id": 12,
+                "min": 2,
+                "description": "All heroes receive a 40% bonus to defence against magical attacks",
+                "ru_description": "Все герои получают бонус 40% к защите от магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            },
+            {
+                "id": 71,
+                "alliance_id": 12,
+                "min": 4,
+                "description": "All heroes receive an 80% bonus to defence against magical attacks",
+                "ru_description": "Все герои получают бонус 80% к защите от магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "cat": "3",
+    "index_in_category": 42
+}

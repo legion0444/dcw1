@@ -1,0 +1,123 @@
+[
+    {
+        "id": 1,
+        "name": "Common",
+        "name_ru": "Обычный",
+        "ranks": 10,
+        "factor": 1,
+        "image": "images/rarities/1.png",
+        "color": "#c4c4c4",
+        "border": "0.6px solid #B8B8B8",
+        "background": "linear-gradient(132.45deg, #BBBBBB 0.94%, #555555 98.73%)"
+    },
+    {
+        "id": 2,
+        "name": "Uncommon",
+        "name_ru": "Необычный",
+        "ranks": 25,
+        "factor": 1,
+        "image": "images/rarities/2.png",
+        "color": "#e5d9c1",
+        "border": "0.6px solid #FFEFCE",
+        "background": "linear-gradient(131.19deg, #DDD1B9 -0.36%, #777164 99.81%)"
+    },
+    {
+        "id": 3,
+        "name": "Rare",
+        "name_ru": "Редкий",
+        "ranks": 50,
+        "factor": 2,
+        "image": "images/rarities/3.png",
+        "color": "#3bac2b",
+        "border": "0.6px solid #BCFFB1",
+        "background": "linear-gradient(134.69deg, #3AA529 1.8%, #163F10 98.2%)"
+    },
+    {
+        "id": 4,
+        "name": "Ultra Rare",
+        "name_ru": "Редчайший",
+        "ranks": 150,
+        "factor": 3,
+        "image": "images/rarities/4.png",
+        "color": "#006eee",
+        "border": "0.6px solid #BEDCFF",
+        "background": "linear-gradient(131.19deg, #016AE5 -0.58%, #013B7F 99.59%)"
+    },
+    {
+        "id": 5,
+        "name": "Epic",
+        "name_ru": "Эпический",
+        "ranks": 250,
+        "factor": 4,
+        "image": "images/rarities/5.png",
+        "color": "#9404f5",
+        "border": "0.6px solid #D79BFF",
+        "background": "linear-gradient(133.67deg, #9005EC 0.53%, #520386 100.49%)"
+    },
+    {
+        "id": 6,
+        "name": "Legendary",
+        "name_ru": "Легендарный",
+        "ranks": 1750,
+        "factor": 5,
+        "image": "images/rarities/6.png",
+        "color": "#ffbd58",
+        "border": "0.6px solid #FFE5BD",
+        "background": "linear-gradient(135deg, #F6B655 1.45%, #906B32 99.04%)"
+    },
+    {
+        "id": 7,
+        "name": "Mythic",
+        "name_ru": "Мифический",
+        "ranks": 2500,
+        "factor": 7,
+        "image": "images/rarities/7.png",
+        "color": "#52fbbd",
+        "border": "0.6px solid #88FFD0",
+        "background": "linear-gradient(133.67deg, #50F1B5 0%, #47B585 99.97%)"
+    },
+    {
+        "id": 8,
+        "name": "Divine",
+        "name_ru": "Божественный",
+        "ranks": 3250,
+        "factor": 8,
+        "image": "images/rarities/8.png",
+        "color": "#424153",
+        "border": "0.6px solid #E0D6FF",
+        "background": "linear-gradient(135deg, #7D7B89 0.94%, #272128 98.53%)"
+    },
+    {
+        "id": 9,
+        "name": "Godlike",
+        "name_ru": "Богоподобный",
+        "ranks": 4000,
+        "factor": 13,
+        "image": "images/rarities/9.png",
+        "color": "#b91229",
+        "border": "0.6px solid #FF8E8E",
+        "background": "linear-gradient(131.19deg, #E40000 -0.54%, #7E0000 99.63%)"
+    },
+    {
+        "id": 10,
+        "name": "Eternal",
+        "name_ru": "Вечный",
+        "ranks": 4750,
+        "factor": 17,
+        "image": "images/rarities/10.png",
+        "color": "#d643b7",
+        "border": "0.6px solid #FFDCF9",
+        "background": "linear-gradient(132.45deg, #E800C3 0.55%, #82006D 98.34%)"
+    },
+    {
+        "id": 11,
+        "name": "Galactic",
+        "name_ru": "Галактический",
+        "ranks": 5500,
+        "factor": 25,
+        "image": "images/rarities/11.png",
+        "color": "#ddfe21",
+        "border": "0.6px solid #FFFA6D",
+        "background": "linear-gradient(132.45deg, #FFF500 1.61%, #999300 99.4%)"
+    }
+]

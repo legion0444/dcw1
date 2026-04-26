@@ -1,0 +1,80 @@
+{
+    "id": 268,
+    "name": "Lucus",
+    "name_ru": "Луцус",
+    "class_id": 13,
+    "class_2_id": 0,
+    "race_id": 38,
+    "alliance_id": 15,
+    "alliance_2_id": 0,
+    "rarity_id": 7,
+    "cost_gold": "1.0Е+974",
+    "buy_level": 4710,
+    "image": "images/heroes/268.webp",
+    "power": 645,
+    "base_damage": "9.9Е+963",
+    "hp": 135,
+    "hp_main": 0,
+    "atk": 137,
+    "atk_main": 1,
+    "def": 131,
+    "def_main": 0,
+    "wis": 119,
+    "wis_main": 0,
+    "agi": 110,
+    "agi_main": 0,
+    "bonus_event": 10,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 2000,
+    "order": 274,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 2652,
+            "hero_id": 268,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/268_2652.webp",
+            "image_id": 3415,
+            "type": "active",
+            "chance": 30,
+            "created": "2023-10-11 14:04:26",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Deals massive ATK-based damage to 2 random enemies with a power of 200%. Decreases the enemy\\'s ATK by 20%.",
+            "name_ru": "Наносит мощный урон ATK по 2 случайным соперникам силой 200%. Понижает сопернику ATK на 20%."
+        }
+    ],
+    "alliance_data": {
+        "id": 15,
+        "name": "Defenders",
+        "color": "#90d100",
+        "name_ru": "Защитники",
+        "image": "images/gallery/assets/images/categories/alliances/2884bec2f599feae3350ec070169e3ff.png",
+        "items": [
+            {
+                "id": 75,
+                "alliance_id": 15,
+                "min": 2,
+                "description": "All heroes receive a 20% bonus to defence against all damage types",
+                "ru_description": "Все герои получают бонус 20% к уменьшению урона от всех типов урона",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            },
+            {
+                "id": 76,
+                "alliance_id": 15,
+                "min": 4,
+                "description": "All heroes receive a 40% bonus to defence against all damage types",
+                "ru_description": "Все герои получают бонус 40% к уменьшению урона от всех типов урона",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "cat": "5",
+    "index_in_category": 0
+}

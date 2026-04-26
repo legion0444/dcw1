@@ -1,0 +1,89 @@
+{
+    "id": 731,
+    "name": "Surgrazoth the Defiler",
+    "name_ru": "Сургразотх осквернитель",
+    "class_id": 4,
+    "class_2_id": 0,
+    "race_id": 15,
+    "alliance_id": 1,
+    "alliance_2_id": 0,
+    "rarity_id": 6,
+    "cost_gold": "5.0E+444",
+    "buy_level": 2206,
+    "image": "images/heroes/731.webp",
+    "power": 520,
+    "base_damage": "1.5E+450",
+    "hp": 121,
+    "hp_main": 0,
+    "atk": 126,
+    "atk_main": 1,
+    "def": 123,
+    "def_main": 0,
+    "wis": 60,
+    "wis_main": 0,
+    "agi": 60,
+    "agi_main": 0,
+    "bonus_event": 20,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 0,
+    "order": 235,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 2816,
+            "hero_id": 731,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/731_2816.webp",
+            "image_id": 3414,
+            "type": "active",
+            "chance": 30,
+            "created": "2023-10-14 08:47:32",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Deals massive HP-based damage to 3 random enemies with a power of 135%. Decreases the ememiy\\'s  ATK by 75%",
+            "name_ru": "Наносит мощный урон ХП по 3 случайным соперникам силой 135%. Понижает сопернику АТК на 75%"
+        }
+    ],
+    "alliance_data": {
+        "id": 1,
+        "name": "Warriors",
+        "color": "#b97000",
+        "name_ru": "Воины",
+        "image": "images/gallery/assets/images/categories/alliances/f3d501fa5fc6ca802c6f1003d19ce8e8.png",
+        "items": [
+            {
+                "id": 48,
+                "alliance_id": 1,
+                "min": 3,
+                "description": "All warriors receive an additional 20% DEF",
+                "ru_description": "Все воины получают дополнительно 20% DEF",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:49:10"
+            },
+            {
+                "id": 49,
+                "alliance_id": 1,
+                "min": 6,
+                "description": "All warriors receive an additional 40% DEF",
+                "ru_description": "Все воины получают дополнительно 40% DEF",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:49:20"
+            },
+            {
+                "id": 50,
+                "alliance_id": 1,
+                "min": 9,
+                "description": "All warriors receive an additional 80% DEF",
+                "ru_description": "Все воины получают дополнительно 80% DEF",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:49:25"
+            }
+        ]
+    },
+    "cat": "10",
+    "index_in_category": 17
+}

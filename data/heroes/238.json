@@ -1,0 +1,80 @@
+{
+    "id": 238,
+    "name": "Frombiss the Hungry",
+    "name_ru": "Фромбисс, голодный",
+    "class_id": 8,
+    "class_2_id": 0,
+    "race_id": 30,
+    "alliance_id": 11,
+    "alliance_2_id": 0,
+    "rarity_id": 7,
+    "cost_gold": "1.0E+974",
+    "buy_level": 4666,
+    "image": "images/heroes/238.webp",
+    "power": 645,
+    "base_damage": "1.7E+950",
+    "hp": 137,
+    "hp_main": 0,
+    "atk": 140,
+    "atk_main": 1,
+    "def": 138,
+    "def_main": 0,
+    "wis": 104,
+    "wis_main": 0,
+    "agi": 108,
+    "agi_main": 0,
+    "bonus_event": 10,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 2000,
+    "order": 286,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 4392,
+            "hero_id": 238,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/238_4392.webp",
+            "image_id": 3577,
+            "type": "active",
+            "chance": 30,
+            "created": "2024-04-09 14:43:59",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Deals heavy WIS-based damage to all enemies with a power of 80%. Number of attacks: 1. Miss chance: 20%.",
+            "name_ru": "Наносит мощный урон WIS по всем соперникам силой 80%. Количество атак 1. Шанс промаха 20%."
+        }
+    ],
+    "alliance_data": {
+        "id": 11,
+        "name": "Skymaws",
+        "color": "#ff000c",
+        "name_ru": "Небожоры",
+        "image": "images/gallery/assets/images/categories/alliances/a9bd69d5bd3dcdacd71cd592e690417d.png",
+        "items": [
+            {
+                "id": 68,
+                "alliance_id": 11,
+                "min": 2,
+                "description": "All skymaws receive +10% to DEF, +10% to WIS and a 10% bonus to defence against all damage types. All heroes receive +25% to HP",
+                "ru_description": "Все небожоры получают +10% к DEF, +10% к WIS, и 10% к защите от любого вида урона. Все герои получают +25% к HP",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-08-26 09:40:01"
+            },
+            {
+                "id": 69,
+                "alliance_id": 11,
+                "min": 4,
+                "description": "All skymaws receive +25% to DEF, +25% to WIS and a 25% bonus to defence against all damage types. All heroes receive +50% to HP",
+                "ru_description": "Все небожоры получают +25% к DEF, +25% к WIS, и 25% к защите от любого вида урона. Все герои получают +50% к HP",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-08-26 09:39:55"
+            }
+        ]
+    },
+    "cat": "3",
+    "index_in_category": 36
+}

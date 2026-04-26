@@ -1,0 +1,80 @@
+{
+    "id": 913,
+    "name": "Space Scout",
+    "name_ru": "Космический скаут",
+    "class_id": 26,
+    "class_2_id": 0,
+    "race_id": 40,
+    "alliance_id": 20,
+    "alliance_2_id": 0,
+    "rarity_id": 7,
+    "cost_gold": "5.0E+519",
+    "buy_level": 2545,
+    "image": "images/heroes/913.webp",
+    "power": 420,
+    "base_damage": "1.0Е+500",
+    "hp": 84,
+    "hp_main": 0,
+    "atk": 113,
+    "atk_main": 0,
+    "def": 75,
+    "def_main": 0,
+    "wis": 54,
+    "wis_main": 0,
+    "agi": 114,
+    "agi_main": 1,
+    "bonus_event": 10,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 1500,
+    "order": 237,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "skills": [
+        {
+            "id": 1747,
+            "hero_id": 913,
+            "boss_id": null,
+            "guard_id": null,
+            "image": "images/skills/913_1747.webp",
+            "image_id": 3475,
+            "type": "active",
+            "chance": 30,
+            "created": "2023-08-19 12:02:25",
+            "updated": "2024-06-18 13:58:33",
+            "status": null,
+            "name": "Deals massive AGI-based damage to 4 random enemies whith a power of 100%.",
+            "name_ru": "Наносит мощный урон AGI по 4 случайным соперникам силой 100%."
+        }
+    ],
+    "alliance_data": {
+        "id": 20,
+        "name": "Scouts",
+        "color": "#00a641",
+        "name_ru": "Разведчики",
+        "image": "images/gallery/assets/images/categories/alliances/cb593d45f0c939234506248e62b1f716.png",
+        "items": [
+            {
+                "id": 81,
+                "alliance_id": 20,
+                "min": 2,
+                "description": "All heroes receive +5% to dodge. All scouts receive a 5% bonus to pure damage.",
+                "ru_description": "Все герои получают +5% к увороту. Все разведчики получают бонус чистого урона 5%",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            },
+            {
+                "id": 82,
+                "alliance_id": 20,
+                "min": 4,
+                "description": "All heroes receive +15% to dodge. All scouts receive a 10% bonus to pure damage.",
+                "ru_description": "Все герои получают +15% к увороту. Все разведчики получают бонус чистого урона 10%",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "cat": "2",
+    "index_in_category": 74
+}
