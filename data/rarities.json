@@ -5,7 +5,7 @@
         "name_ru": "Обычный",
         "ranks": 10,
         "factor": 1,
-        "image": "images/rarities/1.png",
+        "image": "images/rarities/1.webp",
         "color": "#c4c4c4",
         "border": "0.6px solid #B8B8B8",
         "background": "linear-gradient(132.45deg, #BBBBBB 0.94%, #555555 98.73%)"
@@ -16,7 +16,7 @@
         "name_ru": "Необычный",
         "ranks": 25,
         "factor": 1,
-        "image": "images/rarities/2.png",
+        "image": "images/rarities/2.webp",
         "color": "#e5d9c1",
         "border": "0.6px solid #FFEFCE",
         "background": "linear-gradient(131.19deg, #DDD1B9 -0.36%, #777164 99.81%)"
@@ -27,7 +27,7 @@
         "name_ru": "Редкий",
         "ranks": 50,
         "factor": 2,
-        "image": "images/rarities/3.png",
+        "image": "images/rarities/3.webp",
         "color": "#3bac2b",
         "border": "0.6px solid #BCFFB1",
         "background": "linear-gradient(134.69deg, #3AA529 1.8%, #163F10 98.2%)"
@@ -38,7 +38,7 @@
         "name_ru": "Редчайший",
         "ranks": 150,
         "factor": 3,
-        "image": "images/rarities/4.png",
+        "image": "images/rarities/4.webp",
         "color": "#006eee",
         "border": "0.6px solid #BEDCFF",
         "background": "linear-gradient(131.19deg, #016AE5 -0.58%, #013B7F 99.59%)"
@@ -49,7 +49,7 @@
         "name_ru": "Эпический",
         "ranks": 250,
         "factor": 4,
-        "image": "images/rarities/5.png",
+        "image": "images/rarities/5.webp",
         "color": "#9404f5",
         "border": "0.6px solid #D79BFF",
         "background": "linear-gradient(133.67deg, #9005EC 0.53%, #520386 100.49%)"
@@ -60,7 +60,7 @@
         "name_ru": "Легендарный",
         "ranks": 1750,
         "factor": 5,
-        "image": "images/rarities/6.png",
+        "image": "images/rarities/6.webp",
         "color": "#ffbd58",
         "border": "0.6px solid #FFE5BD",
         "background": "linear-gradient(135deg, #F6B655 1.45%, #906B32 99.04%)"
@@ -71,7 +71,7 @@
         "name_ru": "Мифический",
         "ranks": 2500,
         "factor": 7,
-        "image": "images/rarities/7.png",
+        "image": "images/rarities/7.webp",
         "color": "#52fbbd",
         "border": "0.6px solid #88FFD0",
         "background": "linear-gradient(133.67deg, #50F1B5 0%, #47B585 99.97%)"
@@ -82,7 +82,7 @@
         "name_ru": "Божественный",
         "ranks": 3250,
         "factor": 8,
-        "image": "images/rarities/8.png",
+        "image": "images/rarities/8.webp",
         "color": "#424153",
         "border": "0.6px solid #E0D6FF",
         "background": "linear-gradient(135deg, #7D7B89 0.94%, #272128 98.53%)"
@@ -93,7 +93,7 @@
         "name_ru": "Богоподобный",
         "ranks": 4000,
         "factor": 13,
-        "image": "images/rarities/9.png",
+        "image": "images/rarities/9.webp",
         "color": "#b91229",
         "border": "0.6px solid #FF8E8E",
         "background": "linear-gradient(131.19deg, #E40000 -0.54%, #7E0000 99.63%)"
@@ -104,7 +104,7 @@
         "name_ru": "Вечный",
         "ranks": 4750,
         "factor": 17,
-        "image": "images/rarities/10.png",
+        "image": "images/rarities/10.webp",
         "color": "#d643b7",
         "border": "0.6px solid #FFDCF9",
         "background": "linear-gradient(132.45deg, #E800C3 0.55%, #82006D 98.34%)"
@@ -115,7 +115,7 @@
         "name_ru": "Галактический",
         "ranks": 5500,
         "factor": 25,
-        "image": "images/rarities/11.png",
+        "image": "images/rarities/11.webp",
         "color": "#ddfe21",
         "border": "0.6px solid #FFFA6D",
         "background": "linear-gradient(132.45deg, #FFF500 1.61%, #999300 99.4%)"
