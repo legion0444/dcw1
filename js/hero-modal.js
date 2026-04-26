@@ -11,7 +11,10 @@ async function loadReferences() {
         ]);
         dataCache = { alliances, races, classes, rarities };
         return dataCache;
-    } catch (e) { console.error("Ошибка справочников", e); return null; }
+    } catch (e) { 
+        console.error("Ошибка справочников", e); 
+        return null; 
+    }
 }
 
 const createStatRow = (name, val) => `
@@ -33,7 +36,12 @@ export async function openHeroModal(heroData) {
     const rarityInfo = refs?.rarities.find(r => r.id === heroData.rarity_id);
 
     const rarityColor = rarityInfo?.color || "#e23636";
-    const rarityFrame = rarityInfo?.image || "";
+    
+    // Принудительно меняем .png на .webp для рамок редкости
+    let rarityFrame = rarityInfo?.image || "";
+    if (rarityFrame.endsWith('.png')) {
+        rarityFrame = rarityFrame.replace('.png', '.webp');
+    }
 
     const oldModal = document.getElementById('hero-full-card-modal');
     if (oldModal) oldModal.remove();
@@ -43,12 +51,15 @@ export async function openHeroModal(heroData) {
     modal.className = 'hero-modal-overlay';
 
     modal.innerHTML = `
+        <div class="external-blur"></div>
+
         <div class="hero-modal-content">
             <div class="modal-background"></div>
-            <div class="modal-content-wrapper">
+            
+            <div class="modal-content-wrapper" style="position: relative; z-index: 10;">
                 <button class="close-modal">✕</button>
                 
-                <div class="hero-modal-title" style="border-left-color: ">
+                <div class="hero-modal-title" style="border-left: 4px solid #e23636; padding-left: 15px;">
                     ${(heroData.name_ru || "ГЕРОЙ").toUpperCase()}
                 </div>
 
@@ -73,11 +84,15 @@ export async function openHeroModal(heroData) {
                 <div class="hero-header-flex">
                     <div class="hero-visual">
                         <div class="hero-visual-container">
-                            <div class="hero-visual-bg" style="background-color: ${rarityColor};"></div>
+                            <div class="hero-visual-bg" style="background-color: ${rarityColor}; opacity: 0.15;"></div>
                             
                             <div class="image-container">
                                 <img src="${heroData.image}" class="main-hero-img">
-                                ${rarityFrame ? `<img src="${rarityFrame}" class="rarity-frame-overlay">` : ''}
+                                ${rarityFrame ? `
+                                    <img src="${rarityFrame}" 
+                                         class="rarity-frame-overlay" 
+                                         onerror="this.src='${rarityFrame.replace('.webp', '.png')}'">
+                                ` : ''}
                                 
                                 ${heroData.shards > 0 ? `
                                     <div class="shards-overlay-panel panel-glass">
@@ -126,5 +141,8 @@ export async function openHeroModal(heroData) {
     `;
 
     modal.querySelector('.close-modal').onclick = () => modal.remove();
+    // Закрытие по клику на оверлей (вне контента)
+    modal.onclick = (e) => { if (e.target === modal) modal.remove(); };
+    
     document.body.appendChild(modal);
 }

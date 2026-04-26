@@ -4,7 +4,7 @@
         "name": "Warriors",
         "color": "#b97000",
         "name_ru": "Воины",
-        "image": "images/gallery/assets/images/categories/alliances/f3d501fa5fc6ca802c6f1003d19ce8e8.png",
+        "image": "images/alliance/1.webp",
         "items": [
             {
                 "id": 48,
@@ -40,7 +40,7 @@
         "name": "Assassins",
         "color": "#00c81d",
         "name_ru": "Асассины",
-        "image": "images/gallery/assets/images/categories/alliances/c88f5caca61a11732cd11c105573fa30.png",
+        "image": "images/alliance/2.webp",
         "items": [
             {
                 "id": 51,
@@ -58,7 +58,7 @@
         "name": "Blacksmiths",
         "color": "#a40013",
         "name_ru": "Кузнецы",
-        "image": "images/gallery/assets/images/categories/alliances/bdd2c2fb3cc6c61eef792640eab3e2b2.png",
+        "image": "images/alliance/3.webp",
         "items": [
             {
                 "id": 52,
@@ -76,7 +76,7 @@
         "name": "Rangers",
         "color": "#ff5300",
         "name_ru": "Рейнджеры",
-        "image": "images/gallery/assets/images/categories/alliances/a5dacb05fcf1baf144d3c91962e95923.png",
+        "image": "images/alliance/4.webp",
         "items": [
             {
                 "id": 53,
@@ -103,7 +103,7 @@
         "name": "Knights",
         "color": "#bc0f73",
         "name_ru": "Рыцари",
-        "image": "images/gallery/assets/images/categories/alliances/b89f7fb00479d74236e3dce897e9803a.png",
+        "image": "images/alliance/5.webp",
         "items": [
             {
                 "id": 55,
@@ -130,7 +130,7 @@
         "name": "Bards",
         "color": "#e000ec",
         "name_ru": "Барды",
-        "image": "images/gallery/assets/images/categories/alliances/3422c5a80f31f94377e1b5990c7b8c51.png",
+        "image": "images/alliance/6.webp",
         "items": [
             {
                 "id": 57,
@@ -148,7 +148,7 @@
         "name": "Thieves",
         "color": "#c8e514",
         "name_ru": "Воры",
-        "image": "images/gallery/assets/images/categories/alliances/036e8a8b13e6134bc54de30f14a68134.png",
+        "image": "images/alliance/7.webp",
         "items": [
             {
                 "id": 58,
@@ -184,7 +184,7 @@
         "name": "Mages",
         "color": "#8047ff",
         "name_ru": "Маги",
-        "image": "images/gallery/assets/images/categories/alliances/f005288ee6233543006b15a51923a00e.png",
+        "image": "images/alliance/9.webp",
         "items": [
             {
                 "id": 64,
@@ -220,7 +220,7 @@
         "name": "Monks",
         "color": "#d90168",
         "name_ru": "Монахи",
-        "image": "images/gallery/assets/images/categories/alliances/0e3ab36a5076a98c16fa5f88dab934da.png",
+        "image": "images/alliance/10.webp",
         "items": [
             {
                 "id": 67,
@@ -238,7 +238,7 @@
         "name": "Skymaws",
         "color": "#ff000c",
         "name_ru": "Небожоры",
-        "image": "images/gallery/assets/images/categories/alliances/a9bd69d5bd3dcdacd71cd592e690417d.png",
+        "image": "images/alliance/11.webp",
         "items": [
             {
                 "id": 68,
@@ -265,7 +265,7 @@
         "name": "Sages",
         "color": "#ff8255",
         "name_ru": "Мудрецы",
-        "image": "images/gallery/assets/images/categories/alliances/94c0e5787de4117eac96eb92b9a73c95.png",
+        "image": "images/alliance/12.webp",
         "items": [
             {
                 "id": 70,
@@ -292,7 +292,7 @@
             "name": "Troopers",
             "color": "#d6d6d6",
             "name_ru": "Десантники",
-            "image": "images/gallery/assets/images/categories/alliances/6dc3cc85bf1f8c629f7e1fb5ad85d00b.png",
+            "image": "images/alliance/13.webp",
             "items": [
                 {
                     "id": 72,
@@ -319,7 +319,7 @@
         "name": "Whisperers",
         "color": "#34dfff",
         "name_ru": "Шептуны",
-        "image": "images/gallery/assets/images/categories/alliances/b76d703eb206f65607bbf08210ccebee.png",
+        "image": "images/alliance/14.webp",
         "items": [
             {
                 "id": 74,
@@ -337,7 +337,7 @@
         "name": "Defenders",
         "color": "#90d100",
         "name_ru": "Защитники",
-        "image": "images/gallery/assets/images/categories/alliances/2884bec2f599feae3350ec070169e3ff.png",
+        "image": "images/alliance/15.webp",
         "items": [
             {
                 "id": 75,
@@ -364,7 +364,7 @@
         "name": "Spiders",
         "color": "#cc5718",
         "name_ru": "Пауки",
-        "image": "images/gallery/assets/images/categories/alliances/0ec3c20e66a5a02f8890a466bb07dbe3.png",
+        "image": "images/alliance/16.webp",
         "items": [
             {
                 "id": 77,
@@ -382,7 +382,7 @@
         "name": "Mechanics",
         "color": "#3b8c80",
         "name_ru": "Механики",
-        "image": "images/gallery/assets/images/categories/alliances/75e38c1c1386650b2624383c5516e431.png",
+        "image": "images/alliance/17.webp",
         "items": [
             {
                 "id": 78,
@@ -400,7 +400,7 @@
         "name": "Paladins",
         "color": "#0085ff",
         "name_ru": "Паладины",
-        "image": "images/gallery/assets/images/categories/alliances/e4cc9e4b76cd5cf0ccf86b1c6b11ca8b.png",
+        "image": "images/alliance/18.webp",
         "items": [
             {
                 "id": 79,
@@ -418,7 +418,7 @@
         "name": "Shadowknights",
         "color": "#4317d1",
         "name_ru": "Теневой рыцарь",
-        "image": "images/gallery/assets/images/categories/alliances/641b609331d30a3b0047c23a3a870566.png",
+        "image": "images/alliance/19.webp",
         "items": [
             {
                 "id": 80,
@@ -436,7 +436,7 @@
         "name": "Scouts",
         "color": "#00a641",
         "name_ru": "Разведчики",
-        "image": "images/gallery/assets/images/categories/alliances/cb593d45f0c939234506248e62b1f716.png",
+        "image": "images/alliance/20.webp",
         "items": [
             {
                 "id": 81,
@@ -463,7 +463,7 @@
         "name": "Priests",
         "color": "#e68125",
         "name_ru": "Священники",
-        "image": "images/gallery/assets/images/categories/alliances/21f43f3b8002d1af56c7a6831bf1ba67.png",
+        "image": "images/alliance/21.webp",
         "items": [
             {
                 "id": 83,
@@ -490,7 +490,7 @@
         "name": "Wizards",
         "color": "#7d5da6",
         "name_ru": "Волшебники",
-        "image": "images/gallery/assets/images/categories/alliances/6845bb0a01d9dc6e5ff17b26c77fb92a.png",
+        "image": "images/alliance/22.webp",
         "items": [
             {
                 "id": 85,
@@ -517,7 +517,7 @@
         "name": "Berserkers",
         "color": "#7b111f",
         "name_ru": "Берсерки",
-        "image": "images/gallery/assets/images/categories/alliances/f54699893b20df57cc6d8fcb580f4b95.png",
+        "image": "images/alliance/23.webp",
         "items": [
             {
                 "id": 87,
@@ -553,7 +553,7 @@
         "name": "Druids",
         "color": "#00d10a",
         "name_ru": "Друиды",
-        "image": "images/gallery/assets/images/categories/alliances/b147271f51268c80b4f2089b4c6df01e.png",
+        "image": "images/alliance/24.webp",
         "items": [
             {
                 "id": 90,
@@ -571,7 +571,7 @@
         "name": "Wanderers",
         "color": "#add4d0",
         "name_ru": "Странники",
-        "image": "images/gallery/assets/images/categories/alliances/1d98a3971db2e88ebd82b71ebe768f06.png",
+        "image": "images/alliance/25.webp",
         "items": [
             {
                 "id": 91,
@@ -589,7 +589,7 @@
         "name": "Warlords",
         "color": "#ffc200",
         "name_ru": "Военачальники",
-        "image": "images/gallery/assets/images/categories/alliances/c0829ee3164bdb341bc072de60c70505.png",
+        "image": "images/alliance/26.webp",
         "items": [
             {
                 "id": 92,
@@ -607,7 +607,7 @@
         "name": "Hunters",
         "color": "#00d4a8",
         "name_ru": "Охотники",
-        "image": "images/gallery/assets/images/categories/alliances/7b348884e63acaa236033c52ae72a1bc.png",
+        "image": "images/alliance/27.webp",
         "items": [
             {
                 "id": 93,
@@ -625,7 +625,7 @@
         "name": "Unicorn Master",
         "color": "#0b0071",
         "name_ru": "Мастер единорогов",
-        "image": "images/gallery/assets/images/categories/alliances/60988aeda2939cf22b18832651ef0fb7.png",
+        "image": "images/alliance/28.webp",
         "items": [
             {
                 "id": 94,
