@@ -33,7 +33,7 @@
     "is_active": 1,
     "skills": [
         {
-            "id": 2025,
+            "id": 2025, 
             "hero_id": 186,
             "boss_id": null,
             "guard_id": null,

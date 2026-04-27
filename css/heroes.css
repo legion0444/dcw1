@@ -107,8 +107,9 @@
 
 /* Контейнер на почти всю ширину экрана */
 .sections-wide-wrapper {
+    align-items: flex-start;
     width: 95%;              /* Почти по края экрана */
-    max-width: 1800px;       /* Но ограничиваем на очень больших мониторах */
+    max-width: 1980px;       /* Но ограничиваем на очень больших мониторах */
     display: flex;
     flex-direction: column;
     gap: 40px;               /* Расстояние между разделами */
@@ -116,7 +117,8 @@
 }
 
 .hero-group {
-    width: 100%;
+    max-width: 100%; 
+    width: fit-content;   
 }
 
 .group-title {
@@ -134,6 +136,7 @@
     display: flex;
     flex-wrap: wrap;         /* Герои идут в ряд и переносятся */
     gap: 10px;               /* Плотная расстановка */
+    width: fit-content;
 }
 
 /* КАРТОЧКА 50x50 */
@@ -186,6 +189,8 @@
 
 /* Стеклянная подложка теперь облегает сетку */
 .hero-group .glass-panel {
+    display: inline-block; /* Или table, чтобы фон облегал только сетку с героями */
+    width: auto;
     padding: 15px;
     background: rgba(255, 255, 255, 0.02);
     backdrop-filter: blur(5px);
