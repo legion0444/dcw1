@@ -29,7 +29,7 @@ const createStatRow = (name, val) => `
 export async function openHeroModal(heroData) {
     const refs = await loadReferences();
     
-    // Получение данных по ID
+    // Получение данных по ID из справочников [cite: 69, 70, 71]
     const allianceData = refs?.alliances.find(a => a.id === heroData.alliance_id);
     const raceName = refs?.races.find(r => r.id === heroData.race_id)?.name_ru || "НЕИЗВЕСТНО";
     const className = refs?.classes.find(c => c.id === heroData.class_id)?.name_ru || "БОЕЦ";
@@ -37,7 +37,7 @@ export async function openHeroModal(heroData) {
 
     const rarityColor = rarityInfo?.color || "#e23636";
     
-    // Принудительно меняем .png на .webp для рамок редкости
+    // Подготовка изображения рамки [cite: 72, 73]
     let rarityFrame = rarityInfo?.image || "";
     if (rarityFrame.endsWith('.png')) {
         rarityFrame = rarityFrame.replace('.png', '.webp');
@@ -48,7 +48,7 @@ export async function openHeroModal(heroData) {
 
     const modal = document.createElement('div');
     modal.id = 'hero-full-card-modal';
-    modal.className = 'hero-modal-overlay';
+    modal.className = 'hero-modal-overlay'; // [cite: 75]
 
     modal.innerHTML = `
         <div class="external-blur"></div>
@@ -59,7 +59,7 @@ export async function openHeroModal(heroData) {
             <div class="modal-content-wrapper" style="position: relative; z-index: 10;">
                 <button class="close-modal">✕</button>
                 
-                <div class="hero-modal-title" style="border-left: 4px solid #e23636; padding-left: 15px;">
+                <div class="hero-modal-title">
                     ${(heroData.name_ru || "ГЕРОЙ").toUpperCase()}
                 </div>
 
@@ -84,8 +84,7 @@ export async function openHeroModal(heroData) {
                 <div class="hero-header-flex">
                     <div class="hero-visual">
                         <div class="hero-visual-container">
-                            <div class="hero-visual-bg" style="background-color: ${rarityColor}; opacity: 0.15;"></div>
-                            
+                            <div class="hero-visual-bg" style="background-color: ${rarityColor};"></div>
                             <div class="image-container">
                                 <img src="${heroData.image}" class="main-hero-img">
                                 ${rarityFrame ? `
@@ -93,7 +92,6 @@ export async function openHeroModal(heroData) {
                                          class="rarity-frame-overlay" 
                                          onerror="this.src='${rarityFrame.replace('.webp', '.png')}'">
                                 ` : ''}
-                                
                                 ${heroData.shards > 0 ? `
                                     <div class="shards-overlay-panel panel-glass">
                                         <span class="shards-count">${heroData.shards}</span>
@@ -105,7 +103,17 @@ export async function openHeroModal(heroData) {
                     </div>
 
                     <div class="hero-stats-side panel-glass">
-                        <div class="panel-header">ХАРАКТЕРИСТИКИ</div>
+                        <div class="panel-header">
+                            <label class="stats-slider-switch large-slider">
+                                <input type="checkbox" id="stats-level-toggle">
+                                <span class="slider-pill">
+                                    <span class="slider-knob-text">x1</span>
+                                </span>
+                            </label>
+                        </div>
+                        
+                        <div class="panel-divider"></div>
+
                         <div class="panel-body stats-list">
                             ${createStatRow('sum', heroData.power)}
                             ${createStatRow('hp', heroData.hp)}
@@ -140,8 +148,16 @@ export async function openHeroModal(heroData) {
         </div>
     `;
 
+    // Логика переключения текста на слайдере
+    const toggle = modal.querySelector('#stats-level-toggle');
+    const knobText = modal.querySelector('.slider-knob-text');
+
+    toggle.addEventListener('change', () => {
+        knobText.textContent = toggle.checked ? 'x5' : 'x1';
+        // Здесь можно добавить вызов функции пересчета статов, если необходимо
+    });
+
     modal.querySelector('.close-modal').onclick = () => modal.remove();
-    // Закрытие по клику на оверлей (вне контента)
     modal.onclick = (e) => { if (e.target === modal) modal.remove(); };
     
     document.body.appendChild(modal);

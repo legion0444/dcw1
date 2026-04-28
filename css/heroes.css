@@ -107,18 +107,20 @@
 
 /* Контейнер на почти всю ширину экрана */
 .sections-wide-wrapper {
-    align-items: flex-start;
-    width: 95%;              /* Почти по края экрана */
-    max-width: 1980px;       /* Но ограничиваем на очень больших мониторах */
     display: flex;
     flex-direction: column;
-    gap: 40px;               /* Расстояние между разделами */
-    padding-bottom: 100px;   /* Отступ снизу, чтобы футер не перекрывал */
+    align-items: flex-start; /* ЭТО КЛЮЧЕВОЙ МОМЕНТ: прижимает элементы влево и не дает им растягиваться */
+    width: 95%;
+    max-width: 2000px;
+    
+    gap: 40px;
+    padding-bottom: 100px;
 }
 
 .hero-group {
-    max-width: 100%; 
-    width: fit-content;   
+    display: table;     /* Заставляет блок сжаться строго по ширине самых длинных элементов внутри */
+    width: auto;        /* Убираем 100% */
+    max-width: 100%;
 }
 
 .group-title {
@@ -134,9 +136,10 @@
 /* Сетка с маленькими карточками */
 .heroes-grid-mini {
     display: flex;
-    flex-wrap: wrap;         /* Герои идут в ряд и переносятся */
-    gap: 10px;               /* Плотная расстановка */
-    width: fit-content;
+    flex-wrap: wrap;     /* Разрешаем перенос на новую строку */
+    gap: 10px;
+    grid-template-columns: repeat(15, 80px);
+    max-width: 1880px;   /* ЭТО ГЛАВНОЕ: после 15 героев начнется новый ряд */
 }
 
 /* КАРТОЧКА 50x50 */
@@ -189,12 +192,11 @@
 
 /* Стеклянная подложка теперь облегает сетку */
 .hero-group .glass-panel {
-    display: inline-block; /* Или table, чтобы фон облегал только сетку с героями */
-    width: auto;
+    display: block;
+    width: 100%;        /* Теперь 100% означает "всю ширину родителя .hero-group", который уже сжат через display: table */
     padding: 15px;
     background: rgba(255, 255, 255, 0.02);
     backdrop-filter: blur(5px);
-    z-index: 0;
 }
 
 .heroes-container {

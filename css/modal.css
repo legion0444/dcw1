@@ -68,8 +68,8 @@
     width: 240px;
     height: 240px;
    
-    filter: blur(24px); /* Увеличил размытие для мягкости */
-    opacity: 100%;
+    filter: blur(20px); /* Увеличил размытие для мягкости */
+    opacity: 40%;
     z-index: 3;
     animation: breath 6s infinite ease-in-out; /* Ускорил дыхание для заметности */
     
@@ -82,7 +82,7 @@
         
     }
     50% {
-        transform: scale(1); /* Легкое увеличение */
+        transform: scale(0.95); /* Легкое увеличение */
         
     }
     100% {
@@ -148,7 +148,7 @@
 /* Стеклянная плашка осколков (тот самый белый прямоугольник) */
 .shards-overlay-panel {
     position: absolute;
-    bottom: -23px; /* Отрицательное значение выводит плашку наполовину вниз */
+    bottom: 183px; /* Отрицательное значение выводит плашку наполовину вниз */
     left: 50%;
     transform: translateX(-50%);
     
@@ -184,11 +184,17 @@
 
 /* Старая панель статов во флексе теперь занимает всю высоту */
 .hero-stats-side {
-    width: 200px;
+    width: 180px; /* Фиксированная ширина как на фото  */
     display: flex;
     flex-direction: column;
-    margin-left: auto; /* Прижимаем статы к правому краю */
+    margin-left: auto;
+   
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
 }
+
+
 
 .hero-modal-overlay {
     position: fixed;
@@ -214,6 +220,68 @@
     overflow: hidden;
 }
 
+/* КРУПНЫЙ СЛАЙДЕР */
+.stats-slider-switch.large-slider {
+    position: relative;
+    display: block;
+    width: 80px; 
+    height: 32px;
+    cursor: pointer;
+}
+
+.stats-slider-switch input { opacity: 0; width: 0; height: 0; }
+
+.slider-pill {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(226, 54, 54, 0.4);
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.panel-header {
+    display: flex;             /* Включаем Flexbox */
+    justify-content: center;   /* Центрируем по горизонтали */
+    align-items: center;       /* Центрируем по вертикали */
+    padding: 12px 0;           /* Внутренние отступы сверху и снизу */
+    width: 100%;               /* Растягиваем на всю ширину родителя */
+    box-sizing: border-box;
+}
+
+/* Элемент с текстом, который заменяет старый :before */
+.slider-knob-text {
+    position: absolute;
+    height: 24px;
+    width: 32px; /* Сделали чуть шире круга для удобства цифр */
+    left: 3px;
+    bottom: 3px;
+    background: #e23636;
+    border-radius: 20px; /* Овальная форма бегунка */
+    
+    /* Стили текста внутри круга */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0 10px rgba(226, 54, 54, 0.6);
+    z-index: 2;
+}
+
+/* Анимация движения бегунка вместе с текстом */
+input:checked + .slider-pill .slider-knob-text {
+    transform: translateX(40px); /* Смещение вправо */
+}
+
+/* Эффект при наведении */
+.stats-slider-switch:hover .slider-knob-text {
+    background: #ff3e3e;
+    box-shadow: 0 0 15px rgba(226, 54, 54, 0.8);
+}
 
 .modal-background {
     position: absolute;
@@ -271,35 +339,52 @@
     border-radius: 6px;
 }
 
-.panel-header {
-    background: rgba(226, 54, 54, 0.15);
-    padding: 5px 12px;
-    font-size: 11px;
-    color: #e23636;
-    letter-spacing: 2px;
-    border-bottom: 1px solid rgba(226, 54, 54, 0.2);
-}
 
 .panel-body { padding: 12px; }
-
-/* СТАТЫ С ИКОНКАМИ */
-.stats-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
 
 .stat-row {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
+    padding: 2px 0;
 }
+
+.stat-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.stat-value {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.hero-header-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px; /* Расстояние между картинкой и статами [cite: 44] */
+    margin-bottom: 30px;
+}
+
+.panel-divider {
+    height: 1px;
+    /* Градиент от прозрачного к белому и обратно создаст эффект "свечения" в центре */
+    background: linear-gradient(90deg, 
+        rgba(255, 255, 255, 0) 0%, 
+        rgba(255, 255, 255, 0.1) 50%, 
+        rgba(255, 255, 255, 0) 100%
+    );
+    margin: 0 15px; /* Отступы по бокам, чтобы линия не упиралась в края */
+    border: none;
+}
+
 
 .stat-icon { width: 22px; height: 22px; }
 .stat-icon img { width: 100%; height: 100%; object-fit: contain; }
-.stat-value { font-size: 18px; font-weight: bold; }
+.stat-value { font-size: 18px; font-weight: bold; }сч
 
-/* НАВЫКИ */
+
 .hero-skills-section {
     display: flex;
     flex-direction: column;
