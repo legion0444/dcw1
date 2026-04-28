@@ -235,24 +235,24 @@
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(226, 54, 54, 0.4);
+    border: 1px solid rgba(121, 121, 121, 0.4);
     border-radius: 20px;
     transition: 0.3s;
 }
 .panel-header {
-    display: flex;             /* Включаем Flexbox */
-    justify-content: center;   /* Центрируем по горизонтали */
-    align-items: center;       /* Центрируем по вертикали */
-    padding: 12px 0;           /* Внутренние отступы сверху и снизу */
-    width: 100%;               /* Растягиваем на всю ширину родителя */
+    display: flex;              
+    justify-content: center;   
+    align-items: center;        
+    padding: 12px 0;           
+    width: 100%;              
     box-sizing: border-box;
 }
 
-/* Элемент с текстом, который заменяет старый :before */
+
 .slider-knob-text {
     position: absolute;
     height: 24px;
-    width: 32px; /* Сделали чуть шире круга для удобства цифр */
+    width: 32px; 
     left: 3px;
     bottom: 3px;
     background: #e23636;

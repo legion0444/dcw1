@@ -1,6 +1,4 @@
-/**
- * LEGION WIKI - Optimized Heroes Loader
- */
+
 import { setupDropdown } from './ui-components.js';
 import { applyUniversalFilters } from './filter-engine.js';
 import { getHeroFullData } from './data-manager.js';
@@ -102,9 +100,7 @@ function renderAllSections() {
     container.appendChild(fragment);
 }
 
-/**
- * ФУНКЦИЯ ФИЛЬТРАЦИИ
- */
+
 function runFiltering() {
     const searchInput = document.getElementById('hero-name-filter');
     const query = searchInput ? searchInput.value : "";
