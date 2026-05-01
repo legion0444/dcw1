@@ -27,41 +27,29 @@ const createStatRow = (name, val) => `
 `;
 
 export async function openHeroModal(heroData) {
-    const refs = await loadReferences();
+    const refs = await loadReferences();  
     
-    // Получение данных по ID из справочников [cite: 69, 70, 71]
-    const allianceData = refs?.alliances.find(a => a.id === heroData.alliance_id);
-    const raceName = refs?.races.find(r => r.id === heroData.race_id)?.name_ru || "НЕИЗВЕСТНО";
-    const className = refs?.classes.find(c => c.id === heroData.class_id)?.name_ru || "БОЕЦ";
-    const rarityInfo = refs?.rarities.find(r => r.id === heroData.rarity_id);
-
-    const rarityColor = rarityInfo?.color || "#e23636";
+    const allianceData = refs?.alliances.find(a => a.id === heroData.alliance_id);  
+    const raceName = refs?.races.find(r => r.id === heroData.race_id)?.name_ru || "НЕИЗВЕСТНО";  
+    const className = refs?.classes.find(c => c.id === heroData.class_id)?.name_ru || "НЕТ"; 
     
-    // Подготовка изображения рамки [cite: 72, 73]
-    let rarityFrame = rarityInfo?.image || "";
-    if (rarityFrame.endsWith('.png')) {
-        rarityFrame = rarityFrame.replace('.png', '.webp');
-    }
+    const currentRarity = refs?.rarities.find(r => r.id === heroData.rarity_id); 
 
     const oldModal = document.getElementById('hero-full-card-modal');
     if (oldModal) oldModal.remove();
 
     const modal = document.createElement('div');
     modal.id = 'hero-full-card-modal';
-    modal.className = 'hero-modal-overlay'; // [cite: 75]
+    modal.className = 'hero-modal-overlay';  
 
     modal.innerHTML = `
         <div class="external-blur"></div>
-
         <div class="hero-modal-content">
             <div class="modal-background"></div>
-            
             <div class="modal-content-wrapper" style="position: relative; z-index: 10;">
                 <button class="close-modal">✕</button>
-                
-                <div class="hero-modal-title">
-                    ${(heroData.name_ru || "ГЕРОЙ").toUpperCase()}
-                </div>
+            
+                <div class="hero-modal-title">${(heroData.name_ru || "ГЕРОЙ").toUpperCase()}</div>
 
                 <div class="hero-meta-row">
                     <div class="meta-item">
@@ -80,18 +68,21 @@ export async function openHeroModal(heroData) {
                         </button>
                     </div>
                 </div>
-                
+
                 <div class="hero-header-flex">
+                    <!-- ЛЕВАЯ ЧАСТЬ: ИЗОБРАЖЕНИЕ -->
                     <div class="hero-visual">
                         <div class="hero-visual-container">
-                            <div class="hero-visual-bg" style="background-color: ${rarityColor};"></div>
+                            <div id="hero-rarity-bg" class="hero-visual-bg" style="background-color: ${currentRarity?.color || '#e23636'};"></div>
                             <div class="image-container">
                                 <img src="${heroData.image}" class="main-hero-img">
-                                ${rarityFrame ? `
-                                    <img src="${rarityFrame}" 
-                                         class="rarity-frame-overlay" 
-                                         onerror="this.src='${rarityFrame.replace('.webp', '.png')}'">
-                                ` : ''}
+                                <div id="frame-container">
+                                    ${currentRarity?.image ? `<img src="${currentRarity.image.replace('.png', '.webp')}" class="rarity-frame-overlay">` : ''}
+                                </div>
+                                
+                                <!-- КОНТЕЙНЕР ДЛЯ ЗВЕЗД НА КАРТОЧКЕ -->
+                                <div id="hero-stars-container" class="stars-card-overlay"></div>
+
                                 ${heroData.shards > 0 ? `
                                     <div class="shards-overlay-panel panel-glass">
                                         <span class="shards-count">${heroData.shards}</span>
@@ -102,6 +93,36 @@ export async function openHeroModal(heroData) {
                         </div>
                     </div>
 
+                    <!-- ЦЕНТРАЛЬНАЯ ЧАСТЬ: СЕЛЕКТОРЫ -->
+                    <div class="selectors-column">
+                        <!-- ПАНЕЛЬ РЕДКОСТЕЙ -->
+                        <div class="rarity-selector-panel panel-glass vertical-selector">
+                            <div id="rarity-list" class="rarity-grid">
+                                ${refs?.rarities.map(r => `
+                                    <div class="rarity-option ${r.id === heroData.rarity_id ? 'active' : ''}" 
+                                         data-id="${r.id}" 
+                                         style="background: ${r.background}; border: 1px solid ${r.border}">
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+
+                        <!-- ПАНЕЛЬ ЗВЕЗД -->
+                        <div class="stars-selector-panel panel-glass">
+                            <div class="stars-selector-grid">
+                                ${[1, 2, 3].map(type => 
+                                    [1, 2, 3, 4].map(count => `
+                                        <div class="star-option" data-type="${type}" data-count="${count}">
+                                            <img src="images/misc/icons/stars/${type}.webp">
+                                            
+                                        </div>
+                                    `).join('')
+                                ).join('')}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ПРАВАЯ ЧАСТЬ: ХАРАКТЕРИСТИКИ -->
                     <div class="hero-stats-side panel-glass">
                         <div class="panel-header">
                             <label class="stats-slider-switch large-slider">
@@ -111,9 +132,7 @@ export async function openHeroModal(heroData) {
                                 </span>
                             </label>
                         </div>
-                        
                         <div class="panel-divider"></div>
-
                         <div class="panel-body stats-list">
                             ${createStatRow('sum', heroData.power)}
                             ${createStatRow('hp', heroData.hp)}
@@ -148,17 +167,83 @@ export async function openHeroModal(heroData) {
         </div>
     `;
 
-    // Логика переключения текста на слайдере
-    const toggle = modal.querySelector('#stats-level-toggle');
-    const knobText = modal.querySelector('.slider-knob-text');
+    // Логика переключения редкости[cite: 1]
+    const rarityOptions = modal.querySelectorAll('.rarity-option');
+    const heroBg = modal.querySelector('#hero-rarity-bg');
+    const frameContainer = modal.querySelector('#frame-container');
 
-    toggle.addEventListener('change', () => {
-        knobText.textContent = toggle.checked ? 'x5' : 'x1';
-        // Здесь можно добавить вызов функции пересчета статов, если необходимо
+    rarityOptions.forEach(opt => {
+        opt.onclick = () => {
+            const rId = parseInt(opt.dataset.id);
+            const rInfo = refs.rarities.find(r => r.id === rId);
+
+            rarityOptions.forEach(o => o.classList.remove('active'));
+            opt.classList.add('active');
+
+            if (rInfo) {
+                heroBg.style.backgroundColor = rInfo.color;
+                if (rInfo.image) {
+                    const webpFrame = rInfo.image.replace('.png', '.webp');
+                    frameContainer.innerHTML = `<img src="${webpFrame}" class="rarity-frame-overlay">`;
+                } else {
+                    frameContainer.innerHTML = '';
+                }
+            }
+        };
     });
 
-    modal.querySelector('.close-modal').onclick = () => modal.remove();
-    modal.onclick = (e) => { if (e.target === modal) modal.remove(); };
+    const starOptions = modal.querySelectorAll('.star-option');
+    const starsContainer = modal.querySelector('#hero-stars-container');
+
+    starOptions.forEach((opt) => {
+        opt.onclick = () => {
+            const currentType = parseInt(opt.dataset.type);
+            const currentCount = parseInt(opt.dataset.count);
+            
+            // ПРОВЕРКА: Если кликнули по уже активной звезде — сбрасываем всё
+            if (opt.classList.contains('active')) {
+                starOptions.forEach(o => o.classList.remove('active', 'filled'));
+                starsContainer.innerHTML = '';
+                return; // Прекращаем выполнение функции
+            }
+
+            // Иначе — обычная логика активации
+            starOptions.forEach(o => o.classList.remove('active', 'filled'));
+
+            opt.classList.add('active');
+
+            starOptions.forEach(o => {
+                const oType = parseInt(o.dataset.type);
+                const oCount = parseInt(o.dataset.count);
+
+                if (oType < currentType) {
+                    // Младшие тиры горят полностью (например, все желтые при выборе синей)[cite: 2]
+                    o.classList.add('filled');
+                } else if (oType === currentType && oCount <= currentCount) {
+                    // В текущем ряду горят до выбранной[cite: 2]
+                    o.classList.add('filled');
+                }
+            });
+
+            // Отрисовка на герое[cite: 2]
+            starsContainer.innerHTML = '';
+            for (let i = 0; i < currentCount; i++) {
+                const img = document.createElement('img');
+                img.src = `images/misc/icons/stars/${currentType}.webp`;
+                img.className = 'hero-star-icon';
+                starsContainer.appendChild(img);
+            }
+        };
+    });
+    // Логика слайдера x1/x5[cite: 1]
+    const toggle = modal.querySelector('#stats-level-toggle');
+    const knobText = modal.querySelector('.slider-knob-text');
+    toggle.addEventListener('change', () => {
+        knobText.textContent = toggle.checked ? 'x5' : 'x1';  
+    });
+
+    modal.querySelector('.close-modal').onclick = () => modal.remove();  
+    modal.onclick = (e) => { if (e.target === modal) modal.remove(); }; 
     
     document.body.appendChild(modal);
 }

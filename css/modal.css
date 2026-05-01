@@ -56,29 +56,29 @@
 /* Общий контейнер для визуальной части */
 .hero-visual-container {
     position: relative;
-    padding-left: 20px; /* Создаем отступ слева для сдвига */
+    padding: 0; /* Обнуляем, чтобы gap в flex-header работал точно */
 }
 
 /* Красная подложка (сзади картинки) */
 .hero-visual-bg {
 
     position: absolute;
-    top: -20px;
-    left: -10px;
+    top: -35px;
+    left: -25px;
     width: 240px;
     height: 240px;
    
-    filter: blur(20px); /* Увеличил размытие для мягкости */
-    opacity: 40%;
+    filter: blur(24px); /* Увеличил размытие для мягкости */
+    opacity: 20%;
     z-index: 3;
-    animation: breath 6s infinite ease-in-out; /* Ускорил дыхание для заметности */
+    animation: breath 12s infinite ease-in-out; /* Ускорил дыхание для заметности */
     
 
 }
 
 @keyframes breath {
     0% {
-        transform: scale(0.9);
+        transform: scale(0.87);
         
     }
     50% {
@@ -86,7 +86,7 @@
         
     }
     100% {
-        transform: scale(0.9);
+        transform: scale(0.87);
         
     }
 }
@@ -114,7 +114,8 @@
 }
 /* Контейнер 200х200 */
 .image-container {
-    left: -10px;
+    left: 20px;
+    top: 13px;
     position: relative;
     width: 200px;
     height: 200px;
@@ -124,22 +125,102 @@
 
 /* Картинка героя */
 .main-hero-img {
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
     object-fit: cover;
-    border-radius: 12px;
+   
     display: block;
 }
+
+
+.selectors-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-grow: 1;
+}
+
+/* Контейнер звезд на самой карточке героя */
+.stars-card-overlay {
+    position: absolute;
+    bottom: 0px; /* Прижимаем к низу картинки */
+    left: -7.5%;
+    
+    display: flex;
+    justify-content: center;
+    gap: 0px; /* Небольшой нахлест звезд как на скриншоте */
+    z-index: 6; /* Выше рамки */
+    width: 100%;
+    pointer-events: none;
+}
+
+.hero-star-icon {
+    width: 50px; /* Размер звезд на герое */
+    height: 50px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
+    
+}
+
+/* Панель выбора звезд */
+.stars-selector-panel {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.stars-selector-grid {
+    display: flex;
+    flex-wrap: wrap; /* Чтобы звезды могли переноситься, если их много */
+    justify-content: center;
+    gap: 0px;
+}
+
+.star-option {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease, filter 0.2s ease;
+    padding: 0;
+}
+
+.star-option img {
+    width: 38px;
+    height: 38px;
+    opacity: 0.4; /* По умолчанию тусклые[cite: 2] */
+    filter: grayscale(1);
+    transition: all 0.2s ease;
+}
+
+.star-option.filled img {
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+.star-option:hover img {
+    transform: scale(1.2);
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+.star-option.active img {
+    opacity: 1;
+    filter: grayscale(0) drop-shadow(0 0 10px rgba(226, 54, 54, 0.8));
+    transform: scale(1.2);
+}
+
+
+
 
 /* РАМКА РЕДКОСТИ: выходит за края */
 .rarity-frame-overlay {
     position: absolute;
     /* Увеличиваем размер, чтобы она выступала */
-    width: 220px; 
-    height: 220px;
-    
-    top: -10px;
-    left: -10px;
+    width: 270px; 
+    height: 270px;
+    opacity: 100%;
+    top: -50px;
+    left: -50px;
     
     z-index: 5;
     pointer-events: none; /* Чтобы можно было кликать сквозь неё */
@@ -149,7 +230,7 @@
 .shards-overlay-panel {
     position: absolute;
     bottom: 183px; /* Отрицательное значение выводит плашку наполовину вниз */
-    left: 50%;
+    left: 43%;
     transform: translateX(-50%);
     
     display: flex;
@@ -182,19 +263,15 @@
     object-fit: contain;
 }
 
-/* Старая панель статов во флексе теперь занимает всю высоту */
 .hero-stats-side {
-    width: 180px; /* Фиксированная ширина как на фото  */
+    width: 180px; 
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-   
+    margin-left: 0; /* ВАЖНО: убираем auto */
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 4px;
 }
-
-
 
 .hero-modal-overlay {
     position: fixed;
@@ -231,11 +308,18 @@
 
 .stats-slider-switch input { opacity: 0; width: 0; height: 0; }
 
+
+
 .slider-pill {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(121, 121, 121, 0.4);
+    border: 1px solid rgba(70, 70, 70, 0.4);
+     box-shadow: 
+        inset 0 2px 5px rgba(0, 0, 0, 0.7),  /* Основная глубокая тень сверху */
+        inset 0 -1px 2px rgba(255, 255, 255, 0.1);
+        
+
     border-radius: 20px;
     transition: 0.3s;
 }
@@ -246,7 +330,52 @@
     padding: 12px 0;           
     width: 100%;              
     box-sizing: border-box;
+    
 }
+
+
+.rarity-selector-panel {
+    /* Удаляем фиксированное смещение left */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+    /* Увеличиваем горизонтальные отступы для расширения панели */
+    padding: 12px 40px; 
+    margin-bottom: 20px;
+    
+    /* Позволяем панели гибко занимать пространство между элементами */
+    flex-grow: 1; 
+    height: fit-content;
+}
+
+.rarity-grid {
+    display: flex;
+    justify-content: space-between; /* Равномерно распределяет иконки по всей ширине */
+    gap: 10px; /* Увеличенный зазор между иконками */
+    width: 100%; /* Занимает всю доступную ширину панели */
+}
+
+.rarity-option {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+    box-sizing: border-box;
+}
+
+.rarity-option.active {
+    outline: 2px solid #e23636; /* Белая обводка как на макете */
+    outline-offset: 1px;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.rarity-option:hover {
+    transform: translateY(-2px);
+}
+
 
 
 .slider-knob-text {
@@ -257,7 +386,12 @@
     bottom: 3px;
     background: #e23636;
     border-radius: 20px; /* Овальная форма бегунка */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
     
+    /* Внешнее свечение кнопки */
+    box-shadow: 
+        0 2px 5px rgba(0, 0, 0, 0.4),
+        0 0 10px rgba(226, 54, 54, 0.4);
     /* Стили текста внутри круга */
     display: flex;
     align-items: center;
@@ -268,7 +402,7 @@
     font-family: 'Oswald', sans-serif;
     
     transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 0 10px rgba(226, 54, 54, 0.6);
+    background: linear-gradient(180deg);
     z-index: 2;
 }
 
@@ -309,20 +443,31 @@ input:checked + .slider-pill .slider-knob-text {
     z-index: 10; 
 }
 
-/* ВЕРХНЯЯ ЧАСТЬ НА FLEXBOX */
+
 .hero-header-flex {
-    
-    align-items: flex-start; /* Выравнивание по верхнему краю [cite: 18] */
-    
+    display: flex;
+    align-items: center; /* Центрируем панель и статы относительно высоты картинки */
+    gap: 20px; /* Уменьшаем gap, так как flex-grow заполнит пространство */
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.rarity-selector-panel.vertical-selector {
+    padding: 10px 15px;
+    margin-bottom: 0; /* Убираем нижний отступ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
 }
 
 .hero-visual {
-    width: 300px;
+    
+   
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-
 
 
 .hero-info-main {
