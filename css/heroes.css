@@ -205,7 +205,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0;
+    padding: 0px 0;
+    margin: 0 auto;
     
     /* ВКЛЮЧАЕМ СКРОЛЛ */
     overflow-y: auto; 
@@ -285,11 +286,7 @@
     border-top: none; /* Склейка с заголовком */
 }
 
-.heroes-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: 15px;
-}
+
 
 /* ЛОГИКА ПЕРЕКЛЮЧЕНИЯ РЕЖИМОВ */
 .search-mode-panel { display: none; width: 100%; max-width: 1200px; }

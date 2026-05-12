@@ -2,6 +2,8 @@
     "id": 2043,
     "name": "Aldric Ironheart",
     "name_ru": "Алдрик",
+    "description": "-",
+    "description_ru": "-",
     "class_id": 15,
     "class_2_id": null,
     "race_id": 40,
@@ -11,6 +13,7 @@
     "cost_gold": "1.6E+46",
     "buy_level": 225,
     "image": "images/heroes/2043.webp",
+    "image_id": 11497,
     "power": 120,
     "base_damage": "1.1Е+58",
     "hp": 26,
@@ -31,23 +34,36 @@
     "color_1": "#000000",
     "color_2": "#000000",
     "is_active": 1,
+    "additional_abilities": [],
+    "passive_abilities": [],
+    "use_in": [],
     "skills": [
         {
             "id": 6639,
             "hero_id": 2043,
-            "boss_id": null,
-            "guard_id": null,
             "image": "images/skills/2043_6639.webp",
             "image_id": 3402,
             "type": "active",
             "chance": 30,
-            "created": "2023-08-24 14:10:26",
-            "updated": "2024-06-18 13:58:33",
             "status": null,
             "name": "Deals massive ATK-based damage to 6 random enemies with a power of 55%.",
             "name_ru": "Наносит мощный урон ATK по 6 случайным соперникам силой 55%."
         }
     ],
+    "equipment": [],
+    "talents": [],
+    "blessing": [],
+    "recipes": [],
+    "race_data": {
+        "id": 40,
+        "name": "Human",
+        "name_ru": "Человек"
+    },
+    "class_data": {
+        "id": 15,
+        "name": "Rogue",
+        "name_ru": "Изгой"
+    },
     "alliance_data": {
         "id": 8,
         "name": "Rogues",
@@ -84,6 +100,28 @@
             }
         ]
     },
+    "weeks_bonus": [],
+    "hatred": [],
+    "get_from_chests": [
+        {
+            "id": 2192,
+            "name": "Spring Chest V",
+            "name_ru": "Весенний сундук V",
+            "rarity_id": 4,
+            "category_id": 2,
+            "image": "images/gallery/assets/images/categories/chests/546de6bf068bef96004e6587ff26b119.png"
+        },
+        {
+            "id": 2259,
+            "name": "Collector\\'s Chest V",
+            "name_ru": "Сундук коллекционера V",
+            "rarity_id": 5,
+            "category_id": 2,
+            "image": "images/gallery/assets/images/categories/chests/a7e19212d3cc96686d74ed7a68ab8331.png"
+        }
+    ],
+    "get_from": [],
+    "guides": [],
     "cat": "9",
     "index_in_category": 72
 }

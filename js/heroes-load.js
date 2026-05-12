@@ -131,14 +131,14 @@ function renderSearchResults(results) {
     const container = document.querySelector('.sections-wide-wrapper');
     container.innerHTML = `
         <div class="glass-panel search-results-active">
-            <h2 class="group-title">ПРОТОКОЛ ПОИСКА: НАЙДЕНО ГЕРОЕВ (${results.length})</h2>
+            <h2 class="group-title">НАЙДЕНО: (${results.length})</h2>
             <div class="heroes-grid-mini">
                 ${results.map(h => createHeroCard(h)).join('')}
             </div>
         </div>`;
 }
 
-/**
+/**                                                    
  * СОЗДАНИЕ КАРТОЧКИ ГЕРОЯ
  */
 function createHeroCard(hero) {

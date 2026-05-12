@@ -1,0 +1,199 @@
+[
+    {
+        "id": 1,
+        "image": "/images/talents/1.webp",
+        "bonuses": {
+            "wis": 15
+        }
+    },
+    {
+        "id": 2,
+        "image": "/images/talents/2.webp",
+        "bonuses": {
+            "wis": 15,
+            "agi": 15
+        }
+    },
+    {
+        "id": 3,
+        "image": "/images/talents/3.webp",
+        "bonuses": {
+            "atk": 15,
+            "wis": 15
+        }
+    },
+    {
+        "id": 4,
+        "image": "/images/talents/4.webp",
+        "bonuses": {
+            "def": 15,
+            "wis": 15
+        }
+    },
+    {
+        "id": 5,
+        "image": "/images/talents/5.webp",
+        "bonuses": {
+            "hp": 20,
+            "wis": 15
+        }
+    },
+    {
+        "id": 6,
+        "image": "/images/talents/6.webp",
+        "bonuses": {
+            "agi": 25
+        }
+    },
+    {
+        "id": 7,
+        "image": "/images/talents/7.webp",
+        "bonuses": {
+            "atk": 15,
+            "agi": 15
+        }
+    },
+    {
+        "id": 8,
+        "image": "/images/talents/8.webp",
+        "bonuses": {
+            "def": 15,
+            "agi": 15
+        }
+    },
+    {
+        "id": 9,
+        "image": "/images/talents/9.webp",
+        "bonuses": {
+            "hp": 20,
+            "agi": 15
+        }
+    },
+    {
+        "id": 11,
+        "image": "/images/talents/11.webp",
+        "bonuses": {
+            "atk": 25
+        }
+    },
+    {
+        "id": 12,
+        "image": "/images/talents/12.webp",
+        "bonuses": {
+            "atk": 15,
+            "def": 15
+        }
+    },
+    {
+        "id": 13,
+        "image": "/images/talents/13.webp",
+        "bonuses": {
+            "hp": 20,
+            "atk": 15
+        }
+    },
+    {
+        "id": 14,
+        "image": "/images/talents/14.webp",
+        "bonuses": {
+            "def": 25
+        }
+    },
+    {
+        "id": 15,
+        "image": "/images/talents/15.webp",
+        "bonuses": {
+            "hp": 25
+        }
+    },
+    {
+        "id": 16,
+        "image": "/images/talents/16.webp",
+        "bonuses": {
+            "dmg": 20
+        }
+    },
+    {
+        "id": 17,
+        "image": "/images/talents/17.webp",
+        "bonuses": {
+            "dmg_atk": 15
+        }
+    },
+    {
+        "id": 18,
+        "image": "/images/talents/18.webp",
+        "bonuses": {
+            "assasin_dmg": 5
+        }
+    },
+    {
+        "id": 19,
+        "image": "/images/talents/19.webp",
+        "bonuses": {
+            "def_wis": 5
+        }
+    },
+    {
+        "id": 20,
+        "image": "/images/talents/20.webp",
+        "bonuses": {
+            "hp": 20,
+            "def": 15
+        }
+    },
+    {
+        "id": 21,
+        "image": "/images/talents/21.webp",
+        "bonuses": {
+            "dmg_wis": 25
+        }
+    },
+    {
+        "id": 22,
+        "image": "/images/talents/22.webp",
+        "bonuses": {
+            "def_atk": 5
+        }
+    },
+    {
+        "id": 23,
+        "image": "/images/talents/23.webp",
+        "bonuses": {
+            "def_all": 5
+        }
+    },
+    {
+        "id": 24,
+        "image": "/images/talents/24.webp",
+        "bonuses": {
+            "dodge_wis": 5
+        }
+    },
+    {
+        "id": 25,
+        "image": "/images/talents/25.webp",
+        "bonuses": {
+            "dodge_atk": 5
+        }
+    },
+    {
+        "id": 26,
+        "image": "/images/talents/26.webp",
+        "bonuses": {
+            "all_dodge": 5
+        }
+    },
+    {
+        "id": 27,
+        "image": "/images/talents/27.webp",
+        "skills": [
+            {
+                "type": "active",
+                "chance": 15,
+                "name": "Revives and fully restores HP of an ally",
+                "name_ru": "Воскрешает и востанавливает полностью HP союзника"
+            }
+        ]
+    }
+]

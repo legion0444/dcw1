@@ -19,8 +19,7 @@ def find_ids_with_low_rarity(path):
                 with open(file_path, 'r', encoding='utf-8') as f:
                     data = json.load(f)
                     
-                    # Проверяем, является ли содержимое словарем
-                    # (если в файле список объектов, логику нужно слегка подправить)
+ 
                     if isinstance(data, dict):
                         if data.get('rarity_id') == 0:
                             print(f"Файл: {filename} | ID: {data.get('id')}")

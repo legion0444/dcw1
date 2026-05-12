@@ -2,6 +2,8 @@
     "id": 280,
     "name": "Lava Snake",
     "name_ru": "Лавовый змей",
+    "description": "-",
+    "description_ru": "-",
     "class_id": 5,
     "class_2_id": 0,
     "race_id": 36,
@@ -11,6 +13,7 @@
     "cost_gold": "-",
     "buy_level": 4710,
     "image": "images/heroes/280.webp",
+    "image_id": 6472,
     "power": 850,
     "base_damage": "2.3Е+967",
     "hp": 187,
@@ -31,18 +34,170 @@
     "color_1": "#000000",
     "color_2": "#000000",
     "is_active": 1,
+    "additional_abilities": [
+        {
+            "id": 241,
+            "level": 1,
+            "influence": 0,
+            "wisdom": 0,
+            "image": "images/gallery/assets/images/categories/skills/de673c507db40f091ec76d9aeed448b9.png",
+            "image_id": 10952,
+            "name": "Tournament Blessing",
+            "name_ru": "Турнирное Благословение",
+            "description": "Increases the number of weekly rating points by 10%.",
+            "description_ru": "Увеличивает количество получаемых очков для еженедельного рейтинга на 10%."
+        },
+        {
+            "id": 270,
+            "level": 10,
+            "influence": 0,
+            "wisdom": 0,
+            "image": "images/gallery/assets/images/categories/skills/a26d602e1d9421bc5334cdb8eea58b6a.png",
+            "image_id": 11185,
+            "name": "Warrior",
+            "name_ru": "Воин",
+            "description": "Increases this hero's damage by 100%",
+            "description_ru": "Увеличивает урон этого героя на 100%"
+        },
+        {
+            "id": 271,
+            "level": 25,
+            "influence": 0,
+            "wisdom": 0,
+            "image": "images/gallery/assets/images/categories/skills/a26d602e1d9421bc5334cdb8eea58b6a.png",
+            "image_id": 11185,
+            "name": "Champion",
+            "name_ru": "Чемпион",
+            "description": "Increases this hero's damage by 100%",
+            "description_ru": "Увеличивает урон этого героя на 100%"
+        },
+        {
+            "id": 272,
+            "level": 50,
+            "influence": 0,
+            "wisdom": 0,
+            "image": "images/gallery/assets/images/categories/skills/311d1ac6389f3242c2295456f41f737e.png",
+            "image_id": 11182,
+            "name": "Master",
+            "name_ru": "Мастер",
+            "description": "Increases this hero's damage by 150%",
+            "description_ru": "Увеличивает урон этого героя на 150%."
+        },
+        {
+            "id": 273,
+            "level": 75,
+            "influence": 0,
+            "wisdom": 0,
+            "image": "images/gallery/assets/images/categories/skills/b0fb7bf9c5a8cfb691f9bb15a79269e7.png",
+            "image_id": 11187,
+            "name": "Inspiration",
+            "name_ru": "Воодушевление",
+            "description": "Increases all heroes' damage by 25%",
+            "description_ru": "Увеличивает урон всех героев на 25%."
+        },
+        {
+            "id": 228,
+            "level": 200,
+            "influence": 0,
+            "wisdom": 0,
+            "image": "images/gallery/assets/images/categories/skills/855678fb51a989b3fb9d6fc5830cc8a2.png",
+            "image_id": 10997,
+            "name": "Power of Fire",
+            "name_ru": "Сила огня",
+            "description": "Starting with lvl 200, the hero gets a x4 DPS bonus for every 25 lvls attained.",
+            "description_ru": "Начиная с 200 уровня, каждые 25 уровней герой получает x4 к ДПС."
+        },
+        {
+            "id": 229,
+            "level": 999,
+            "influence": 0,
+            "wisdom": 0,
+            "image": "images/gallery/assets/images/categories/skills/d7699ff36e7d9c083917178d991648f3.png",
+            "image_id": 3432,
+            "name": "Power of the Soul",
+            "name_ru": "Сила духа",
+            "description": "The hero gets a x10 DPS bonus for each 1000th lvl attained.",
+            "description_ru": "Каждый 1000-й уровень герой получает x10 к ДПС."
+        }
+    ],
+    "passive_abilities": [
+        {
+            "type_id": 5,
+            "image": "images/gallery/assets/images/categories/statuses/1c98764b2f0b858af5bc93ad4cf8c0ba.png",
+            "data": {
+                "id": 5,
+                "name": "Immunity against debuffs",
+                "name_ru": "Защита от дебафов"
+            },
+            "description": "Can't be the target of debuff spells.",
+            "description_ru": "Не может быть выбран в качестве цели для негативных заклинаний."
+        },
+        {
+            "type_id": 9,
+            "image": "images/gallery/assets/images/categories/statuses/9a039ee761b68e10594a1dd52d9caece.png",
+            "data": {
+                "id": 9,
+                "name": "Shapeshifting Immunity",
+                "name_ru": "Защита от смены формы"
+            },
+            "description": "Cannot be targeted by shapeshifting.",
+            "description_ru": "Не может быть выбран целью смены формы."
+        }
+    ],
+    "use_in": [
+        {
+            "status": 2,
+            "location_id": 1
+        },
+        {
+            "status": 2,
+            "location_id": 4
+        },
+        {
+            "status": 1,
+            "location_id": 2
+        },
+        {
+            "status": 1,
+            "location_id": 5
+        },
+        {
+            "status": 1,
+            "location_id": 6
+        },
+        {
+            "status": 1,
+            "location_id": 3
+        },
+        {
+            "status": 2,
+            "location_id": 7
+        },
+        {
+            "status": 1,
+            "location_id": 8
+        },
+        {
+            "status": 1,
+            "location_id": 10
+        },
+        {
+            "status": 1,
+            "location_id": 9
+        },
+        {
+            "status": 1,
+            "location_id": 11
+        }
+    ],
     "skills": [
         {
             "id": 3653,
             "hero_id": 280,
-            "boss_id": null,
-            "guard_id": null,
-            "image": "images/skills/280_3654.webp",
+            "image": "images/skills/280_3653.webp",
             "image_id": 3530,
             "type": "active",
             "chance": 30,
-            "created": "2024-01-27 19:02:41",
-            "updated": "2024-06-18 13:58:33",
             "status": null,
             "name": "Deals heavy WIS-based damage to all enemies with a power of 80%. Number of attacks: 1. Miss chance: 20%.",
             "name_ru": "Наносит мощный урон WIS по всем соперникам силой 80%. Количество атак 1. Шанс промаха 20%."
@@ -50,19 +205,29 @@
         {
             "id": 3654,
             "hero_id": 280,
-            "boss_id": null,
-            "guard_id": null,
             "image": "images/skills/280_3654.webp",
             "image_id": 3395,
             "type": "active",
             "chance": 5,
-            "created": "2024-01-27 19:02:41",
-            "updated": "2024-06-18 13:58:33",
             "status": null,
-            "name": "Decreases all stats of one ally by 25%. Adds stolen stat value to hero\\'s own base stats. Ally dies.",
+            "name": "Decreases all stats of one ally by 25%. Adds stolen stat value to hero's own base stats. Ally dies.",
             "name_ru": "Уменьшает все характеристики одному союзнику на 25%. Прибавляет украденные характеристики к своим базовым характеристикам. Союзник погибает."
         }
     ],
+    "equipment": [],
+    "talents": [],
+    "blessing": [],
+    "recipes": [],
+    "race_data": {
+        "id": 36,
+        "name": "Creature",
+        "name_ru": "Существо"
+    },
+    "class_data": {
+        "id": 5,
+        "name": "Wizard",
+        "name_ru": "Волшебник"
+    },
     "alliance_data": {
         "id": 22,
         "name": "Wizards",
@@ -90,6 +255,52 @@
             }
         ]
     },
+    "weeks_bonus": [],
+    "hatred": [],
+    "get_from_chests": [],
+    "get_from": [
+        {
+            "id": 5156,
+            "hero_id": 280,
+            "chest_800": null,
+            "shop": null,
+            "c_shards": null,
+            "c_voids": null,
+            "c_bottles": null,
+            "c_soul": null,
+            "altar_400": null,
+            "altar_1500": null,
+            "training": null,
+            "hunt": 1,
+            "daily_rewards": null,
+            "after_hero_id": null,
+            "hidden_boss_id": null,
+            "week_id": null,
+            "event_id": null,
+            "league_id": null,
+            "top": null,
+            "points": null,
+            "labyrinth_id": null,
+            "count": null,
+            "count_max": null
+        }
+    ],
+    "guides": [
+        {
+            "id": 10964,
+            "main_image": "",
+            "post_name": "lava-serpent",
+            "post_title": "Lava Serpent",
+            "lang": "en"
+        },
+        {
+            "id": 10965,
+            "main_image": "/assets/images/categories/heroes/UI_hero_kinghunt_01_b_03.png",
+            "post_name": "%d0%bb%d0%b0%d0%b2%d0%be%d0%b2%d1%8b%d0%b9-%d0%b7%d0%bc%d0%b5%d0%b9-2",
+            "post_title": "Лавовый змей",
+            "lang": "ru"
+        }
+    ],
     "cat": "6",
     "index_in_category": 24
 }

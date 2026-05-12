@@ -144,11 +144,11 @@
 .stars-card-overlay {
     position: absolute;
     bottom: 0px; /* Прижимаем к низу картинки */
-    left: -7.5%;
+    left: -8.8%;
     
     display: flex;
     justify-content: center;
-    gap: 0px; /* Небольшой нахлест звезд как на скриншоте */
+    gap: 0px;
     z-index: 6; /* Выше рамки */
     width: 100%;
     pointer-events: none;
@@ -158,9 +158,66 @@
     width: 50px; /* Размер звезд на герое */
     height: 50px;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
+    margin-right: -5px;
     
 }
 
+.blessing-section-new {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 20px 0 15px; /* Отступы от краев всей панели */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Расталкивает левую группу и бонус по краям */
+}
+
+/* Группа: Заголовок + Инпут */
+.blessing-left-group {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* ВОТ ЭТОТ ГАП ТЕПЕРЬ УПРАВЛЯЕТ РАССТОЯНИЕМ ОТ ТЕКСТА ДО ИНПУТА */
+    flex: 1;   /* Позволяет группе занимать место, но не выталкивать бонус */
+}
+
+/* Убираем лишние флексы у заголовка, чтобы он не растягивался */
+.blessing-left-group .column-title {
+    flex: 0 1 auto; 
+    margin-bottom: 0;
+    width: fit-content;
+}
+
+/* Бонус теперь живет своей жизнью справа */
+.bonus-wrapper {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.blessing-bonus-info {
+    font-size: 14px;
+    color: #888;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+#blessing-bonus-value {
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+/* Используем более точный путь к инпуту в секции благословения */
+.blessing-left-group .rank-input-wrapper {
+    width: 50px;
+    min-width: 50px;
+    flex-shrink: 0; /* Чтобы flex-контейнер не сжимал его */
+}
+
+/* На всякий случай зафиксируем и сам тег input внутри */
+#hero-blessing-input {
+    width: 100%;
+    text-align: center; /* Чтобы число было по центру */
+}
 /* Панель выбора звезд */
 .stars-selector-panel {
     padding: 10px;
@@ -187,7 +244,7 @@
 .star-option img {
     width: 38px;
     height: 38px;
-    opacity: 0.4; /* По умолчанию тусклые[cite: 2] */
+    opacity: 0.4;  
     filter: grayscale(1);
     transition: all 0.2s ease;
 }
@@ -209,6 +266,130 @@
     transform: scale(1.2);
 }
 
+.controls-row-container {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 2px;
+}
+
+/* Панель ранга[cite: 2] */
+.rank-control-panel {
+    display: flex;
+    align-items: center;
+    
+    padding: 10px 10px;
+    width: 100%; /* Чтобы не растягивалась на всю ширину */
+    
+}
+
+.rank-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.rank-icon {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+.rank-label {
+    color: #e23636;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Инпут и текст ранга[cite: 2] */
+.rank-input-wrapper {
+    display: flex;
+    align-items: center;
+    width: 70px;
+    margin-left: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 5px 5px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    
+}
+
+.rank-input {
+    background: none;
+    border: none;
+    color: #fff;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+}
+
+/* Убираем стрелочки у инпута number */
+.rank-input::-webkit-inner-spin-button,
+.rank-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.rank-max-divider {
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+.rank-max-text {
+    color: #888;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Кнопка MAX[cite: 2] */
+.rank-max-button {
+    margin-left: 7px;
+    background: rgba(226, 54, 54, 0.1);
+    border: 1px solid #e23636;
+    color: #e23636;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-left: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.rank-max-button:hover {
+    background: #e23636;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(226, 54, 54, 0.5);
+}
+
+/* Римская цифра возле имени[cite: 2] */
+.roman-rank {
+    color: #ffffff; /* Золотистый цвет */
+    margin-left: 10px;
+    font-family: 'Oswald', serif;
+    font-size: 24px;
+    text-shadow: 0 0 10px rgba(160, 160, 160, 0.5);
+}
+
+/* Оверлей доблести на изображении[cite: 2] */
+.valor-frame-overlay {
+    position: absolute;
+    width: 270px; 
+    height: 270px;
+    top: -50px;
+    left: -50px;
+
+    pointer-events: none;
+    z-index: 6; /* Выше фона, ниже рамки или на уровне */
+    object-fit: contain;
+}
 
 
 
@@ -264,13 +445,262 @@
 }
 
 .hero-stats-side {
-    width: 180px; 
+    width: 350px; 
     display: flex;
     flex-direction: column;
     margin-left: 0; /* ВАЖНО: убираем auto */
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 4px;
+}
+
+.stats-comparison-container {
+    display: flex;
+    flex-direction: row; /* Располагаем колонки горизонтально */
+    align-items: flex-start;
+    justify-content: space-between;
+    
+   
+}
+
+/* --- СЕКЦИЯ ТАЛАНТОВ --- */
+.talents-panel {
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.panel-header-mini {
+    color: #888;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+/* --- ТАЛАНТЫ (ГРИД И СОСТОЯНИЯ) --- */
+
+.talents-panel {
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.panel-header-mini {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+/* --- СЕКЦИЯ ТАЛАНТОВ --- */
+.talents-panel {
+    margin-top: 12px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.panel-header-mini {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+/* --- СЕКЦИЯ ТАЛАНТОВ (ПРАВКА: ЕДИНОЕ ЦЕЛОЕ) --- */
+.talents-panel {
+    margin-top: 12px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.panel-header-mini {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.talents-grid {
+    margin-left: 3px;
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    gap: 8px;
+    width: fit-content;
+}
+
+.talents-header-container {
+    display: flex;
+    justify-content: center; /* Центрирует по горизонтали */
+    align-items: center;     /* Центрирует по вертикали (если есть высота) */
+    width: 100%;             /* Растягиваем на всю ширину панели */
+    margin-bottom: 4px;     /* Расстояние до талантов */
+    padding-top: 4px;
+}
+
+.talent-all-button {
+
+    
+    
+    /* Эти стили обычно наследуются от .rank-max-button, 
+       но можно продублировать для надежности: */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Родительский слот - теперь только контейнер, не анимируется */
+.talent-slot {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* --- ОБЪЕДИНЯЮЩИЙ WRAPPER (ЕДИНОЕ ЦЕЛОЕ) --- */
+.talent-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Все переходы и фильтры вешаем сюда */
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), filter 0.3s ease;
+    
+    /* ВЫКЛЮЧЕНО ПО УМОЛЧАНИЮ */
+    filter: grayscale(100%) opacity(75%) brightness(0.7);
+    
+    /* Оптимизация */
+    will-change: transform, filter;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+/* --- АНИМАЦИЯ И СОСТОЯНИЯ --- */
+
+/* АКТИВНОЕ СОСТОЯНИЕ: зажигаем wrapper */
+.talent-slot.active .talent-wrapper {
+    filter: grayscale(0%) opacity(100%) brightness(1);
+}
+
+/* ХОВЕР: увеличиваем wrapper как единое целое */
+.talent-slot:hover .talent-wrapper {
+    transform: scale(1.1);
+    z-index: 5;
+}
+
+/* Внутренние элементы больше не имеют своих переходов */
+.talent-frame {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: block;
+    pointer-events: none;
+}
+
+.talent-icon {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    z-index: 2;
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+
+.panel-glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.compact-panel {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 10px;
+}
+
+/* Стилизация скроллбара для модалки, если контента много */
+.hero-modal-content::-webkit-scrollbar {
+    width: 4px;
+}
+
+.hero-modal-content::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+}
+
+.stats-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding: 15px;
+}
+
+/* Вертикальная линия в стиле ваших panel-divider */
+.vertical-divider {
+    width: 1px;
+    align-self: stretch; /* Растягиваем на всю высоту контейнера */
+    background: linear-gradient(180deg, 
+        rgba(255, 255, 255, 0) 0%, 
+        rgba(255, 255, 255, 0.1) 50%, 
+        rgba(255, 255, 255, 0) 100%
+    ); /* Градиент сверху вниз для эффекта свечения в центре  */
+    margin: 0 5px;
+}
+
+/* Стили заголовков для единообразия */
+.column-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    
+    /* ГРАДИЕНТНАЯ ПОДЛОЖКА */
+    background: linear-gradient(90deg, rgba(226, 54, 54, 0.15) 0%, rgba(226, 54, 54, 0) 100%);
+   
+    width: 100%; /* Чтобы градиент растягивался на всю ширину колонки */
+}
+
+/* Красная линия (маркер) перед текстом */
+.column-title::before {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 20px;
+    background-color: #e23636;
+    box-shadow: 0 0 8px rgba(226, 54, 54, 0.6);
+    flex-shrink: 0;
 }
 
 .hero-modal-overlay {
@@ -284,17 +714,19 @@
     padding: 20px;
 }
 
+/* В файле css.txt строка 340 */
 .hero-modal-content {
     position: relative;
-    width: 100%;
-    max-width: 1000px;
+    width: fit-content; /* Окно будет растягиваться под контент */
+    min-width: 900px;   /* Минимальная база, чтобы не схлопывалось */
+    max-width: 95vw;    /* Ограничение только по ширине экрана */
     max-height: 90vh;
     display: flex;
     flex-direction: column;
     font-family: 'Oswald', sans-serif;
     color: #fff;
     border-radius: 4px;
-    overflow: hidden;
+    overflow-y: auto;   /* Добавляем прокрутку, если контент слишком большой */
 }
 
 /* КРУПНЫЙ СЛАЙДЕР */
@@ -510,6 +942,7 @@ input:checked + .slider-pill .slider-knob-text {
     align-items: flex-start;
     gap: 40px; /* Расстояние между картинкой и статами [cite: 44] */
     margin-bottom: 30px;
+    flex-wrap: nowrap;
 }
 
 .panel-divider {
@@ -537,6 +970,7 @@ input:checked + .slider-pill .slider-knob-text {
     border-top: 1px solid rgba(255,255,255,0.1);
     padding-top: 20px;
 }
+
 
 .skill-row {
     display: flex;
@@ -572,3 +1006,4 @@ input:checked + .slider-pill .slider-knob-text {
     position: absolute; top: 10px; right: 10px;
     background: none; border: none; color: #555; font-size: 24px; cursor: pointer;
 }
+

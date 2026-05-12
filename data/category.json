@@ -1,9 +1,9 @@
 {
   "categories": {
     "1": { "ru": "Все", "en": "All" },
-    "2": { "ru": "Линейные Герои", "en": "Linear heroes", "icon": "icons/siege.svg" },
-    "3": { "ru": "Герои осады", "en": "Siege heroes", "icon": "icons/event.svg" },
-    "4": { "ru": "Герои события", "en": "Event heroes", "icon": "icons/lair.svg" },
+    "2": { "ru": "Линейные Герои", "en": "Linear heroes"},
+    "3": { "ru": "Герои осады", "en": "Siege heroes"},
+    "4": { "ru": "Герои события", "en": "Event heroes"},
     "5": { "ru": "Титаны", "en": "Titans" },
     "6": { "ru": "Герои логова", "en": "Lair heroes" },
     "7": { "ru": "Герои лабиринта", "en": "Labyrinth heroes" },

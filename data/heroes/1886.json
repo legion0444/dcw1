@@ -2,6 +2,8 @@
     "id": 1886,
     "name": "Zath Ilzttran",
     "name_ru": "Затх Илзтран",
+    "description": "-",
+    "description_ru": "-",
     "class_id": 32,
     "class_2_id": 0,
     "race_id": 5,
@@ -11,6 +13,7 @@
     "cost_gold": "-",
     "buy_level": 0,
     "image": "images/heroes/1886.webp",
+    "image_id": 6343,
     "power": 950,
     "base_damage": "1E+2013",
     "hp": 256,
@@ -31,18 +34,171 @@
     "color_1": "#000000",
     "color_2": "#000000",
     "is_active": 1,
+    "additional_abilities": [
+        {
+            "id": 1398,
+            "level": 1,
+            "influence": 0,
+            "wisdom": 0,
+            "image": "images/gallery/assets/images/categories/skills/782051bda3c820b72350ff1be22aabb7.png",
+            "image_id": 10960,
+            "name": "Great Hunter",
+            "name_ru": "Великий Охотник",
+            "description": "Increases the number of siege rating points received by 5%",
+            "description_ru": "Увеличивает количество получаемых осадных очков на 5%."
+        },
+        {
+            "id": 1399,
+            "level": 1,
+            "influence": 0,
+            "wisdom": 0,
+            "image": "images/gallery/assets/images/categories/skills/de673c507db40f091ec76d9aeed448b9.png",
+            "image_id": 10952,
+            "name": "Tournament Blessing",
+            "name_ru": "Турнирное Благословение",
+            "description": "Increases the number of weekly rating points by 10%.",
+            "description_ru": "Увеличивает количество получаемых очков для еженедельного рейтинга на 10%."
+        },
+        {
+            "id": 1400,
+            "level": 10,
+            "influence": 0,
+            "wisdom": 0,
+            "image": "images/gallery/assets/images/categories/skills/4d1aa226feb5efaf39949bec5dfdf18c.png",
+            "image_id": 11184,
+            "name": "Boss Power I",
+            "name_ru": "Сила босса I",
+            "description": "Increases this hero's damage by 50%.",
+            "description_ru": "Увеличивает урон этого героя на 50%."
+        },
+        {
+            "id": 1401,
+            "level": 25,
+            "influence": 0,
+            "wisdom": 0,
+            "image": "images/gallery/assets/images/categories/skills/311d1ac6389f3242c2295456f41f737e.png",
+            "image_id": 11182,
+            "name": "Boss Power II",
+            "name_ru": "Сила босса II",
+            "description": "Increases this hero's damage by 100%.",
+            "description_ru": "Увеличивает урон этого героя на 100%."
+        },
+        {
+            "id": 1402,
+            "level": 50,
+            "influence": 0,
+            "wisdom": 0,
+            "image": "images/gallery/assets/images/categories/skills/311d1ac6389f3242c2295456f41f737e.png",
+            "image_id": 11182,
+            "name": "Boss Power III",
+            "name_ru": "Сила босса III",
+            "description": "Increases this hero's damage by 100%.",
+            "description_ru": "Увеличивает урон этого героя на 100%."
+        },
+        {
+            "id": 1403,
+            "level": 75,
+            "influence": 0,
+            "wisdom": 0,
+            "image": "images/gallery/assets/images/categories/skills/8b763d04fcee161bd2e323f8436eeba8.png",
+            "image_id": 11181,
+            "name": "Boss Power IV",
+            "name_ru": "Сила босса IV",
+            "description": "Increases this hero's damage by 150%.",
+            "description_ru": "Увеличивает урон этого героя на 150%."
+        },
+        {
+            "id": 1404,
+            "level": 100,
+            "influence": 0,
+            "wisdom": 0,
+            "image": "images/gallery/assets/images/categories/skills/fd868b84e2f0d61603ab69bdef9ddbe7.png",
+            "image_id": 11183,
+            "name": "Master",
+            "name_ru": "Мастер",
+            "description": "Increases this hero's damage by 150%.",
+            "description_ru": "Увеличивает урон этого героя на 150%."
+        },
+        {
+            "id": 1405,
+            "level": 200,
+            "influence": 0,
+            "wisdom": 0,
+            "image": "images/gallery/assets/images/categories/skills/855678fb51a989b3fb9d6fc5830cc8a2.png",
+            "image_id": 10997,
+            "name": "Power of Fire",
+            "name_ru": "Сила огня",
+            "description": "Starting with lvl 200, the hero gets a x4 DPS bonus for every 25 lvls attained.",
+            "description_ru": "Начиная с 200 уровня, каждые 25 уровней герой получает x4 к ДПС."
+        },
+        {
+            "id": 1406,
+            "level": 999,
+            "influence": 0,
+            "wisdom": 0,
+            "image": "images/gallery/assets/images/categories/skills/d7699ff36e7d9c083917178d991648f3.png",
+            "image_id": 3432,
+            "name": "Power of the Soul",
+            "name_ru": "Сила духа",
+            "description": "The hero gets a x10 DPS bonus for each 1000th lvl attained.",
+            "description_ru": "Каждый 1000-й уровень герой получает x10 к ДПС."
+        }
+    ],
+    "passive_abilities": [],
+    "use_in": [
+        {
+            "status": 1,
+            "location_id": 1
+        },
+        {
+            "status": 2,
+            "location_id": 4
+        },
+        {
+            "status": 1,
+            "location_id": 2
+        },
+        {
+            "status": 1,
+            "location_id": 5
+        },
+        {
+            "status": 1,
+            "location_id": 6
+        },
+        {
+            "status": 1,
+            "location_id": 3
+        },
+        {
+            "status": 1,
+            "location_id": 7
+        },
+        {
+            "status": 1,
+            "location_id": 8
+        },
+        {
+            "status": 1,
+            "location_id": 10
+        },
+        {
+            "status": 1,
+            "location_id": 9
+        },
+        {
+            "status": 1,
+            "location_id": 11
+        }
+    ],
     "skills": [
         {
             "id": 3461,
             "hero_id": 1886,
-            "boss_id": null,
-            "guard_id": null,
-            "image": "images/skills/1886_3462.webp",
+            "image": "images/skills/1886_3461.webp",
             "image_id": 3601,
             "type": "active",
             "chance": 30,
-            "created": "2023-12-28 20:37:22",
-            "updated": "2024-06-18 13:58:33",
             "status": null,
             "name": "Deals massive AGI-based damage to 3 random enemies with a power of 85%. The attack applies the following effect: Poisoning.",
             "name_ru": "Наносит мощный урон AGI по 3 случайным соперникам силой 85%. Атака накладывает эффект: Отравление."
@@ -50,19 +206,29 @@
         {
             "id": 3462,
             "hero_id": 1886,
-            "boss_id": null,
-            "guard_id": null,
             "image": "images/skills/1886_3462.webp",
             "image_id": 3600,
             "type": "active",
             "chance": 50,
-            "created": "2023-12-28 20:37:22",
-            "updated": "2024-06-18 13:58:33",
             "status": null,
             "name": "Revives and fully restores HP of 3 enemies. Turns them into spiders.",
             "name_ru": "Воскрешает и восстанавливает полностью HP 3 противников. Превращает их в пауков."
         }
     ],
+    "equipment": [],
+    "talents": [],
+    "blessing": [],
+    "recipes": [],
+    "race_data": {
+        "id": 5,
+        "name": "God",
+        "name_ru": "Божество"
+    },
+    "class_data": {
+        "id": 32,
+        "name": "Assassin",
+        "name_ru": "Убийца"
+    },
     "alliance_data": {
         "id": 2,
         "name": "Assassins",
@@ -81,6 +247,146 @@
             }
         ]
     },
+    "weeks_bonus": [],
+    "hatred": [
+        {
+            "race_id": 15,
+            "data": {
+                "id": 15,
+                "name": "Demon",
+                "name_ru": "Демон"
+            }
+        }
+    ],
+    "get_from_chests": [],
+    "get_from": [
+        {
+            "id": 5169,
+            "hero_id": 1886,
+            "chest_800": null,
+            "shop": null,
+            "c_shards": null,
+            "c_voids": null,
+            "c_bottles": null,
+            "c_soul": null,
+            "altar_400": null,
+            "altar_1500": null,
+            "training": null,
+            "hunt": null,
+            "daily_rewards": null,
+            "after_hero_id": null,
+            "hidden_boss_id": null,
+            "week_id": null,
+            "event_id": null,
+            "league_id": null,
+            "top": null,
+            "points": 5130500000,
+            "labyrinth_id": 30,
+            "count": 35,
+            "count_max": null
+        },
+        {
+            "id": 5170,
+            "hero_id": 1886,
+            "chest_800": null,
+            "shop": null,
+            "c_shards": null,
+            "c_voids": null,
+            "c_bottles": null,
+            "c_soul": null,
+            "altar_400": null,
+            "altar_1500": null,
+            "training": null,
+            "hunt": null,
+            "daily_rewards": null,
+            "after_hero_id": null,
+            "hidden_boss_id": null,
+            "week_id": null,
+            "event_id": null,
+            "league_id": null,
+            "top": null,
+            "points": 4630500000,
+            "labyrinth_id": 30,
+            "count": 30,
+            "count_max": null
+        },
+        {
+            "id": 5171,
+            "hero_id": 1886,
+            "chest_800": null,
+            "shop": null,
+            "c_shards": null,
+            "c_voids": null,
+            "c_bottles": null,
+            "c_soul": null,
+            "altar_400": null,
+            "altar_1500": null,
+            "training": null,
+            "hunt": null,
+            "daily_rewards": null,
+            "after_hero_id": null,
+            "hidden_boss_id": null,
+            "week_id": null,
+            "event_id": null,
+            "league_id": null,
+            "top": null,
+            "points": 4130500000,
+            "labyrinth_id": 30,
+            "count": 30,
+            "count_max": null
+        },
+        {
+            "id": 5172,
+            "hero_id": 1886,
+            "chest_800": null,
+            "shop": null,
+            "c_shards": null,
+            "c_voids": null,
+            "c_bottles": null,
+            "c_soul": null,
+            "altar_400": null,
+            "altar_1500": null,
+            "training": null,
+            "hunt": null,
+            "daily_rewards": null,
+            "after_hero_id": null,
+            "hidden_boss_id": null,
+            "week_id": null,
+            "event_id": null,
+            "league_id": null,
+            "top": null,
+            "points": 3630500000,
+            "labyrinth_id": 30,
+            "count": 30,
+            "count_max": null
+        },
+        {
+            "id": 5173,
+            "hero_id": 1886,
+            "chest_800": null,
+            "shop": null,
+            "c_shards": null,
+            "c_voids": null,
+            "c_bottles": null,
+            "c_soul": null,
+            "altar_400": null,
+            "altar_1500": null,
+            "training": null,
+            "hunt": null,
+            "daily_rewards": null,
+            "after_hero_id": null,
+            "hidden_boss_id": null,
+            "week_id": null,
+            "event_id": null,
+            "league_id": null,
+            "top": null,
+            "points": 3130499999,
+            "labyrinth_id": 30,
+            "count": 25,
+            "count_max": null
+        }
+    ],
+    "guides": [],
     "cat": "7",
     "index_in_category": 1
 }
