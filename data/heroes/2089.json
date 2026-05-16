@@ -97,35 +97,14 @@
     ],
     "equipment": [],
     "talents": [],
-    "blessing": [],
     "recipes": [],
-    "race_data": {
-        "id": 43,
-        "name": "Elf",
-        "name_ru": "Эльф"
-    },
-    "class_data": {
-        "id": 20,
-        "name": "Sage",
-        "name_ru": "Мудрец"
-    },
     "weeks_bonus": [],
     "hatred": [
         {
-            "race_id": 12,
-            "data": {
-                "id": 12,
-                "name": "Goblin",
-                "name_ru": "Гоблин"
-            }
+            "race_id": 12
         },
         {
-            "race_id": 28,
-            "data": {
-                "id": 28,
-                "name": "Construct",
-                "name_ru": "Механизм"
-            }
+            "race_id": 28
         }
     ],
     "get_from_chests": [

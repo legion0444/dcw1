@@ -1,0 +1,139 @@
+{
+    "id": 2045,
+    "name": "Grimnok Stonehammer",
+    "name_ru": "Гримнок",
+    "description": "-",
+    "description_ru": "-",
+    "class_id": 13,
+    "class_2_id": 0,
+    "race_id": 33,
+    "alliance_id": 15,
+    "alliance_2_id": 0,
+    "rarity_id": 1,
+    "cost_gold": "1.6E+46",
+    "buy_level": 225,
+    "image": "images/heroes/2045.webp",
+    "image_id": 11499,
+    "power": 120,
+    "base_damage": "7.0E+63",
+    "hp": 26,
+    "hp_main": 0,
+    "atk": 27,
+    "atk_main": 1,
+    "def": 23,
+    "def_main": 0,
+    "wis": 23,
+    "wis_main": 0,
+    "agi": 12,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 40,
+    "order": 162,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "additional_abilities": [],
+    "passive_abilities": [
+        {
+            "type_id": 1,
+            "image": "images/gallery/assets/images/categories/statuses/5437dd859c3f4ae5cbbdb0145e99d267.png",
+            "data": {
+                "id": 1,
+                "name": "Defender",
+                "name_ru": "Защитник"
+            },
+            "description": "Tries to be the first to intercept the enemy's strikes in order to protect allies.",
+            "description_ru": "Пытается первым получить удар соперника, спасая своих союзников."
+        }
+    ],
+    "use_in": [],
+    "skills": [
+        {
+            "id": 6641,
+            "hero_id": 2045,
+            "image": "images/skills/2045_6641.webp",
+            "image_id": 3363,
+            "type": "active",
+            "chance": 30,
+            "status": null,
+            "name": "Deals massive ATK-based damage to 3 random enemies with a power of 100%. Decreases the enemy's DEF by 30%.",
+            "name_ru": "Наносит мощный урон по 3 случайным соперникам силой 100% Понижает сопернику DEF на 30%"
+        }
+    ],
+    "equipment": [],
+    "talents": [],
+    "blessing": [],
+    "recipes": [],
+    "race_data": {
+        "id": 33,
+        "name": "Orc",
+        "name_ru": "Орк"
+    },
+    "class_data": {
+        "id": 13,
+        "name": "Defender",
+        "name_ru": "Защитник"
+    },
+    "alliance_data": {
+        "id": 15,
+        "name": "Defenders",
+        "color": "#90d100",
+        "name_ru": "Защитники",
+        "image": "images/gallery/assets/images/categories/alliances/2884bec2f599feae3350ec070169e3ff.png",
+        "items": [
+            {
+                "id": 75,
+                "alliance_id": 15,
+                "min": 2,
+                "description": "All heroes receive a 20% bonus to defence against all damage types",
+                "ru_description": "Все герои получают бонус 20% к уменьшению урона от всех типов урона",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            },
+            {
+                "id": 76,
+                "alliance_id": 15,
+                "min": 4,
+                "description": "All heroes receive a 40% bonus to defence against all damage types",
+                "ru_description": "Все герои получают бонус 40% к уменьшению урона от всех типов урона",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2023-06-21 14:53:36"
+            }
+        ]
+    },
+    "weeks_bonus": [],
+    "hatred": [
+        {
+            "race_id": 43,
+            "data": {
+                "id": 43,
+                "name": "Elf",
+                "name_ru": "Эльф"
+            }
+        }
+    ],
+    "get_from_chests": [
+        {
+            "id": 2192,
+            "name": "Spring Chest V",
+            "name_ru": "Весенний сундук V",
+            "rarity_id": 4,
+            "category_id": 2,
+            "image": "images/gallery/assets/images/categories/chests/546de6bf068bef96004e6587ff26b119.png"
+        },
+        {
+            "id": 2259,
+            "name": "Collector\\'s Chest V",
+            "name_ru": "Сундук коллекционера V",
+            "rarity_id": 5,
+            "category_id": 2,
+            "image": "images/gallery/assets/images/categories/chests/a7e19212d3cc96686d74ed7a68ab8331.png"
+        }
+    ],
+    "get_from": [],
+    "guides": [],
+    "cat": "9",
+    "index_in_category": 74
+}

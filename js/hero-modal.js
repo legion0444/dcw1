@@ -53,19 +53,64 @@ export async function openHeroModal(heroData) {
 
     const modal = document.createElement('div');
     modal.id = 'hero-full-card-modal';
-    modal.className = 'hero-modal-overlay';  
+    modal.className = 'hero-modal-overlay'; 
+
+    const shardsHtml = (heroData.shards && heroData.shards > 0) ? `
+        <div class="shards-overlay-panel">
+            <span class="shards-count">${heroData.shards}</span>
+            <img src="images/misc/icons/shards.webp" class="shard-icon-img">
+        </div>
+    ` : '';
+
+    const hasTalents = heroData.talents && heroData.talents.length > 0;
+    const talentsHtml = hasTalents ? `
+        <div class="talents-panel panel-glass">
+            <div class="talents-header-container">
+                <button id="talents-all-btn" class="rank-max-button talent-all-button">ALL</button>
+            </div>
+            <div class="talents-grid">
+                ${heroData.talents.map(tObj => {
+                    const tData = refs.talents.find(t => t.id === tObj.talent_id);
+                    return `
+                        <div class="talent-slot pointer" data-talent-id="${tObj.talent_id}">
+                            <div class="talent-wrapper">
+                                <img src="images/misc/icons/frame.webp" class="talent-frame">
+                                ${tData ? `<img src="${tData.image}" class="talent-icon">` : ''}
+                            </div>
+                        </div>
+                    `;
+                }).join('')}
+            </div>
+        </div>
+    ` : '';
+
+    const hatredCount = heroData.hatred ? heroData.hatred.length : 0;
+    const hatredHtml = (heroData.hatred && hatredCount > 0) ? `
+        <div class="hero-hatred-container">
+            <div class="hatred-header-floating hatred-tooltip-trigger" data-hatred-bonus="30">
+                <img src="images/misc/icons/hatred_icon.webp" class="hatred-icon-img">
+            </div>
+            <div class="hero-hatred-panel panel-glass">
+                <div class="hatred-races-text">
+                    ${heroData.hatred.map(h => {
+                        const race = refs.races.find(r => r.id === h.race_id);
+                        const name = race ? race.name_ru : "???";
+                        return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+                    }).join(', ')}
+                </div>
+            </div>
+        </div>
+    ` : '';
 
     modal.innerHTML = `
         <div class="hero-modal-content">
             <div class="modal-background"></div>
             <div class="modal-content-wrapper" style="position: relative; z-index: 10;">
                 <button class="close-modal">✕</button>
-                
                 <div class="hero-modal-title">
                     <span>${(heroData.name_ru || "ГЕРОЙ").toUpperCase()}</span>
                     <span id="hero-valor-roman" class="roman-rank"></span>
                 </div>
-
                 <div class="hero-meta-row">
                     <div class="meta-item"><span class="meta-label">КЛАСС:</span> <span class="meta-value">${className.toUpperCase()}</span></div>
                     <div class="meta-item"><span class="meta-label">РАСА:</span> <span class="meta-value">${raceName.toUpperCase()}</span></div>
@@ -77,12 +122,12 @@ export async function openHeroModal(heroData) {
                         </button>
                     </div>
                 </div>
-
                 <div class="hero-header-flex">
                     <div class="hero-visual">
                         <div class="hero-visual-container">
                             <div id="hero-rarity-bg" class="hero-visual-bg" style="background-color: ${baseRarity.color};"></div>
                             <div class="image-container">
+                                ${shardsHtml}
                                 <img src="${heroData.image}" class="main-hero-img">
                                 <div id="valor-overlay-container"></div>
                                 <div id="frame-container">
@@ -91,8 +136,8 @@ export async function openHeroModal(heroData) {
                                 <div id="hero-stars-container" class="stars-card-overlay"></div>
                             </div>
                         </div>
+                        ${hatredHtml}
                     </div>
-
                     <div class="selectors-column">
                         <div class="rarity-selector-panel panel-glass vertical-selector">
                             <div id="rarity-list" class="rarity-grid">
@@ -103,7 +148,6 @@ export async function openHeroModal(heroData) {
                                 `).join('')}
                             </div>
                         </div>
-
                         <div class="stars-selector-panel panel-glass">
                             <div class="stars-selector-grid">
                                 ${[1, 2, 3].map(type => [1, 2, 3, 4].map(count => `
@@ -113,7 +157,6 @@ export async function openHeroModal(heroData) {
                                 `).join('')).join('')}
                             </div>
                         </div>
-
                         <div class="controls-row-container">
                             <div class="rank-control-panel panel-glass compact-panel">
                                 <div class="rank-info"><img src="images/misc/icons/rank.webp" class="rank-icon"> РАНГИ:</div>
@@ -126,27 +169,8 @@ export async function openHeroModal(heroData) {
                                 <button id="valor-max-btn" class="rank-max-button">MAX</button>
                             </div>
                         </div>
-
-                        <div class="talents-panel panel-glass">
-                            <div class="talents-header-container">
-                                <button id="talents-all-btn" class="rank-max-button talent-all-button">ALL</button>
-                            </div>
-                            <div class="talents-grid">
-                                ${(heroData.talents || []).map(tObj => {
-                                    const tData = refs.talents.find(t => t.id === tObj.talent_id);
-                                    return `
-                                        <div class="talent-slot pointer" data-talent-id="${tObj.talent_id}">
-                                            <div class="talent-wrapper">
-                                                <img src="images/misc/icons/frame.webp" class="talent-frame">
-                                                ${tData ? `<img src="${tData.image}" class="talent-icon">` : ''}
-                                            </div>
-                                        </div>
-                                    `;
-                                }).join('')}
-                            </div>
-                        </div>
+                        ${talentsHtml}
                     </div>
-
                     <div class="hero-stats-side panel-glass">
                         <div class="panel-header">
                             <label class="stats-slider-switch large-slider">
@@ -160,7 +184,6 @@ export async function openHeroModal(heroData) {
                             <div class="stats-column"><div class="column-title">MAX</div><div id="max-stats-list"></div></div>
                         </div>
                         <div class="panel-divider"></div>
-
                         <div class="blessing-section-new">
                             <div class="blessing-left-group">
                                 <span class="column-title">БЛАГОСЛОВЕНИЕ</span>
@@ -170,7 +193,6 @@ export async function openHeroModal(heroData) {
                         </div>
                     </div>
                 </div>
-                
                 <div class="hero-skills-section">
                     ${(heroData.skills || []).map(s => `
                         <div class="skill-row">
@@ -195,6 +217,9 @@ export async function openHeroModal(heroData) {
     const blessingInput = modal.querySelector('#hero-blessing-input');
     const x5Toggle = modal.querySelector('#stats-level-toggle');
 
+    let activeTooltip = null;
+    const hideTooltip = () => { if (activeTooltip) { activeTooltip.remove(); activeTooltip = null; } };
+
     function syncUI() {
         const maxRank = currentRarity.ranks || 5500;
         let rVal = parseInt(rankInput.value) || 0;
@@ -204,12 +229,20 @@ export async function openHeroModal(heroData) {
         if (rVal > maxRank) { rVal = maxRank; rankInput.value = maxRank; }
         if (vVal > 35) { vVal = 35; valorInput.value = 35; }
         if (bVal > 50) { bVal = 50; blessingInput.value = 50; }
-        if (rVal < 0) { rVal = 0; rankInput.value = 0; }
-        if (vVal < 0) { vVal = 0; valorInput.value = 0; }
-        if (bVal < 0) { bVal = 0; blessingInput.value = 0; }
 
-        const config = { rarityId: currentRarity.id, ranks: rVal, valor: vVal, stars: activeStarCount, blessing: bVal, isX5: x5Toggle.checked };
-        const res = calculateHeroStats(heroData, config, refs.curves, refs.rarities);
+        const activeTalentIds = Array.from(modal.querySelectorAll('.talent-slot.active')).map(slot => slot.dataset.talentId);
+
+        const config = { 
+            rarityId: currentRarity.id, 
+            ranks: rVal, 
+            valor: vVal, 
+            stars: activeStarCount, 
+            blessing: bVal, 
+            isX5: x5Toggle.checked,
+            activeTalentIds: activeTalentIds 
+        };
+
+        const res = calculateHeroStats(heroData, config, refs.curves, refs.rarities, refs.talents);
         const keys = ['power', 'hp', 'atk', 'def', 'wis', 'agi'];
 
         modal.querySelector('#current-stats-list').innerHTML = keys.map(k => createStatRow(k, res.stats[k].current)).join('');
@@ -219,20 +252,59 @@ export async function openHeroModal(heroData) {
         modal.querySelector('#valor-overlay-container').innerHTML = vVal > 0 ? `<img src="images/rarities/val.webp" class="valor-frame-overlay">` : "";
     }
 
-    [rankInput, valorInput, blessingInput].forEach(inp => {
-        inp.onblur = function() { if (this.value === "") { this.value = 0; syncUI(); } };
-    });
+    const setupTooltips = (selector, isTalent = true) => {
+        let longPressTimer = null;
+        let isLongPress = false;
+        let isTouchMode = false;
 
-    // Управление талантами
-    modal.querySelectorAll('.talent-slot').forEach(slot => {
-        slot.onclick = function() { this.classList.toggle('active'); };
-    });
+        const showTooltip = (el) => {
+            hideTooltip();
+            activeTooltip = document.createElement('div');
+            activeTooltip.className = 'talent-tooltip';
+            activeTooltip.style.position = 'fixed';
+            activeTooltip.style.zIndex = '10000';
+            activeTooltip.style.pointerEvents = 'none';
+            
+            let content = '';
+            if (isTalent) {
+                const tData = refs.talents.find(t => t.id === parseInt(el.dataset.talentId));
+                if (!tData || !tData.bonuses) return;
+                for (const [stat, val] of Object.entries(tData.bonuses)) {
+                    content += `<div class="tooltip-stat-row"><img src="images/misc/icons/stats/${stat.toLowerCase()}.webp" class="tooltip-stat-icon"><span class="tooltip-stat-text"><span class="stat-plus">+</span>${val}%</span></div>`;
+                }
+            } else {
+                content = `<div class="tooltip-description-text">Наносит на <span class="stat-plus">${el.dataset.hatredBonus}%</span> урона больше по расам ниже</div>`;
+            }
 
-    // Логика кнопки ALL
-    modal.querySelector('#talents-all-btn').onclick = function() {
-        const slots = modal.querySelectorAll('.talent-slot');
-        const anyInactive = Array.from(slots).some(s => !s.classList.contains('active'));
-        slots.forEach(s => anyInactive ? s.classList.add('active') : s.classList.remove('active'));
+            activeTooltip.innerHTML = content;
+            document.body.appendChild(activeTooltip);
+            const r = el.getBoundingClientRect();
+            const tr = activeTooltip.getBoundingClientRect();
+            activeTooltip.style.left = `${r.left + (r.width / 2) - (tr.width / 2)}px`;
+            activeTooltip.style.top = `${r.top - tr.height - 15}px`;
+        };
+
+        modal.querySelectorAll(selector).forEach(el => {
+            el.onmouseenter = function() { if (isTouchMode) return; showTooltip(this); };
+            el.onmouseleave = function() { if (isTouchMode) return; hideTooltip(); };
+            el.addEventListener('touchstart', function(e) {
+                isTouchMode = true; isLongPress = false; clearTimeout(longPressTimer);
+                longPressTimer = setTimeout(() => { 
+                    isLongPress = true; 
+                    showTooltip(this); 
+                }, 400); 
+            }, { passive: true });
+            el.addEventListener('touchend', function(e) {
+                clearTimeout(longPressTimer);
+                if (isLongPress) { 
+                    hideTooltip(); 
+                    setTimeout(() => { isLongPress = false; }, 50); 
+                }
+            });
+            if (isTalent) {
+                el.onclick = function() { if (isLongPress) return; this.classList.toggle('active'); syncUI(); };
+            }
+        });
     };
 
     modal.querySelectorAll('.rarity-option').forEach(opt => {
@@ -242,7 +314,6 @@ export async function openHeroModal(heroData) {
             opt.classList.add('active');
             modal.querySelector('#hero-rarity-bg').style.backgroundColor = currentRarity.color;
             modal.querySelector('#frame-container').innerHTML = `<img src="${currentRarity.image?.replace('.png', '.webp')}" class="rarity-frame-overlay">`;
-            rankInput.max = currentRarity.ranks || 5500;
             syncUI();
         };
     });
@@ -266,15 +337,23 @@ export async function openHeroModal(heroData) {
         };
     });
 
-    rankInput.oninput = syncUI;
-    valorInput.oninput = syncUI;
-    blessingInput.oninput = syncUI;
+    [rankInput, valorInput, blessingInput].forEach(inp => {
+        inp.onblur = function() { if (this.value === "") { this.value = 0; syncUI(); } };
+        inp.oninput = syncUI;
+    });
+
     x5Toggle.onchange = () => { modal.querySelector('.slider-knob-text').textContent = x5Toggle.checked ? 'x5' : 'x1'; syncUI(); };
     modal.querySelector('#rank-max-btn').onclick = () => { rankInput.value = currentRarity.ranks || 5500; syncUI(); };
     modal.querySelector('#valor-max-btn').onclick = () => { valorInput.value = 35; syncUI(); };
     modal.querySelector('.close-modal').onclick = () => modal.remove();
     modal.onclick = (e) => { if (e.target === modal) modal.remove(); };
 
+    // Сначала пушим в DOM
     document.body.appendChild(modal);
+
+    // Строго после добавления в DOM инициализируем тултипы, чтобы getBoundingClientRect сработал верно
+    if (hasTalents) setupTooltips('.talent-slot', true);
+    if (heroData.hatred) setupTooltips('.hatred-tooltip-trigger', false);
+
     syncUI();
 }

@@ -217,45 +217,11 @@
     ],
     "equipment": [],
     "talents": [],
-    "blessing": [],
     "recipes": [],
-    "race_data": {
-        "id": 5,
-        "name": "God",
-        "name_ru": "Божество"
-    },
-    "class_data": {
-        "id": 16,
-        "name": "Blacksmith",
-        "name_ru": "Кузнец"
-    },
-    "alliance_data": {
-        "id": 3,
-        "name": "Blacksmiths",
-        "color": "#a40013",
-        "name_ru": "Кузнецы",
-        "image": "images/gallery/assets/images/categories/alliances/bdd2c2fb3cc6c61eef792640eab3e2b2.png",
-        "items": [
-            {
-                "id": 52,
-                "alliance_id": 3,
-                "min": 2,
-                "description": "All heroes receive +40% to ATK, +40% to DEF",
-                "ru_description": "Все герои получают +40% к ATK, +40% к DEF",
-                "created": "2023-06-21 14:51:36",
-                "updated": "2026-04-08 12:54:17"
-            }
-        ]
-    },
     "weeks_bonus": [],
     "hatred": [
         {
-            "race_id": 17,
-            "data": {
-                "id": 17,
-                "name": "Dragon",
-                "name_ru": "Дракон"
-            }
+            "race_id": 17
         }
     ],
     "get_from_chests": [],

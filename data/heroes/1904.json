@@ -217,62 +217,14 @@
     ],
     "equipment": [],
     "talents": [],
-    "blessing": [],
     "recipes": [],
-    "race_data": {
-        "id": 5,
-        "name": "God",
-        "name_ru": "Божество"
-    },
-    "class_data": {
-        "id": 28,
-        "name": "Knight",
-        "name_ru": "Рыцарь"
-    },
-    "alliance_data": {
-        "id": 5,
-        "name": "Knights",
-        "color": "#bc0f73",
-        "name_ru": "Рыцари",
-        "image": "images/gallery/assets/images/categories/alliances/b89f7fb00479d74236e3dce897e9803a.png",
-        "items": [
-            {
-                "id": 55,
-                "alliance_id": 5,
-                "min": 3,
-                "description": "All knights receive a 20% bonus against all damage types and a 50% bonus to additional damage",
-                "ru_description": "Все рыцари получают бонус 20% к защите от любого вида урона и бонус 50% к дополнительному урону",
-                "created": "2023-06-21 14:51:36",
-                "updated": "2026-04-07 20:22:00"
-            },
-            {
-                "id": 56,
-                "alliance_id": 5,
-                "min": 6,
-                "description": "All knights receive a 40% bonus against all damage types and a 100% bonus to additional damage",
-                "ru_description": "Все рыцари получают бонус 40% к защите от любого вида урона и бонус 100% к дополнительному урону",
-                "created": "2023-06-21 14:51:36",
-                "updated": "2026-04-07 20:22:14"
-            }
-        ]
-    },
     "weeks_bonus": [],
     "hatred": [
         {
-            "race_id": 15,
-            "data": {
-                "id": 15,
-                "name": "Demon",
-                "name_ru": "Демон"
-            }
+            "race_id": 15
         },
         {
-            "race_id": 30,
-            "data": {
-                "id": 30,
-                "name": "Undead",
-                "name_ru": "Нежить"
-            }
+            "race_id": 30
         }
     ],
     "get_from_chests": [],

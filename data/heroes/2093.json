@@ -97,18 +97,7 @@
     ],
     "equipment": [],
     "talents": [],
-    "blessing": [],
     "recipes": [],
-    "race_data": {
-        "id": 14,
-        "name": "Humanoid",
-        "name_ru": "Гуманоид"
-    },
-    "class_data": {
-        "id": 4,
-        "name": "Warrior",
-        "name_ru": "Воин"
-    },
     "weeks_bonus": [],
     "hatred": [],
     "get_from_chests": [

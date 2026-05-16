@@ -97,45 +97,7 @@
     ],
     "equipment": [],
     "talents": [],
-    "blessing": [],
     "recipes": [],
-    "race_data": {
-        "id": 14,
-        "name": "Humanoid",
-        "name_ru": "Гуманоид"
-    },
-    "class_data": {
-        "id": 27,
-        "name": "Ranger",
-        "name_ru": "Рейнджер"
-    },
-    "alliance_data": {
-        "id": 4,
-        "name": "Rangers",
-        "color": "#ff5300",
-        "name_ru": "Рейнджеры",
-        "image": "images/gallery/assets/images/categories/alliances/a5dacb05fcf1baf144d3c91962e95923.png",
-        "items": [
-            {
-                "id": 53,
-                "alliance_id": 4,
-                "min": 2,
-                "description": "All heroes receive +10% to dodge",
-                "ru_description": "Все герои получают +10% к увороту",
-                "created": "2023-06-21 14:51:36",
-                "updated": "2023-06-21 14:53:36"
-            },
-            {
-                "id": 54,
-                "alliance_id": 4,
-                "min": 4,
-                "description": "All heroes receive +30% to dodge",
-                "ru_description": "Все герои получают +30% к увороту",
-                "created": "2023-06-21 14:51:36",
-                "updated": "2023-06-21 14:53:36"
-            }
-        ]
-    },
     "weeks_bonus": [],
     "hatred": [],
     "get_from_chests": [

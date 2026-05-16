@@ -217,45 +217,11 @@
     ],
     "equipment": [],
     "talents": [],
-    "blessing": [],
     "recipes": [],
-    "race_data": {
-        "id": 5,
-        "name": "God",
-        "name_ru": "Божество"
-    },
-    "class_data": {
-        "id": 32,
-        "name": "Assassin",
-        "name_ru": "Убийца"
-    },
-    "alliance_data": {
-        "id": 2,
-        "name": "Assassins",
-        "color": "#00c81d",
-        "name_ru": "Асассины",
-        "image": "images/gallery/assets/images/categories/alliances/c88f5caca61a11732cd11c105573fa30.png",
-        "items": [
-            {
-                "id": 51,
-                "alliance_id": 2,
-                "min": 2,
-                "description": "All assassins receive a 50% bonus to pure damage",
-                "ru_description": "Все ассасины получают бонус чистого урона 50%",
-                "created": "2023-06-21 14:51:36",
-                "updated": "2023-06-21 14:53:36"
-            }
-        ]
-    },
     "weeks_bonus": [],
     "hatred": [
         {
-            "race_id": 15,
-            "data": {
-                "id": 15,
-                "name": "Demon",
-                "name_ru": "Демон"
-            }
+            "race_id": 15
         }
     ],
     "get_from_chests": [],

@@ -109,18 +109,7 @@
     ],
     "equipment": [],
     "talents": [],
-    "blessing": [],
     "recipes": [],
-    "race_data": {
-        "id": 29,
-        "name": "Insect",
-        "name_ru": "Насекомое"
-    },
-    "class_data": {
-        "id": 3,
-        "name": "Warlord",
-        "name_ru": "Военачальник"
-    },
     "weeks_bonus": [],
     "hatred": [],
     "get_from_chests": [

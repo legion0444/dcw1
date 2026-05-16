@@ -1,0 +1,127 @@
+{
+    "id": 2044,
+    "name": "Elara Fireshadow",
+    "name_ru": "Элара",
+    "description": "-",
+    "description_ru": "-",
+    "class_id": 17,
+    "class_2_id": 0,
+    "race_id": 43,
+    "alliance_id": 9,
+    "alliance_2_id": 0,
+    "rarity_id": 1,
+    "cost_gold": "1.6E+46",
+    "buy_level": 225,
+    "image": "images/heroes/2044.webp",
+    "image_id": 11498,
+    "power": 120,
+    "base_damage": "2.5+41",
+    "hp": 20,
+    "hp_main": 0,
+    "atk": 15,
+    "atk_main": 0,
+    "def": 15,
+    "def_main": 0,
+    "wis": 25,
+    "wis_main": 1,
+    "agi": 22,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 40,
+    "order": 162,
+    "color_1": "#000000",
+    "color_2": "#000000",
+    "is_active": 1,
+    "additional_abilities": [],
+    "passive_abilities": [],
+    "use_in": [],
+    "skills": [
+        {
+            "id": 6640,
+            "hero_id": 2044,
+            "image": "images/skills/2044_6640.webp",
+            "image_id": 3387,
+            "type": "active",
+            "chance": 30,
+            "status": null,
+            "name": "Deals heavy WIS-based damage to all enemies with a power of 120%. Number of attacks: 1. Miss chance: 15%.",
+            "name_ru": "Наносит мощный урон  по всем соперникам силой 120%. Количество атак 1. Шанс промаха 15%"
+        }
+    ],
+    "equipment": [],
+    "talents": [],
+    "blessing": [],
+    "recipes": [],
+    "race_data": {
+        "id": 43,
+        "name": "Elf",
+        "name_ru": "Эльф"
+    },
+    "class_data": {
+        "id": 17,
+        "name": "Mag",
+        "name_ru": "Маг"
+    },
+    "alliance_data": {
+        "id": 9,
+        "name": "Mages",
+        "color": "#8047ff",
+        "name_ru": "Маги",
+        "image": "images/gallery/assets/images/categories/alliances/f005288ee6233543006b15a51923a00e.png",
+        "items": [
+            {
+                "id": 64,
+                "alliance_id": 9,
+                "min": 3,
+                "description": "All mages receive a 30% bonus to additional damage and a 15% bonus to defence against magical attacks",
+                "ru_description": "Все маги получают 30% бонус к дополнительному урону и 15% к защите от магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:51:40"
+            },
+            {
+                "id": 65,
+                "alliance_id": 9,
+                "min": 6,
+                "description": "All mages receive a 75% bonus to additional damage and a 40% bonus to defence against magical attacks",
+                "ru_description": "Все маги получают 75% бонус к дополнительному урону и 40% к защите от магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:51:55"
+            },
+            {
+                "id": 66,
+                "alliance_id": 9,
+                "min": 9,
+                "description": "All mages receive a 150% bonus to additional damage and a 65% bonus to defence against magical attacks",
+                "ru_description": "Все маги получают 150% бонус к дополнительному урону и 65% к защите от магических атак",
+                "created": "2023-06-21 14:51:36",
+                "updated": "2025-01-29 18:52:15"
+            }
+        ]
+    },
+    "weeks_bonus": [],
+    "hatred": [],
+    "get_from_chests": [
+        {
+            "id": 2192,
+            "name": "Spring Chest V",
+            "name_ru": "Весенний сундук V",
+            "rarity_id": 4,
+            "category_id": 2,
+            "image": "images/gallery/assets/images/categories/chests/546de6bf068bef96004e6587ff26b119.png"
+        },
+        {
+            "id": 2259,
+            "name": "Collector\\'s Chest V",
+            "name_ru": "Сундук коллекционера V",
+            "rarity_id": 5,
+            "category_id": 2,
+            "image": "images/gallery/assets/images/categories/chests/a7e19212d3cc96686d74ed7a68ab8331.png"
+        }
+    ],
+    "get_from": [],
+    "guides": [],
+    "cat": "9",
+    "index_in_category": 73
+}

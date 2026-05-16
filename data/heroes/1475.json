@@ -182,54 +182,7 @@
     ],
     "equipment": [],
     "talents": [],
-    "blessing": [],
     "recipes": [],
-    "race_data": {
-        "id": 40,
-        "name": "Human",
-        "name_ru": "Человек"
-    },
-    "class_data": {
-        "id": 6,
-        "name": "Thief",
-        "name_ru": "Вор"
-    },
-    "alliance_data": {
-        "id": 7,
-        "name": "Thieves",
-        "color": "#c8e514",
-        "name_ru": "Воры",
-        "image": "images/gallery/assets/images/categories/alliances/036e8a8b13e6134bc54de30f14a68134.png",
-        "items": [
-            {
-                "id": 58,
-                "alliance_id": 7,
-                "min": 2,
-                "description": "All heroes receive +40% to AGI",
-                "ru_description": "Все герои получают +40% к AGI",
-                "created": "2023-06-21 14:51:36",
-                "updated": "2023-06-21 14:53:36"
-            },
-            {
-                "id": 59,
-                "alliance_id": 7,
-                "min": 4,
-                "description": "All heroes receive +100% to AGI",
-                "ru_description": "Все герои получают +100% к AGI",
-                "created": "2023-06-21 14:51:36",
-                "updated": "2026-04-07 20:23:35"
-            },
-            {
-                "id": 60,
-                "alliance_id": 7,
-                "min": 6,
-                "description": "All heroes receive +175% to AGI. All heroes receive a 40% bonus to dodge non magical attacks",
-                "ru_description": "Все герои получают +175% к AGI. Все герои получают бонус 40% к увороту от не магических атак",
-                "created": "2023-06-21 14:51:36",
-                "updated": "2026-04-07 20:23:30"
-            }
-        ]
-    },
     "weeks_bonus": [],
     "hatred": [],
     "get_from_chests": [

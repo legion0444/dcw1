@@ -1,0 +1,243 @@
+{
+    "id": 852,
+    "name": "Soul Totem",
+    "name_ru": "Тотем душ",
+    "description": "By investing gold into upgrading your totem, you will receive more souls.",
+    "description_ru": "Вкладывая золото в улучшение тотема, можно получить больше душ.",
+    "class_id": 0,
+    "class_2_id": null,
+    "race_id": 0,
+    "alliance_id": 0,
+    "alliance_2_id": 0,
+    "rarity_id": 4,
+    "cost_gold": "2",
+    "buy_level": 1,
+    "image": "images/heroes/852.webp",
+    "image_id": 6532,
+    "power": 0,
+    "base_damage": "0",
+    "hp": 0,
+    "hp_main": 1,
+    "atk": 0,
+    "atk_main": 0,
+    "def": 0,
+    "def_main": 0,
+    "wis": 0,
+    "wis_main": 0,
+    "agi": 0,
+    "agi_main": 0,
+    "bonus_event": 0,
+    "bonus_siege": 0,
+    "bonus_lair": 0,
+    "shards": 0,
+    "order": 0,
+    "color_1": "#031526",
+    "color_2": "#003847",
+    "is_active": 1,
+    "additional_abilities": [
+        {
+            "id": 1614,
+            "level": 1,
+            "influence": 0,
+            "wisdom": 0,
+            "image": "images/gallery/2026-02-26/1d9f62ad97b4d523e3fd9e38d875d149.png",
+            "image_id": 11807,
+            "name": "Pacifism",
+            "name_ru": "Миролюбие",
+            "description": "The hero cannot take part in battles for the clan mine. the King of the Realm's castle, etc.\r\nHe is too pacifistic for this.",
+            "description_ru": "Герой не может принимать участие в битвах за клановую шахту, замок короля мира и т.п.\r\nОн слишком миролюбив для этого."
+        },
+        {
+            "id": 595,
+            "level": 50,
+            "influence": 0,
+            "wisdom": 0,
+            "image": "images/gallery/assets/images/categories/skills/abb4f2453da489cb630d2b216a2818ab.png",
+            "image_id": 11189,
+            "name": "Souleater",
+            "name_ru": "Пожиратель душ",
+            "description": "Increases the number of received souls by 5%",
+            "description_ru": "Увеличивает количество получаемых душ на 5%."
+        },
+        {
+            "id": 596,
+            "level": 200,
+            "influence": 0,
+            "wisdom": 0,
+            "image": "images/gallery/assets/images/categories/skills/abb4f2453da489cb630d2b216a2818ab.png",
+            "image_id": 11189,
+            "name": "Souleater",
+            "name_ru": "Пожиратель душ",
+            "description": "Increases the number of received souls by 5%",
+            "description_ru": "Увеличивает количество получаемых душ на 5%"
+        },
+        {
+            "id": 597,
+            "level": 600,
+            "influence": 0,
+            "wisdom": 0,
+            "image": "images/gallery/assets/images/categories/skills/abb4f2453da489cb630d2b216a2818ab.png",
+            "image_id": 11189,
+            "name": "Souleater",
+            "name_ru": "Пожиратель душ",
+            "description": "Increases the number of received souls by 5%",
+            "description_ru": "Увеличивает количество получаемых душ на 5%"
+        },
+        {
+            "id": 598,
+            "level": 800,
+            "influence": 0,
+            "wisdom": 0,
+            "image": "images/gallery/assets/images/categories/skills/abb4f2453da489cb630d2b216a2818ab.png",
+            "image_id": 11189,
+            "name": "Souleater 2",
+            "name_ru": "Пожиратель душ 2",
+            "description": "Increases the number of received souls by 10%",
+            "description_ru": "Увеличивает количество получаемых душ на 10%"
+        },
+        {
+            "id": 599,
+            "level": 999,
+            "influence": 0,
+            "wisdom": 0,
+            "image": "images/gallery/assets/images/categories/skills/abb4f2453da489cb630d2b216a2818ab.png",
+            "image_id": 11189,
+            "name": "Souleater 3",
+            "name_ru": "Пожиратель душ 3",
+            "description": "Increases the number of received souls by 20%",
+            "description_ru": "Увеличивает количество получаемых душ на 20%"
+        },
+        {
+            "id": 600,
+            "level": 3000,
+            "influence": 0,
+            "wisdom": 0,
+            "image": "images/gallery/assets/images/categories/skills/abb4f2453da489cb630d2b216a2818ab.png",
+            "image_id": 11189,
+            "name": "Souleater 4",
+            "name_ru": "Пожиратель душ 4",
+            "description": "Increases the number of received souls by 150%",
+            "description_ru": "Увеличивает количество получаемых душ на 150%"
+        },
+        {
+            "id": 601,
+            "level": 5000,
+            "influence": 0,
+            "wisdom": 0,
+            "image": "images/gallery/assets/images/categories/skills/abb4f2453da489cb630d2b216a2818ab.png",
+            "image_id": 11189,
+            "name": "Souleater 5",
+            "name_ru": "Пожиратель душ 5",
+            "description": "Increases the number of received souls by x 10.",
+            "description_ru": "Увеличивает количество получаемых душ в 10 раз. "
+        },
+        {
+            "id": 602,
+            "level": 7500,
+            "influence": 0,
+            "wisdom": 0,
+            "image": "images/gallery/assets/images/categories/skills/abb4f2453da489cb630d2b216a2818ab.png",
+            "image_id": 11189,
+            "name": "Souleater 6",
+            "name_ru": "Пожиратель душ 6",
+            "description": "Increases the number of received souls x 100.",
+            "description_ru": "Увеличивает количество получаемых душ в 100 раз."
+        }
+    ],
+    "passive_abilities": [],
+    "use_in": [
+        {
+            "status": 2,
+            "location_id": 1
+        },
+        {
+            "status": 2,
+            "location_id": 4
+        },
+        {
+            "status": 2,
+            "location_id": 2
+        },
+        {
+            "status": 2,
+            "location_id": 5
+        },
+        {
+            "status": 2,
+            "location_id": 6
+        },
+        {
+            "status": 2,
+            "location_id": 3
+        },
+        {
+            "status": 2,
+            "location_id": 7
+        },
+        {
+            "status": 2,
+            "location_id": 8
+        },
+        {
+            "status": 2,
+            "location_id": 10
+        },
+        {
+            "status": 2,
+            "location_id": 9
+        }
+    ],
+    "skills": [],
+    "equipment": [],
+    "talents": [],
+    "blessing": [],
+    "recipes": [],
+    "weeks_bonus": [],
+    "hatred": [],
+    "get_from_chests": [],
+    "get_from": [
+        {
+            "id": 2858,
+            "hero_id": 852,
+            "chest_800": null,
+            "shop": 1,
+            "c_shards": 0,
+            "c_voids": 0,
+            "c_bottles": 0,
+            "c_soul": 50,
+            "altar_400": null,
+            "altar_1500": null,
+            "training": null,
+            "hunt": null,
+            "daily_rewards": null,
+            "after_hero_id": null,
+            "hidden_boss_id": null,
+            "week_id": null,
+            "event_id": null,
+            "league_id": null,
+            "top": null,
+            "points": null,
+            "labyrinth_id": null,
+            "count": null,
+            "count_max": null
+        }
+    ],
+    "guides": [
+        {
+            "id": 11382,
+            "main_image": "",
+            "post_name": "soul-totem-2",
+            "post_title": "Soul Totem",
+            "lang": "en"
+        },
+        {
+            "id": 11383,
+            "main_image": "/assets/images/categories/heroes/UI_hero_totem.png",
+            "post_name": "%d1%82%d0%be%d1%82%d0%b5%d0%bc-%d0%b4%d1%83%d1%88",
+            "post_title": "Тотем душ",
+            "lang": "ru"
+        }
+    ],
+    "cat": "2",
+    "index_in_category": 0
+}

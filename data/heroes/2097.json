@@ -97,18 +97,7 @@
     ],
     "equipment": [],
     "talents": [],
-    "blessing": [],
     "recipes": [],
-    "race_data": {
-        "id": 26,
-        "name": "Skafanj",
-        "name_ru": "Скафандж"
-    },
-    "class_data": {
-        "id": 15,
-        "name": "Rogue",
-        "name_ru": "Изгой"
-    },
     "weeks_bonus": [],
     "hatred": [],
     "get_from_chests": [

@@ -213,5 +213,11 @@
         "id": 43,
         "name": "Elf",
         "name_ru": "Эльф"
+    },
+    {
+        "id": 99,
+        "desc": "Deals [bonus]% more damage to the races listed below.",
+        "desc_ru": "Наносит на [bonus]% урона больше по расам ниже",
+        "bonus": 30
     }
 ]

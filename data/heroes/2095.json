@@ -97,18 +97,7 @@
     ],
     "equipment": [],
     "talents": [],
-    "blessing": [],
     "recipes": [],
-    "race_data": {
-        "id": 43,
-        "name": "Elf",
-        "name_ru": "Эльф"
-    },
-    "class_data": {
-        "id": 17,
-        "name": "Mag",
-        "name_ru": "Маг"
-    },
     "weeks_bonus": [],
     "hatred": [],
     "get_from_chests": [

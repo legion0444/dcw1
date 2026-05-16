@@ -97,54 +97,7 @@
     ],
     "equipment": [],
     "talents": [],
-    "blessing": [],
     "recipes": [],
-    "race_data": {
-        "id": 21,
-        "name": "Beast",
-        "name_ru": "Зверь"
-    },
-    "class_data": {
-        "id": 2,
-        "name": "Berserker",
-        "name_ru": "Берсерк"
-    },
-    "alliance_data": {
-        "id": 23,
-        "name": "Berserkers",
-        "color": "#7b111f",
-        "name_ru": "Берсерки",
-        "image": "images/gallery/assets/images/categories/alliances/f54699893b20df57cc6d8fcb580f4b95.png",
-        "items": [
-            {
-                "id": 87,
-                "alliance_id": 23,
-                "min": 2,
-                "description": "All heroes receive +10% to ΑΤΚ. All berserkers receive an additional 40% ΑΤΚ. Berserkers can go into a rage. Berserkers may lose useful passive abilities that have been cast on them.",
-                "ru_description": "Все герои получают +10% к ATK. Все берсерки получают дополнительно 40% AТК. Берсерки могут стать яростными. Берсерки могут потерять полезные пассивные способности, которые были на них наложены.",
-                "created": "2023-06-21 14:51:36",
-                "updated": "2023-06-21 14:53:36"
-            },
-            {
-                "id": 88,
-                "alliance_id": 23,
-                "min": 4,
-                "description": "All heroes receive +60% to ΑΤΚ. All berserkers receive an additional 80% ΑΤΚ. Berserkers can go into a rage. Berserkers may lose useful passive abilities that have been cast on them.",
-                "ru_description": "Все герои получают +60% к ATK. Все берсерки получают дополнительно 80% ATК. Берсерки могут стать яростными. Берсерки могут потерять полезные пассивные способности, которые были на них наложены.",
-                "created": "2023-06-21 14:51:36",
-                "updated": "2023-06-21 14:53:36"
-            },
-            {
-                "id": 89,
-                "alliance_id": 23,
-                "min": 6,
-                "description": "All heroes receive +60% to ΑΤΚ. All berserkers receive an additional 80% ΑΤΚ. Berserkers can go into a rage. Berserkers receive a 50% bonus to dodge non magical attacks. Berserkers may lose useful passive abilities that have been cast on them.",
-                "ru_description": "Все герои получают +60% к ATK. Все берсерки получают дополнительно 80% AТК. Берсерки могут стать яростными. Берсерки получают бонус 50% к увороту от не магических атак. Берсерки могут потерять полезные пассивные способности, которые были на них наложены.",
-                "created": "2023-06-21 14:51:36",
-                "updated": "2023-06-21 14:53:36"
-            }
-        ]
-    },
     "weeks_bonus": [],
     "hatred": [],
     "get_from_chests": [

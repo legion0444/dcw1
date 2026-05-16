@@ -70,6 +70,13 @@
         }
     },
     {
+        "id": 10,
+        "image": "/images/talents/15.webp",
+        "bonuses": {
+            "hp": 20
+        }
+    },
+    {
         "id": 11,
         "image": "/images/talents/11.webp",
         "bonuses": {

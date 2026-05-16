@@ -97,36 +97,7 @@
     ],
     "equipment": [],
     "talents": [],
-    "blessing": [],
     "recipes": [],
-    "race_data": {
-        "id": 29,
-        "name": "Insect",
-        "name_ru": "Насекомое"
-    },
-    "class_data": {
-        "id": 24,
-        "name": "Spider",
-        "name_ru": "Паук"
-    },
-    "alliance_data": {
-        "id": 16,
-        "name": "Spiders",
-        "color": "#cc5718",
-        "name_ru": "Пауки",
-        "image": "images/gallery/assets/images/categories/alliances/0ec3c20e66a5a02f8890a466bb07dbe3.png",
-        "items": [
-            {
-                "id": 77,
-                "alliance_id": 16,
-                "min": 3,
-                "description": "All heroes receive a 15% bonus to dodge non magical attacks",
-                "ru_description": "Все герои получают бонус 15% к увороту от не магических атак",
-                "created": "2023-06-21 14:51:36",
-                "updated": "2025-01-29 18:50:58"
-            }
-        ]
-    },
     "weeks_bonus": [],
     "hatred": [],
     "get_from_chests": [

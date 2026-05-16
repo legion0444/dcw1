@@ -182,63 +182,11 @@
     ],
     "equipment": [],
     "talents": [],
-    "blessing": [],
     "recipes": [],
-    "race_data": {
-        "id": 16,
-        "name": "Dragonoid",
-        "name_ru": "Драгонид"
-    },
-    "class_data": {
-        "id": 17,
-        "name": "Mag",
-        "name_ru": "Маг"
-    },
-    "alliance_data": {
-        "id": 9,
-        "name": "Mages",
-        "color": "#8047ff",
-        "name_ru": "Маги",
-        "image": "images/gallery/assets/images/categories/alliances/f005288ee6233543006b15a51923a00e.png",
-        "items": [
-            {
-                "id": 64,
-                "alliance_id": 9,
-                "min": 3,
-                "description": "All mages receive a 30% bonus to additional damage and a 15% bonus to defence against magical attacks",
-                "ru_description": "Все маги получают 30% бонус к дополнительному урону и 15% к защите от магических атак",
-                "created": "2023-06-21 14:51:36",
-                "updated": "2025-01-29 18:51:40"
-            },
-            {
-                "id": 65,
-                "alliance_id": 9,
-                "min": 6,
-                "description": "All mages receive a 75% bonus to additional damage and a 40% bonus to defence against magical attacks",
-                "ru_description": "Все маги получают 75% бонус к дополнительному урону и 40% к защите от магических атак",
-                "created": "2023-06-21 14:51:36",
-                "updated": "2025-01-29 18:51:55"
-            },
-            {
-                "id": 66,
-                "alliance_id": 9,
-                "min": 9,
-                "description": "All mages receive a 150% bonus to additional damage and a 65% bonus to defence against magical attacks",
-                "ru_description": "Все маги получают 150% бонус к дополнительному урону и 65% к защите от магических атак",
-                "created": "2023-06-21 14:51:36",
-                "updated": "2025-01-29 18:52:15"
-            }
-        ]
-    },
     "weeks_bonus": [],
     "hatred": [
         {
-            "race_id": 40,
-            "data": {
-                "id": 40,
-                "name": "Human",
-                "name_ru": "Человек"
-            }
+            "race_id": 40
         }
     ],
     "get_from_chests": [

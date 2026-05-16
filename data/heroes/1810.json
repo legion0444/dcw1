@@ -495,36 +495,7 @@
         }
     ],
     "talents": [],
-    "blessing": [],
     "recipes": [],
-    "race_data": {
-        "id": 30,
-        "name": "Undead",
-        "name_ru": "Нежить"
-    },
-    "class_data": {
-        "id": 19,
-        "name": "Monk",
-        "name_ru": "Монах"
-    },
-    "alliance_data": {
-        "id": 10,
-        "name": "Monks",
-        "color": "#d90168",
-        "name_ru": "Монахи",
-        "image": "images/gallery/assets/images/categories/alliances/0e3ab36a5076a98c16fa5f88dab934da.png",
-        "items": [
-            {
-                "id": 67,
-                "alliance_id": 10,
-                "min": 2,
-                "description": "All monks deal an additional 10% damage and receive a 15% bonus to defense against all damage types. All heroes receive a 20% bonus to dodge non magical attacks",
-                "ru_description": "Все монахи наносят дополнительно 10% урона и получают 15% к защите от любого вида урона. Все герои получают бонус 20% к увороту от не магических атак",
-                "created": "2023-06-21 14:51:36",
-                "updated": "2023-06-21 14:53:36"
-            }
-        ]
-    },
     "weeks_bonus": [],
     "hatred": [],
     "get_from_chests": [

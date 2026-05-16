@@ -97,36 +97,7 @@
     ],
     "equipment": [],
     "talents": [],
-    "blessing": [],
     "recipes": [],
-    "race_data": {
-        "id": 30,
-        "name": "Undead",
-        "name_ru": "Нежить"
-    },
-    "class_data": {
-        "id": 18,
-        "name": "Mechanic",
-        "name_ru": "Механик"
-    },
-    "alliance_data": {
-        "id": 17,
-        "name": "Mechanics",
-        "color": "#3b8c80",
-        "name_ru": "Механики",
-        "image": "images/gallery/assets/images/categories/alliances/75e38c1c1386650b2624383c5516e431.png",
-        "items": [
-            {
-                "id": 78,
-                "alliance_id": 17,
-                "min": 3,
-                "description": "All constructs receive an additional 75% ATK, DEF, WIS, AGI. Mechanics can resurrect an allied construction.",
-                "ru_description": "Все механизмы получают дополнительно 75% АТК, DEF, WIS, AGI. Механик может воскресить союзный механизм.",
-                "created": "2023-06-21 14:51:36",
-                "updated": "2026-04-07 19:48:24"
-            }
-        ]
-    },
     "weeks_bonus": [],
     "hatred": [],
     "get_from_chests": [

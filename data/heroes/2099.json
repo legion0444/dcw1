@@ -97,18 +97,7 @@
     ],
     "equipment": [],
     "talents": [],
-    "blessing": [],
     "recipes": [],
-    "race_data": {
-        "id": 25,
-        "name": "Rabbit",
-        "name_ru": "Кролик"
-    },
-    "class_data": {
-        "id": 18,
-        "name": "Mechanic",
-        "name_ru": "Механик"
-    },
     "weeks_bonus": [],
     "hatred": [],
     "get_from_chests": [
